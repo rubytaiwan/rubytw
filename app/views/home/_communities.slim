@@ -1,0 +1,12 @@
+section#communities
+  h3.section-title =t('section.communities')
+
+  .communities
+    - t('communities').each_with_index do |community, index|
+      .community-card class="#{index.odd? ? 'odd' : 'even'}"
+        = link_to community[:link], target: :_blank, :class=> "community-info" do
+          = community[:name]
+          - if community[:type] == 'facebook'
+            i.fa.fa-facebook-official aria-hidden="true"
+          - if community[:type] == 'web'
+            i.fa.fa-external-link aria-hidden="true"

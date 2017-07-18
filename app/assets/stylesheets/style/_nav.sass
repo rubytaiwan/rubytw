@@ -1,0 +1,92 @@
+.navbar-custom
+  background: #fff
+  border-width: 0
+  margin: 0
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1)
+  padding: 11px 20px
+  +transition(opacity, 0.5s)
+
+  // Navbar Change on Scroll
+  @media (min-width: $screen-md)
+    padding: 5px 40px
+    opacity: 0
+    &.affix
+      opacity: 1
+      background-color: #fff
+      padding: 5px 40px
+
+  .navbar-header
+    position: relative
+    padding: 5px 0
+    
+    .navbar-brand
+      position: absolute
+      width: 130px
+      left: 50%
+      top: 10px
+      +transform(translateX(-50%))
+      padding: 0
+      .cover-icons
+        fill: $red
+
+      @media (min-width: $screen-sm)
+        width: 150px
+        top: 12px
+        +transform(translateX(0%))
+  
+  .navbar-collapse
+    border-width: 0
+
+  .navbar-toggle
+    color: $dark-grey
+    font-size: 20px
+    border-width: 0
+    padding: 0
+    margin: 0
+
+    &:hover, &:visited, &:link, &:active
+      background-color: #fff
+  
+  .nav
+    li 
+      &.social-media
+        width: 25%
+        display: inline-block
+        a
+          text-align: center
+          font-size: 24px
+
+        @media (min-width: $screen-sm)
+          width: auto
+          display: block
+          a
+            font-size: 20px
+    
+      a
+        position: relative
+        color: $dark-grey
+        font-size: 16px
+        text-align: center
+        +transition(color, 0.2s)
+        padding: 15px
+
+        &:hover
+          color: $red
+        
+        @media (min-width: $screen-sm)
+          padding: 15px
+
+  .navbar-nav>.active>a
+    background-color: transparent
+
+    &:after
+      content: ""
+      +size(20px, 2px)
+      background: $red
+      position: absolute
+      bottom: 5px
+      left: 50%
+      +transform(translateX(-50%))
+
+    &:hover, &:visited, &:link, &:active
+      background-color: transparent

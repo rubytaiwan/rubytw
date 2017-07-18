@@ -1,0 +1,15 @@
+section#news
+  .news-card
+    h3.section-title =t('section.news')
+    
+    - t('news').each do |article|
+      .news-item
+        p.news-date = article[:date]
+        - if article[:link].present?
+          = link_to article[:link], target: :_blank, :class => "news-link" do
+            = article[:title]
+        - else
+            p.news-title = article[:title]
+
+    a.button-more href="#"
+      =t('helper.view_more')

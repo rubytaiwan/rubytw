@@ -1,0 +1,103 @@
+zh-TW:
+  landing:
+    title: Ruby Taiwan
+    description: 'Ruby Taiwan 社群成立於2008年10月，主要是針對 Ruby 程式語言及軟體開發，進行業界的交流及分享，提昇開發人員的技術深度與廣度。'
+  
+  social-media:
+    twitter: 'https://twitter.com/rubytaiwan'
+    github: 'https://github.com/rubytaiwan'
+    facebook: 'https://www.facebook.com/ruby.taiwan'
+    blog:
+
+  section:
+    news: 最新消息
+    activities: 近期活動
+    communities: 相關社群
+    subscription: 訂閱最新消息
+
+  helper:
+    view_more: 更多消息
+    apply_now: 立即報名
+    order_events: 過往活動
+    subscription: 訂閱
+    placeholder: 請輸入 Email
+
+  news:
+    - title: |
+        矽谷新創都風靡的程式技術！絕不能錯過的 RubyConf Taiwan 2015
+      date: 'Aug 14 2015'
+      link: 'https://5xruby.tw'
+    - title: |
+        RubyConf Taiwan 2015 徵求贊助
+      date: 'May 25 2015'
+
+  activities:
+    - title: |
+        Taipei.rb 201704：Rib Yet another interactive Ruby shell
+      photo: 'taipei_rb_01.jpg'
+      date: '2017-04-18'
+      location: '五倍紅寶石出礦坑'
+      desc: |
+        Rib 是一個 Ruby 內建的 irb 的代用品，本次活動由作者本人介紹當初開發這個的緣由，以及每天如何用它來工作，以及 plugin 的使用方式與部份原始碼說明。
+      link: 'https://5xruby.tw'
+    - title: |
+        第 0012 回 Ruby 默默會
+      photo: 'mokumokukai_01.jpg'
+      date: '2017-04-12'
+      location: '五倍紅寶石出礦坑'
+      desc: |
+        台灣的 Ruby 社群活動很多，但 Ruby Tuesday 或是 Taipei.rb 活動常一、二個月或是一季、半年才辦一次(對不起我們錯了)，或是像 RubyConf Taiwan 這樣的大型活動雖然可以跟很多國內...
+      link: 'https://5xruby.tw'
+    - title: |
+        Taipei.rb 201701：RSpec 的 BDD 實戰經驗分享
+      photo: 'taipei_rb_02.jpg'
+      date: '2017-04-10'
+      location: '五倍紅寶石出礦坑'
+      desc: |
+        一間以 Rails 為主的接案公司，在面對某次複雜系統開發的過程中，本著追求卓越的精神，決定導入 BDD，試圖解決過去專案中的測試程式碼和規格文件的維護問題。
+      link: 'https://5xruby.tw'
+
+  events:
+    - title: 'Ruby Taiwan'
+      id: 'rubytaiwan'
+      photo: ['rubytaiwan-0.jpg', 'rubytaiwan-1.jpg', 'rubytaiwan-2.jpg', 'rubytaiwan-3.jpg', 'rubytaiwan-4.jpg']
+      desc: |
+        Ruby Taiwan 成立於 2008 年10 月，主要針對 Ruby 程式語言及軟體開發，進行業界的交流及分享，提昇開發人員的技術深度與廣度。
+      links: {'Facebook 專頁': 'https://www.facebook.com/ruby.taiwan', 'Facebook 社團': 'https://www.facebook.com/groups/142197385837507/'}
+    - title: 'Ruby 默默會'
+      id: 'mokumokukai'
+      photo: ['mokumokukai-0.jpg', 'mokumokukai-1.jpg', 'mokumokukai-2.jpg', 'mokumokukai-3.jpg', 'mokumokukai-4.jpg']
+      desc: |
+        每週（二）19:00 ~ 22:00
+        在默默會上你可以：Ruby / Rails 交流、找人才 / 找工作、純哈拉閒聊⋯來發呆也可以！
+      facebookPage: 'https://www.facebook.com/rubymokumokukai/'
+      links: {'Facebook 專頁': 'https://www.facebook.com/rubymokumokukai/', '工作職缺看板': 'https://github.com/5xRuby/mokumokukai'}
+    - title: 'Rails Girls Taipei'
+      id: 'railsgirlstaipei'
+      photo: ['railsgirlstaipei-0.jpg', 'railsgirlstaipei-1.jpg', 'railsgirlstaipei-2.jpg', 'railsgirlstaipei-3.jpg', 'railsgirlstaipei-4.jpg']
+      desc: |
+        為期 2 天的 Rails Girls 工作坊，幫助女生們進入 Ruby 以及 Rails 的世界, 讓妳們有能力實現自己的點子與理想！
+      links: {'Facebook 專頁': 'https://www.facebook.com/railsgirlstw/', 'Rails Girls 官網': 'http://railsgirls.tw'}
+    - title: 'RubyConf Taiwan'
+      id: 'rubyconftaiwan'
+      photo: ['rubyconftaiwan-0.jpg', 'rubyconftaiwan-1.jpg', 'rubyconftaiwan-2.jpg', 'rubyconftaiwan-3.jpg', 'rubyconftaiwan-4.jpg']
+      desc: |
+        Ruby Taiwan 成立於 2008 年10 月，主要針對 Ruby 程式語言及軟體開發，進行業界的交流及分享，提昇開發人員的技術深度與廣度。
+      links: {'FB 專頁': 'https://www.facebook.com/rubyconftw/', '官網': 'http://rubyconf.tw/', '影片回顧': 'https://www.youtube.com/channel/UCqw_z59yI24SivuD573FECA'}
+
+  communities:
+    - name: 'RubyConf Taiwan'
+      type: 'facebook'
+      link: 'https://www.facebook.com/rubyconftw/'
+    - name: 'Ruby on Rails 讀書會'
+      type: 'facebook'
+      link: 'https://www.facebook.com/groups/208890269174940/'
+    - name: 'RailsFun.tw'
+      type: 'facebook'
+      link: 'https://www.facebook.com/groups/railsfun.tw/'
+    - name: 'Rails Fun!! Ruby & Rails 中文論壇'
+      type: 'web'
+      link: 'http://railsfun.tw/'
+    - name: 'Ruby Jobs in Taiwan'
+      type: 'web'
+      link: 'http://jobs.ruby.tw/'

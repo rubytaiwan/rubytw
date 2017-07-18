@@ -1,0 +1,62 @@
+#communities
+  max-width: inherit
+  background: #fff
+  padding: 60px 0
+  margin: 0 -15px
+
+  @media screen and (min-width: $screen-sm)
+    margin: 0 -50px
+    padding: 80px 10%
+  
+  .communities
+    max-width: 1020px
+    margin: 0 auto
+    @extend .flexbox
+
+    @media screen and (min-width: $screen-sm)
+      justify-content: flex-start
+
+    .community-card
+      width: calc(100% - 40px)
+      min-height: 160px
+      display: table
+      padding: 15px
+
+      @-moz-document url-prefix()
+        height: 160px
+
+      +transition(all, 0.3s)
+
+      @media screen and (min-width: $screen-sm)
+        width: 50%
+
+      @media screen and (min-width: $screen-md)
+        width: calc(100%/3)
+
+      &.even
+        background-color: $light-grey
+
+        .community-info
+          border: solid 1px #fff
+
+      &.odd .community-info
+        border: solid 1px $light-grey
+
+      &.even:hover, &.odd:hover
+        background-color: $red
+
+        .community-info
+          color: #fff
+
+      .community-info
+        display: table-cell
+        vertical-align: middle
+        text-align: center
+        padding:  0 20px
+
+        font-size: 20px
+        color: $deep-grey
+
+        i
+          display: block
+          margin-top: 10px

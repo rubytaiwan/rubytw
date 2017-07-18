@@ -1,0 +1,26 @@
+#cover
+  .ruby_taiwan_cover
+    = inline_svg 'cover/cover-sky.svg'
+    = inline_svg 'cover/cover-night.svg'
+    = inline_svg 'cover/cover-platform_l.svg'
+    = inline_svg 'cover/cover-platform_r.svg'
+    = inline_svg 'cover/cover-ocean.svg'
+    = inline_svg 'cover/cover-ground.svg'
+
+  .ruby_taiwan
+
+    .ruby_taiwan_logotype
+      = inline_svg 'cover/ruby_taiwan_logotype.svg', title: 'Ruby Taiwan Logotype'
+    .ruby_taiwan_logo
+      = inline_svg 'cover/ruby_taiwan_logo.svg', title: 'Ruby Taiwan Logo'
+    .ruby_taiwan_year
+      p Since 2008
+    .ruby_taiwan_social
+      = link_to t('social-media.twitter'), target: :_blank, class: "social-links" do
+        i.fa.fa-twitter aria-hidden="true"
+      = link_to t('social-media.github'), target: :_blank, class: "social-links" do
+        i.fa.fa-github aria-hidden="true"
+      = link_to t('social-media.facebook'), target: :_blank, class: "social-links" do
+        i.fa.fa-facebook-official aria-hidden="true"
+      = link_to t('social-media.blog'), target: :_blank, class: "social-links" do
+        i.fa.fa-rss aria-hidden="true"

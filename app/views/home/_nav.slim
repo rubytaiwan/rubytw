@@ -1,0 +1,32 @@
+nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
+  .container-fluid
+    .navbar-header.page-scroll
+      button.navbar-toggle data-target="#navbar-collapse" data-toggle="collapse" type="button" 
+        i.fa.fa-bars
+      a.navbar-brand.page-scroll href="#cover"
+        = inline_svg 'cover/ruby_taiwan_logotype.svg', title: 'Ruby Taiwan Logotype'
+
+    #navbar-collapse.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li.hidden
+          a href="#home" 
+        li
+          a.page-scroll href="#news"  =t('section.news')
+        li
+          a.page-scroll href="#activities"  =t('section.activities')
+        li
+          a.page-scroll href="#communities"  =t('section.communities')
+        li
+          a.page-scroll href="#subscription"  =t('section.subscription')
+        li.social-media
+          = link_to t('social-media.twitter'), target: '_blank' do
+            i.fa.fa-twitter aria-hidden="true"
+        li.social-media
+          = link_to t('social-media.github'), target: '_blank' do
+            i.fa.fa-github aria-hidden="true"
+        li.social-media
+          = link_to t('social-media.facebook'), target: '_blank' do
+            i.fa.fa-facebook-official aria-hidden="true"
+        li.social-media
+          = link_to t('social-media.blog'), target: '_blank' do
+            i.fa.fa-rss aria-hidden="true"
