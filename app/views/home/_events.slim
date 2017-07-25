@@ -1,30 +1,17 @@
 section#events
+  h3.section-title =t('section.events')
 
-  - t('events').each_with_index do |event, index|
-    .event-card class="#{index.odd? ? 'odd' : 'even'} #{event[:id]}"
-    
-      .event-info
-        h4.event-title = event[:title]
-        p.event-desc = event[:desc]
-        - if event[:links].length == 2
-          - event[:links].each do |key, value|
-            = link_to value, target: :_blank, :class => "event-link double" do 
-              = key
-        - if event[:links].length == 3
-          - event[:links].each do |key, value|
-            = link_to value, target: :_blank, :class => "event-link triple" do 
-              = key
-
-      .event-photos.carousel.slide data-ride="carousel" id="#{event[:id] + '-photo'}"
-        /! Indicators
-        ol.carousel-indicators
-          - event[:photo].each_with_index do |photo, index|
-            li data-slide-to="#{index}" data-target="#{'#' + event[:id] + '-photo'}" class="#{index == 0 ? "active" : ""}"
-        / ! Wrapper for slides
-        .carousel-inner role="listbox"
-          - event[:photo].each_with_index do |photo, index|
-            .item class="#{index == 0 ? "active" : ""}" id="#{event[:id] + '-photo-'}#{index}"
-              = image_tag 'events/' + photo, alt: event[:title], title: event[:title]
-
-  a.button-more href="#"
-    =t('helper.order_events')
+  .events-list
+    - t('events').each do |event|
+      .event-card
+        = image_tag 'events/' + event[:photo], alt: event[:title], title: event[:title], class: "event-photo"
+        .event-info
+          p.event-date = event[:date]
+          = link_to event[:link], target: :_blank, class: "event-title" do
+            = event[:title]
+          .event-location
+            i.fa.fa-map-marker aria-hidden="true"
+            p = event[:location]
+          p.event-desc = event[:desc]
+          = link_to event[:link], target: :_blank, class:'button-apply' do
+            =t('helper.apply_now')

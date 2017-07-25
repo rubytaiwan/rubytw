@@ -11,7 +11,7 @@ zh-TW:
 
   section:
     news: 最新消息
-    activities: 近期活動
+    events: 近期活動
     communities: 相關社群
     subscription: 訂閱最新消息
 
@@ -31,7 +31,7 @@ zh-TW:
         RubyConf Taiwan 2015 徵求贊助
       date: 'May 25 2015'
 
-  activities:
+  events:
     - title: |
         Taipei.rb 201704：Rib Yet another interactive Ruby shell
       photo: 'taipei_rb_01.jpg'
@@ -57,7 +57,7 @@ zh-TW:
         一間以 Rails 為主的接案公司，在面對某次複雜系統開發的過程中，本著追求卓越的精神，決定導入 BDD，試圖解決過去專案中的測試程式碼和規格文件的維護問題。
       link: 'https://5xruby.tw'
 
-  events:
+  campaigns:
     - title: 'Ruby Taiwan'
       id: 'rubytaiwan'
       photo: ['rubytaiwan-0.jpg', 'rubytaiwan-1.jpg', 'rubytaiwan-2.jpg', 'rubytaiwan-3.jpg', 'rubytaiwan-4.jpg']

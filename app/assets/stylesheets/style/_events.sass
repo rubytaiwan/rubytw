@@ -1,161 +1,82 @@
 #events
-  padding-top: 0
-  
-  .event-card
-    @extend .flexbox
-    flex-direction: column-reverse
-    margin: 0 -15px
 
-    + .event-card
+  .events-list
+    @extend .flexbox
+    justify-content: center
+
+    .event-card
+      position: relative
+      width: 100%
+      background: #fff
+      box-shadow: 0 2px 4px 0 rgba($deep-grey, 0.5)
       margin-top: 30px
 
-    @media screen and (min-width: $screen-sm)
-      margin: 0
-
-    @media screen and (min-width: $screen-md)
-      max-height: 380px
-      + .event-card
-        margin-top: 60px
-
-    &.rubytaiwan
-      background-color: $red
-      .event-link:hover
-        color: $red
-      .event-photos .carousel-indicators li.active
-        background-color: $red
-
-    &.mokumokukai
-      background-color: $blue
-      .event-link:hover
-        color: $blue
-      .event-photos .carousel-indicators li.active
-        background-color: $blue
-
-    &.railsgirlstaipei
-      background-color: $purple
-      .event-link:hover
-        color: $purple
-      .event-photos .carousel-indicators li.active
-        background-color: $purple
-
-    &.rubyconftaiwan
-      background-color: $red
-      .event-link:hover
-        color: $red
-      .event-photos .carousel-indicators li.active
-        background-color: $red
-      
-    &.even
-      @media screen and (min-width: $screen-md)
-        flex-direction: row
-
-    &.odd
-      @media screen and (min-width: $screen-md)
-        flex-direction: row-reverse
-
-    .event-info
-      color: #fff
-      padding: 30px
-
       @media screen and (min-width: $screen-sm)
-        padding: 40px 60px
+        margin: 30px 10px 0
+        width: calc(50% - 20px)
 
       @media screen and (min-width: $screen-md)
-        width: 45%
-        padding: 0 60px
-        align-self: center
+        width: calc(100%/3 - 20px)
 
-      .event-title
-        text-align: center
-        font-size: 24px
-        position: relative
-        padding-bottom: 25px
-        margin-bottom: 50px
-
-        &:after
-          content: ""
-          +size(29px, 22px)
-          background-image: image-url("icon_ruby_white.svg")
-          position: absolute
-          +transform(translateX(-35%) translateY(100%))
-          bottom: 0
-          left: 50%
-
-      .event-desc
-        font-size: 14px
-        font-weight: 300
-        text-align: justify
-        white-space: pre-wrap
-        letter-spacing: 1px
-        line-height: 1.6
-        padding-bottom: 20px
-        margin: 0
-
-      .event-link
-        font-size: 14px
-        text-align: center
-        color: #fff
-        
-        display: block
-        border-radius: 4px
-        border: solid 1px #fff
-        padding: 10px
-        margin-top: 10px
-        
-        +transition(all, 0.3s)
-
-        &:hover
-          background: #fff
-
-        @media screen and (min-width: $screen-sm)
-          display: inline-block
-
-          + .event-link
-            margin-left: 5%
-
-          &.double
-            width: calc(95%/2)
-
-          &.triple
-            width: calc(90%/3)
-
-    .event-photos
-      overflow: hidden
-
-      @media screen and (min-width: $screen-md)
-        width: 55%
-
-      .carousel-inner .item
+      .event-photo
         width: 100%
-        height: 100%
-        -webkit-background-size: cover
-        -moz-background-size: cover
-        -o-background-size: cover
-        background-size: cover
-        background-position: center
 
-        img
-          visibility: hidden
+      .event-info
+        padding: 0 20px 90px
 
-        @media screen and (min-width: $screen-sm)
-          height: 45vw
+        .event-date
+          color: #fff
+          font-size: 14px
+          font-weight: 300
+          text-align: center
+          line-height: 27px
+          letter-spacing: 1px
 
-        @media screen and (min-width: $screen-sm)
-          height: 380px
+          +size(120px,27px)
+          border-radius: 100px
+          background-color: $red
+          box-shadow: 0 2px 4px 0 rgba($deep-grey, 0.5)
+          +transform(translateY(-50%))
+          margin: 0 auto
 
-      @each $name in 'rubytaiwan' 'mokumokukai' 'railsgirlstaipei' 'rubyconftaiwan'
-        @for $i from 0 through 4
-          ##{$name}-photo-#{$i}
-            background-image: image-url("events/#{$name}-#{$i}.jpg")
-      
+        .event-title
+          color: $deep-grey
+          font-size: 16px
+          font-weight: 500
+          
+          display: block
+          margin: 15px 0 20px
 
-      .carousel-indicators
-        margin-bottom: 0
-      
-        li
-          +size(12px, 12px)
-          margin: 0 4px
-          background-color: #fff
+          +transition(color, 0.3s)
 
-  .button-more
-    margin-top: 60px
+          &:hover
+            color: $red
+
+        .event-location
+          font-size: 15px
+          color: $warm-grey
+          padding: 5px 0 20px
+
+          i, p
+            display: inline
+            padding-right: 5px
+
+        .event-desc
+          font-size: 14px
+          line-height: 1.6
+          color: $dark-grey
+
+        .button-apply
+          @extend .button-more
+          position: absolute
+          +transform(translateX(-50%))
+          left: 50%
+          bottom: 30px
+
+          color: $red
+          border: solid 1px $red
+
+          &:hover
+            color: #fff
+            background: $red
+            border-color: $red
