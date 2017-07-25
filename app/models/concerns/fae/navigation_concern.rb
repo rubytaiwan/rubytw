@@ -25,6 +25,7 @@ module Fae
 
     def structure
       [
+        item('活動列表', path: admin_events_path),
         # scaffold inject marker
       ]
     end
