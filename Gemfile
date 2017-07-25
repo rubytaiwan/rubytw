@@ -38,6 +38,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'rails-i18n'
 
 # assets
+gem 'fae-rails'
 gem 'slim-rails'
 gem 'bootstrap-sass'
 gem "font-awesome-rails"
