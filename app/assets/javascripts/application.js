@@ -12,12 +12,21 @@
 //= require bootstrap
 //= require turbolinks
 //= require jquery.easing
+//= require jquery-touchswipe/jquery.touchSwipe.min
 //= require_tree .
 
 $(function(){
 
   // Enable Bootstrap Carousel
   $('.carousel').carousel()
+
+  $(".carousel").swipe({
+    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+      if (direction == 'left') $(this).carousel('next');
+      if (direction == 'right') $(this).carousel('prev');
+    },
+    allowPageScroll:"vertical"
+  });
 
   // jQuery for page scrolling feature - requires jQuery Easing plugin
   $('a.page-scroll').bind('click', function(event) {

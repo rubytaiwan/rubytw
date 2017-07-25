@@ -15,5 +15,8 @@ module Rubytw
     config.i18n.available_locales = %i[en zh-TW]
     config.i18n.default_locale = :'zh-TW'
     config.active_record.time_zone_aware_types = [:datetime]
+    
+    # Include Bower components in compiled assets
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
   end
 end
