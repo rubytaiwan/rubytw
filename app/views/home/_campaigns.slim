@@ -25,6 +25,3 @@ section#campaigns
           - campaign[:photo].each_with_index do |photo, index|
             .item class="#{index == 0 ? "active" : ""}" id="#{campaign[:id] + '-photo-'}#{index}"
               = image_tag 'campaigns/' + photo, alt: campaign[:title], title: campaign[:title]
-
-  a.button-more href="#"
-    =t('helper.order_events')

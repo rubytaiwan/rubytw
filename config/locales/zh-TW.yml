@@ -19,6 +19,7 @@ zh-TW:
     view_more: 更多消息
     apply_now: 立即報名
     order_events: 過往活動
+    empty_events: 尚無活動
     subscription: 訂閱
     placeholder: 請輸入 Email
 
@@ -30,32 +31,6 @@ zh-TW:
     - title: |
         RubyConf Taiwan 2015 徵求贊助
       date: 'May 25 2015'
-
-  events:
-    - title: |
-        Taipei.rb 201704：Rib Yet another interactive Ruby shell
-      photo: 'taipei_rb_01.jpg'
-      date: '2017-04-18'
-      location: '五倍紅寶石出礦坑'
-      desc: |
-        Rib 是一個 Ruby 內建的 irb 的代用品，本次活動由作者本人介紹當初開發這個的緣由，以及每天如何用它來工作，以及 plugin 的使用方式與部份原始碼說明。
-      link: 'https://5xruby.tw'
-    - title: |
-        第 0012 回 Ruby 默默會
-      photo: 'mokumokukai_01.jpg'
-      date: '2017-04-12'
-      location: '五倍紅寶石出礦坑'
-      desc: |
-        台灣的 Ruby 社群活動很多，但 Ruby Tuesday 或是 Taipei.rb 活動常一、二個月或是一季、半年才辦一次(對不起我們錯了)，或是像 RubyConf Taiwan 這樣的大型活動雖然可以跟很多國內...
-      link: 'https://5xruby.tw'
-    - title: |
-        Taipei.rb 201701：RSpec 的 BDD 實戰經驗分享
-      photo: 'taipei_rb_02.jpg'
-      date: '2017-04-10'
-      location: '五倍紅寶石出礦坑'
-      desc: |
-        一間以 Rails 為主的接案公司，在面對某次複雜系統開發的過程中，本著追求卓越的精神，決定導入 BDD，試圖解決過去專案中的測試程式碼和規格文件的維護問題。
-      link: 'https://5xruby.tw'
 
   campaigns:
     - title: 'Ruby Taiwan'

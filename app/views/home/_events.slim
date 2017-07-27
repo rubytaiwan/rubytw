@@ -2,16 +2,31 @@ section#events
   h3.section-title =t('section.events')
 
   .events-list
-    - t('events').each do |event|
-      .event-card
-        = image_tag 'events/' + event[:photo], alt: event[:title], title: event[:title], class: "event-photo"
-        .event-info
-          p.event-date = event[:date]
-          = link_to event[:link], target: :_blank, class: "event-title" do
-            = event[:title]
-          .event-location
-            i.fa.fa-map-marker aria-hidden="true"
-            p = event[:location]
-          p.event-desc = event[:desc]
-          = link_to event[:link], target: :_blank, class:'button-apply' do
+    - if @events.present?
+      - @events.each do |event|
+        .event-card
+          - if event.cover_image.asset?
+            = image_tag event.cover_image.asset.url, title: event.title, alt: event.cover_image.alt, class: "event-photo"
+          .event-info
+            p.event-date = event.date_of_event.strftime("%Y-%m-%d")
+            = link_to event.apply_link, target: :_blank, class: "event-title" do
+              = event.title
+            .event-time
+              i.fa.fa-clock-o aria-hidden="true"
+              p 
+                = event.start_time.strftime("%H:%M")
+                | &nbsp;~&nbsp;
+                = event.end_time.strftime("%H:%M")
+            .event-location
+              i.fa.fa-map-marker aria-hidden="true"
+              p = event.location
+            p.event-desc = event.description
+          = link_to event.apply_link, target: :_blank, class:'button-apply' do
             =t('helper.apply_now')
+
+    - else
+      span.event-empty
+        =t('helper.empty_events')
+
+  a.button-more.events-more href="#"
+    =t('helper.order_events')
