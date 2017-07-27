@@ -1,8 +1,9 @@
 section#subscription
   h3.section-title =t('section.subscription')
+  = inline_svg 'icon_ruby.svg'
 
   .subscription.input-group
-    input.form-control placeholder=t('helper.placeholder') type="email" /
+    input.form-control placeholder=t('helper.placeholder') type="email" required="required"/
     span.input-group-btn
-      button.btn type="button"
+      button.btn type="submit"
         =t('helper.subscription')

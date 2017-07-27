@@ -54,6 +54,7 @@
         flex-direction: row-reverse
 
     .campaign-info
+      position: relative
       color: #fff
       padding: 30px
 
@@ -69,17 +70,16 @@
         text-align: center
         font-size: 24px
         position: relative
-        padding-bottom: 25px
-        margin-bottom: 50px
+        padding-bottom: 10px
 
-        &:after
-          content: ""
-          +size(29px, 22px)
-          background-image: image-url("icon_ruby_white.svg")
-          position: absolute
-          +transform(translateX(-35%) translateY(100%))
-          bottom: 0
-          left: 50%
+      svg
+        position: absolute
+        height: 22px
+        left: 50%
+        +transform(translateX(-50%))
+      
+        #icon_ruby
+          fill: #fff
 
       .campaign-desc
         font-size: 14px
@@ -88,7 +88,7 @@
         white-space: pre-wrap
         letter-spacing: 1px
         line-height: 1.6
-        padding-bottom: 20px
+        padding: 50px 0 20px
         margin: 0
 
       .campaign-link

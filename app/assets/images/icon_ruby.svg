@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="29px" height="22px" viewBox="0 0 29 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-    <title>icon_ruby</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Section-Title" transform="translate(-80.000000, -52.000000)" fill-rule="nonzero" fill="#BD3F32">
-            <g id="icon_ruby" transform="translate(80.000000, 52.000000)">
-                <polygon id="Shape" points="24.65 0 25.85 3 28.85 4.2 25.85 5.4 24.65 8.4 23.45 5.4 20.3 4.2 23.45 3"></polygon>
-                <polygon id="Shape" points="10.4 21.15 20.45 10.2 15.8 4.8 4.85 4.8 0.2 10.2"></polygon>
-            </g>
-        </g>
+  <title>icon_ruby</title>
+  <g id="icon_ruby" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Section-Title" transform="translate(-80.000000, -52.000000)" fill-rule="nonzero" fill="#BD3F32">
+      <g id="icon_ruby" transform="translate(80.000000, 52.000000)">
+        <polygon id="Shape" points="24.65 0 25.85 3 28.85 4.2 25.85 5.4 24.65 8.4 23.45 5.4 20.3 4.2 23.45 3"></polygon>
+        <polygon id="Shape" points="10.4 21.15 20.45 10.2 15.8 4.8 4.85 4.8 0.2 10.2"></polygon>
+      </g>
     </g>
+  </g>
 </svg>
