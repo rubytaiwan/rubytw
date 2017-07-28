@@ -18,7 +18,9 @@ zh-TW:
   helper:
     view_more: 更多消息
     apply_now: 立即報名
-    order_events: 過往活動
+    apply_none: 無需報名
+    ended_events: 活動結束
+    order_events: 已結束的活動
     empty_events: 尚無活動
     subscription: 訂閱
     placeholder: 請輸入 Email

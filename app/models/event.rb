@@ -1,7 +1,7 @@
 class Event < ApplicationRecord
   include Fae::BaseModelConcern
 
-  validates :title, :date_of_event, :location, :start_time, :end_time, :description,  presence: true
+  validates :title, :location, :start_time, :end_time, :description,  presence: true
 
   validates :apply_link, Fae.validation_helpers.url
 

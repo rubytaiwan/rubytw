@@ -4,13 +4,24 @@ section#events
   .events-list
     - if @events.present?
       - @events.each do |event|
-        .event-card
-          - if event.cover_image.asset?
-            = image_tag event.cover_image.asset.url, title: event.title, alt: event.cover_image.alt, class: "event-photo"
+        .event-card class="#{event.active ? '' : 'ended'}"
+          .event-photo
+            - if event.cover_image.asset?
+              = image_tag event.cover_image.asset.url, title: event.title, alt: event.cover_image.alt
           .event-info
-            p.event-date = event.date_of_event.strftime("%Y-%m-%d")
-            = link_to event.apply_link, target: :_blank, class: "event-title" do
-              = event.title
+            - if event.start_date && event.end_date?
+              - if event.start_date == event.end_date
+                p.event-date = event.start_date.strftime("%Y.%m.%d")
+              - else
+                p.event-date.period 
+                  = event.start_date.strftime("%Y.%m.%d")
+                  | -
+                  = event.end_date.strftime("%d")
+            - if event.apply_link?
+              = link_to event.apply_link, target: :_blank, class: "event-title" do
+                = event.title
+            - else
+              p.event-title = event.title
             .event-time
               i.fa.fa-clock-o aria-hidden="true"
               p 
@@ -21,8 +32,15 @@ section#events
               i.fa.fa-map-marker aria-hidden="true"
               p = event.location
             p.event-desc = event.description
-          = link_to event.apply_link, target: :_blank, class:'button-apply' do
-            =t('helper.apply_now')
+          - if event.active && event.need_apply?
+            = link_to event.apply_link, target: :_blank, class:'button-apply active' do
+              =t('helper.apply_now')
+          - elsif event.active.blank?
+            .button-apply
+              =t('helper.ended_events')
+          - else
+            .button-apply
+              =t('helper.apply_none')
 
     - else
       span.event-empty

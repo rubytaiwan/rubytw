@@ -5,7 +5,7 @@ main.content
     thead
       tr
         th.-action-wide 編號
-        th 封面照片
+        th data-sorter="false" 封面照片
         th 活動名稱
         th 活動日期
         th.-action-wide 是否報名
@@ -15,12 +15,18 @@ main.content
 
     tbody
       - if @items.present?
-        - @items.each do |item|
+        - @items.each_with_index do |item, index|
           tr id=fae_sort_id(item)
-            td = item.id
+            td = index + 1
             td = fae_index_image item.cover_image, edit_admin_event_path(item)
             td = link_to item.fae_display_field, edit_admin_event_path(item)
-            td = item.date_of_event.strftime("%Y-%m-%d")
+            - if item.start_date != item.end_date
+              td 
+                = item.start_date.strftime("%Y.%m.%d")
+                | -
+                = item.end_date.strftime("%d")
+            - else
+              td = item.start_date.strftime("%Y.%m.%d")
             td = fae_toggle item, :need_apply
             td = fae_toggle item, :active
             td = item.updated_at.strftime("%Y-%m-%d at %H:%M")

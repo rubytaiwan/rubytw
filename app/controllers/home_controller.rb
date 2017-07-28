@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def landing
-    @events = Event.order('date_of_event DESC')
+    @events = Event.order('start_date DESC')
   end
 end

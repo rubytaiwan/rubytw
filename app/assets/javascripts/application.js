@@ -54,4 +54,12 @@ $(function(){
       top: 100
     }
   })
+
+  // Toggle Ended Events
+  $('.events-more').click(function(e){
+    e.preventDefault();
+    var endedEvents = $('.event-card.ended')
+    endedEvents.toggle();
+    $(this).toggleClass( "active" )
+  });
 });

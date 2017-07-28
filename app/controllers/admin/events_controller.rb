@@ -1,6 +1,10 @@
 module Admin
   class EventsController < Fae::BaseController
 
+    def index
+      @items = Event.order('start_date DESC')
+    end
+
     private
 
     def build_assets
