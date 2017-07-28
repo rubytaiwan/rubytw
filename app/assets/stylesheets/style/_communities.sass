@@ -17,7 +17,6 @@
     .community-card
       width: calc(100% - 40px)
       min-height: 160px
-      display: table
       padding: 15px
 
       @-moz-document url-prefix()
@@ -47,13 +46,12 @@
           color: #fff
 
       .community-info
-        display: table-cell
-        vertical-align: middle
-        text-align: center
-        padding:  0 20px
-
-        font-size: 20px
         color: $deep-grey
+        font-size: 20px
+        text-align: center
+        display: block
+        +size(100%,100%)
+        padding: 30px
 
         i
           display: block
