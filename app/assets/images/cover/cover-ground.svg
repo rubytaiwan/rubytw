@@ -1,23 +1,23 @@
 <svg version="1.1" id="cover-ground" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1020 397" style="enable-background:new 0 0 1020 397;" xml:space="preserve">
-	<path class="cover-icons" id="tree_l" d="M13.3,370.5c-2.7,0-5.4,0.8-7.6,2.3c-6,4.2-7.5,12.4-3.4,18.4s12.5,7.5,18.5,3.3s7.5-12.4,3.4-18.4c1.4,0.6,2.9,0.9,4.4,1
-	v19h1v-18.9c1.5-0.1,3-0.4,4.4-1c-3.2,4.5-3.2,10.6,0,15.1c4.2,6,12.5,7.4,18.5,3.3s7.5-12.4,3.3-18.4c1.4,0.6,2.9,0.9,4.4,1v18.9h1
-	v-18.9c1.5-0.1,3-0.4,4.4-1c-1.6,2.2-2.4,4.9-2.4,7.6c0,7.3,6,13.2,13.4,13.2c7.5,0.1,13.4-5.9,13.4-13.2c0-7.3-6-13.2-13.4-13.2
-	c-1.7,0-3.3,0.3-4.9,1c3.2-4.5,3.2-10.6,0-15.1c-4.2-6-12.5-7.4-18.5-3.3s-7.5,12.4-3.3,18.4c-3.2-1.3-6.7-1.3-9.8,0
-	c1.5-2.2,2.3-4.9,2.3-7.6c0.1-3.2-1-6.4-3-8.9c-0.9-1.3-1.7-2.4-1.7-4c0.1-1.5,0.4-3,1.1-4.4c0.7-1.5,1.1-3.1,1.2-4.8l0,0
-	c-0.1-6-4.9-10.8-10.9-10.8s-10.8,4.8-10.8,10.8c0.1,1.7,0.5,3.3,1.2,4.8c0.7,1.4,1,2.9,1.1,4.4c0,1.6-0.7,2.7-1.7,4
-	c-2,2.5-3.1,5.7-3,8.9c0,2.7,0.8,5.3,2.4,7.6C16.6,370.9,15,370.6,13.3,370.5L13.3,370.5z M76.1,395.1c-5.9-0.3-10.6-4.9-10.8-10.8
-	c-0.3-6.2,4.6-11.5,10.8-11.8c6.2-0.3,11.6,4.6,11.8,10.8c0.3,6.2-4.6,11.5-10.8,11.7v-3.9l6.8-6.8l-0.7-0.7l-6.1,6.1v-10.1h-1v10.3
-	l-6.1-6.2l-0.7,0.7l6.8,6.8L76.1,395.1L76.1,395.1z M60.3,375.2c-5.9-0.3-10.6-4.9-10.8-10.8c-0.3-6.2,4.6-11.5,10.8-11.7
-	c6.3-0.3,11.6,4.6,11.8,10.8c0.3,6.2-4.6,11.5-10.8,11.7v-15.5h-1V370l-6.1-6.1l-0.7,0.7l6.8,6.8V375.2z M44.5,395.1
-	c-5.9-0.3-10.6-4.9-10.8-10.8c-0.3-6.2,4.6-11.5,10.8-11.7s11.5,4.5,11.8,10.7s-4.6,11.5-10.8,11.7v-3.9l6.8-6.8l-0.7-0.7l-6.2,6.1
-	v-10.1h-1v10.3l-6.1-6.1l-0.7,0.7l6.8,6.8L44.5,395.1L44.5,395.1z M28.6,375.2c-6.1-0.3-10.9-5.2-10.9-11.3
-	c-0.1-2.8,0.9-5.6,2.7-7.8c1.1-1.5,2.1-2.9,2.1-5.1c0-1.8-0.5-3.5-1.2-5.1c-0.6-1.3-1-2.7-1-4.1l0,0c0-4.9,4-8.8,8.9-8.8
-	s8.9,4,8.9,8.8c-0.1,1.4-0.4,2.8-1,4.1c-0.8,1.6-1.2,3.4-1.2,5.2c0,2.2,1,3.6,2.1,5.1c1.8,2.2,2.7,4.9,2.7,7.8c0,6-4.8,11-10.9,11.3
-	v-28.5l4.4-4.4l-0.7-0.7l-3.7,3.7v-7.5h-1v32l-6.2-6.1l-0.7,0.7l6.8,6.8L28.6,375.2L28.6,375.2z M12.9,395.1
+    <path class="cover-icons" id="tree_l" d="M13.3,370.5c-2.7,0-5.4,0.8-7.6,2.3c-6,4.2-7.5,12.4-3.4,18.4s12.5,7.5,18.5,3.3s7.5-12.4,3.4-18.4
+	c1.4,0.6,2.9,0.9,4.4,1v19h1v-18.9c1.5-0.1,3-0.4,4.4-1c-3.2,4.5-3.2,10.6,0,15.1c4.2,6,12.5,7.4,18.5,3.3s7.5-12.4,3.3-18.4
+	c1.4,0.6,2.9,0.9,4.4,1v18.9h1v-18.9c1.5-0.1,3-0.4,4.4-1c-1.6,2.2-2.4,4.9-2.4,7.6c0,7.3,6,13.2,13.4,13.2
+	c7.5,0.1,13.4-5.9,13.4-13.2c0-7.3-6-13.2-13.4-13.2c-1.7,0-3.3,0.3-4.9,1c3.2-4.5,3.2-10.6,0-15.1c-4.2-6-12.5-7.4-18.5-3.3
+	s-7.5,12.4-3.3,18.4c-3.2-1.3-6.7-1.3-9.8,0c1.5-2.2,2.3-4.9,2.3-7.6c0.1-3.2-1-6.4-3-8.9c-0.9-1.3-1.7-2.4-1.7-4
+	c0.1-1.5,0.4-3,1.1-4.4c0.7-1.5,1.1-3.1,1.2-4.8l0,0c-0.1-6-4.9-10.8-10.9-10.8s-10.8,4.8-10.8,10.8c0.1,1.7,0.5,3.3,1.2,4.8
+	c0.7,1.4,1,2.9,1.1,4.4c0,1.6-0.7,2.7-1.7,4c-2,2.5-3.1,5.7-3,8.9c0,2.7,0.8,5.3,2.4,7.6C16.6,370.9,15,370.6,13.3,370.5L13.3,370.5
+	z M76.1,395.1c-5.9-0.3-10.6-4.9-10.8-10.8c-0.3-6.2,4.6-11.5,10.8-11.8c6.2-0.3,11.6,4.6,11.8,10.8c0.3,6.2-4.6,11.5-10.8,11.7
+	v-3.9l6.8-6.8l-0.7-0.7l-6.1,6.1v-10.1h-1v10.3l-6.1-6.2l-0.7,0.7l6.8,6.8L76.1,395.1L76.1,395.1z M60.3,375.2
+	c-5.9-0.3-10.6-4.9-10.8-10.8c-0.3-6.2,4.6-11.5,10.8-11.7c6.3-0.3,11.6,4.6,11.8,10.8c0.3,6.2-4.6,11.5-10.8,11.7v-15.5h-1V370
+	l-6.1-6.1l-0.7,0.7l6.8,6.8V375.2z M44.5,395.1c-5.9-0.3-10.6-4.9-10.8-10.8c-0.3-6.2,4.6-11.5,10.8-11.7s11.5,4.5,11.8,10.7
+	s-4.6,11.5-10.8,11.7v-3.9l6.8-6.8l-0.7-0.7l-6.2,6.1v-10.1h-1v10.3l-6.1-6.1l-0.7,0.7l6.8,6.8L44.5,395.1L44.5,395.1z M28.6,375.2
+	c-6.1-0.3-10.9-5.2-10.9-11.3c-0.1-2.8,0.9-5.6,2.7-7.8c1.1-1.5,2.1-2.9,2.1-5.1c0-1.8-0.5-3.5-1.2-5.1c-0.6-1.3-1-2.7-1-4.1l0,0
+	c0-4.9,4-8.8,8.9-8.8s8.9,4,8.9,8.8c-0.1,1.4-0.4,2.8-1,4.1c-0.8,1.6-1.2,3.4-1.2,5.2c0,2.2,1,3.6,2.1,5.1c1.8,2.2,2.7,4.9,2.7,7.8
+	c0,6-4.8,11-10.9,11.3v-28.5l4.4-4.4l-0.7-0.7l-3.7,3.7v-7.5h-1v32l-6.2-6.1l-0.7,0.7l6.8,6.8L28.6,375.2L28.6,375.2z M12.9,395.1
 	c-5.9-0.3-10.6-5-10.9-10.8c-0.3-6.2,4.6-11.5,10.9-11.8s11.5,4.6,11.8,10.8c0.3,6.2-4.6,11.5-10.8,11.7v-3.9l6.8-6.8l-0.7-0.6
 	l-6.2,6.1v-10.2h-1v10.3l-6.2-6.1L6,384.4l6.8,6.8L12.9,395.1L12.9,395.1z"></path>
-	<g>
-		<path class="cover-icons" d="M233.6,335.7h-12.3c-0.8,0-1.4,0.6-1.4,1.4v34.4c0,0.8,0.6,1.4,1.4,1.4h12.3c0.8,0,1.4-0.6,1.4-1.4v-34.4
+    <g>
+        <path class="cover-icons" d="M233.6,335.7h-12.3c-0.8,0-1.4,0.6-1.4,1.4v34.4c0,0.8,0.6,1.4,1.4,1.4h12.3c0.8,0,1.4-0.6,1.4-1.4v-34.4
 		C235,336.3,234.4,335.7,233.6,335.7z M232.4,370.9h-10c-0.3,0-0.6-0.3-0.6-0.6v-32.1c0-0.3,0.3-0.6,0.6-0.6h10
 		c0.3,0,0.6,0.3,0.6,0.6v32.2C233,370.6,232.7,370.9,232.4,370.9z M294.7,343.9v7.5h-4.5v-7.5H294.7 M295.2,342.4h-5.5
 		c-0.6,0-1,0.4-1,1v8.5c0,0.5,0.5,1,1,1h5.5c0.6,0,1-0.4,1-1v-8.5C296.2,342.8,295.8,342.4,295.2,342.4L295.2,342.4z M350.5,366.4
@@ -104,76 +104,76 @@
 		 M570.2,342.4h-5.5c-0.6,0-1,0.4-1,1v8.5c0,0.5,0.5,1,1,1h5.5c0.6,0,1-0.4,1-1v-8.5C571.2,342.8,570.8,342.4,570.2,342.4
 		L570.2,342.4z M582.6,343.9v7.5h-4.5v-7.5H582.6 M583.1,342.4h-5.5c-0.6,0-1,0.4-1,1v8.5c0,0.5,0.5,1,1,1h5.5c0.6,0,1-0.4,1-1v-8.5
 		C584.1,342.8,583.7,342.4,583.1,342.4L583.1,342.4z"></path>
-		<rect class="cover-icons" x="289.7" y="342.4" width="5.5" height="1.2">
-      <animate attributeName="height" begin="0s" calcMode="linear" dur="1s" fill="freeze" id="w_1-0" restart="always" to="10.5"></animate>
-      <animate attributeName="height" begin="w_1-0.end+1s;w_1-2.end+2s" calcMode="linear" dur="1s" fill="freeze" id="w_1-1" restart="always" to="1.2"></animate>
-      <animate attributeName="height" begin="w_1-1.end+5s" calcMode="linear" dur="1s" fill="freeze" id="w_1-2" restart="always" to="10.5"></animate>
-		</rect>
-		<rect class="cover-icons" x="302.6" y="342.4" width="5.5" height="10.5"></rect>
-		<rect class="cover-icons" x="315.5" y="342.4" width="5.5" height="10.5">
-      <animate attributeName="height" begin="3s" calcMode="linear" dur="1s" fill="freeze" id="w_3-0" restart="always" to="1.2"></animate>
-      <animate attributeName="height" begin="w_3-0.end+2s;w_3-2.end+4s" calcMode="linear" dur="1s" fill="freeze" id="w_3-1" restart="always" to="10.5"></animate>
-      <animate attributeName="height" begin="w_3-1.end+3s" calcMode="linear" dur="1s" fill="freeze" id="w_3-2" restart="always" to="1.2"></animate>
-		</rect>
-		<rect class="cover-icons" x="328.4" y="342.4" width="5.5" height="1.2">
-      <animate attributeName="height" begin="0s" calcMode="linear" dur="1s" fill="freeze" id="w_4-0" restart="always" to="10.5"></animate>
-      <animate attributeName="height" begin="w_4-0.end+3s;w_4-2.end+7s" calcMode="linear" dur="1s" fill="freeze" id="w_4-1" restart="always" to="1.2"></animate>
-      <animate attributeName="height" begin="w_4-1.end+5s" calcMode="linear" dur="1s" fill="freeze" id="w_4-2" restart="always" to="10.5"></animate>
-		</rect>
-		<rect class="cover-icons" x="341.3" y="342.4" width="5.5" height="1.2"></rect>
-		<rect class="cover-icons" x="354.2" y="342.4" width="5.5" height="10.5"></rect>
-		<rect class="cover-icons" x="367.1" y="342.4" width="5.5" height="10.5">
-      <animate attributeName="height" begin="2s" calcMode="linear" dur="1s" fill="freeze" id="w_7-0" restart="always" to="1.2"></animate>
-      <animate attributeName="height" begin="w_7-0.end+3s;w_7-2.end+3s" calcMode="linear" dur="1s" fill="freeze" id="w_7-1" restart="always" to="10.5"></animate>
-      <animate attributeName="height" begin="w_7-1.end+6s" calcMode="linear" dur="1s" fill="freeze" id="w_7-2" restart="always" to="1.2"></animate>
-    </rect>
-    <rect class="cover-icons" x="380" y="342.4" width="5.5" height="1.2"></rect>
-    <rect class="cover-icons" x="392.9" y="342.4" width="5.5" height="1.2"></rect>
-    <rect class="cover-icons" x="405.8" y="342.4" width="5.5" height="1.2">
-      <animate attributeName="height" begin="2s" calcMode="linear" dur="1s" fill="freeze" id="w_10-0" restart="always" to="10.5"></animate>
-      <animate attributeName="height" begin="w_10-0.end+3s;w_10-2.end+4s" calcMode="linear" dur="1s" fill="freeze" id="w_10-1" restart="always" to="1.2"></animate>
-      <animate attributeName="height" begin="w_10-1.end+2s" calcMode="linear" dur="1s" fill="freeze" id="w_10-2" restart="always" to="10.5"></animate>
-    </rect>
-    <rect class="cover-icons" x="461.4" y="342.4" width="5.5" height="10.5">
-      <animate attributeName="height" begin="0s" calcMode="linear" dur="1s" fill="freeze" id="w_11-0" restart="always" to="1,2"></animate>
-      <animate attributeName="height" begin="w_11-0.end+1s;w_11-2.end+2s" calcMode="linear" dur="1s" fill="freeze" id="w_11-1" restart="always" to="10.5"></animate>
-      <animate attributeName="height" begin="w_11-1.end+5s" calcMode="linear" dur="1s" fill="freeze" id="w_11-2" restart="always" to="1.2"></animate>
-    </rect>
-    <rect class="cover-icons" x="474.3" y="342.4" width="5.5" height="1.2">
-      <animate attributeName="height" begin="0s" calcMode="linear" dur="1s" fill="freeze" id="w_12-0" restart="always" to="10.5"></animate>
-      <animate attributeName="height" begin="w_12-0.end+1s;w_12-2.end+2s" calcMode="linear" dur="1s" fill="freeze" id="w_12-1" restart="always" to="1.2"></animate>
-      <animate attributeName="height" begin="w_12-1.end+5s" calcMode="linear" dur="1s" fill="freeze" id="w_12-2" restart="always" to="10.5"></animate>
-    </rect>
-    <rect class="cover-icons" x="487.2" y="342.4" width="5.5" height="10.5"></rect>
-    <rect class="cover-icons" x="500.1" y="342.4" width="5.5" height="1.2"></rect>
-    <rect class="cover-icons" x="513" y="342.4" width="5.5" height="1.2">
-      <animate attributeName="height" begin="3s" calcMode="linear" dur="1s" fill="freeze" id="w_15-0" restart="always" to="10.5"></animate>
-      <animate attributeName="height" begin="w_15-0.end+5s;w_15-2.end+3s" calcMode="linear" dur="1s" fill="freeze" id="w_15-1" restart="always" to="1.2"></animate>
-      <animate attributeName="height" begin="w_15-1.end+7s" calcMode="linear" dur="1s" fill="freeze" id="w_15-2" restart="always" to="10.5"></animate>
-    </rect>
-    <rect class="cover-icons" x="525.9" y="342.4" width="5.5" height="1.2">
-      <animate attributeName="height" begin="5s" calcMode="linear" dur="1s" fill="freeze" id="w_16-0" restart="always" to="10.5"></animate>
-      <animate attributeName="height" begin="w_16-0.end+2s;w_16-2.end+2s" calcMode="linear" dur="1s" fill="freeze" id="w_16-1" restart="always" to="1.2"></animate>
-      <animate attributeName="height" begin="w_16-1.end+6s" calcMode="linear" dur="1s" fill="freeze" id="w_16-2" restart="always" to="10.5"></animate>
-    </rect>
-    <rect class="cover-icons" x="538.8" y="342.4" width="5.5" height="1.2"></rect>
-    <rect class="cover-icons" x="551.7" y="342.4" width="5.5" height="10.5"></rect>
-    <rect class="cover-icons" x="564.6" y="342.4" width="5.5" height="10.5">
-      <animate attributeName="height" begin="3s" calcMode="linear" dur="1s" fill="freeze" id="w_19-0" restart="always" to="1.2"></animate>
-      <animate attributeName="height" begin="w_19-0.end+5s;w_19-2.end+2s" calcMode="linear" dur="1s" fill="freeze" id="w_19-1" restart="always" to="10.5"></animate>
-      <animate attributeName="height" begin="w_19-1.end+3s" calcMode="linear" dur="1s" fill="freeze" id="w_19-2" restart="always" to="1.2"></animate>
-    </rect>
-    <rect class="cover-icons" x="577.5" y="342.4" width="5.5" height="1.2">
-      <animate attributeName="height" begin="7s" calcMode="linear" dur="1s" fill="freeze" id="w_20-0" restart="always" to="10.5"></animate>
-      <animate attributeName="height" begin="w_20-0.end+1s;w_20-2.end+4s" calcMode="linear" dur="1s" fill="freeze" id="w_20-1" restart="always" to="1.2"></animate>
-      <animate attributeName="height" begin="w_20-1.end+3s" calcMode="linear" dur="1s" fill="freeze" id="w_20-2" restart="always" to="10.5"></animate>
-    </rect>
-    <path class="cover-icons" d="M215.3,335.7h-14.2c-0.8,0-1.4,0.6-1.4,1.4v10.7c0,0.8,0.6,1.4,1.4,1.4h14.2c0.8,0,1.4-0.6,1.4-1.4v-10.7
+        <rect class="cover-icons" x="289.7" y="342.4" width="5.5" height="1.2">
+            <animate attributeName="height" begin="0s" calcMode="linear" dur="1s" fill="freeze" id="w_1-0" restart="always" to="10.5"></animate>
+            <animate attributeName="height" begin="w_1-0.end+1s;w_1-2.end+2s" calcMode="linear" dur="1s" fill="freeze" id="w_1-1" restart="always" to="1.2"></animate>
+            <animate attributeName="height" begin="w_1-1.end+5s" calcMode="linear" dur="1s" fill="freeze" id="w_1-2" restart="always" to="10.5"></animate>
+        </rect>
+        <rect class="cover-icons" x="302.6" y="342.4" width="5.5" height="10.5"></rect>
+        <rect class="cover-icons" x="315.5" y="342.4" width="5.5" height="10.5">
+            <animate attributeName="height" begin="3s" calcMode="linear" dur="1s" fill="freeze" id="w_3-0" restart="always" to="1.2"></animate>
+            <animate attributeName="height" begin="w_3-0.end+2s;w_3-2.end+4s" calcMode="linear" dur="1s" fill="freeze" id="w_3-1" restart="always" to="10.5"></animate>
+            <animate attributeName="height" begin="w_3-1.end+3s" calcMode="linear" dur="1s" fill="freeze" id="w_3-2" restart="always" to="1.2"></animate>
+        </rect>
+        <rect class="cover-icons" x="328.4" y="342.4" width="5.5" height="1.2">
+            <animate attributeName="height" begin="0s" calcMode="linear" dur="1s" fill="freeze" id="w_4-0" restart="always" to="10.5"></animate>
+            <animate attributeName="height" begin="w_4-0.end+3s;w_4-2.end+7s" calcMode="linear" dur="1s" fill="freeze" id="w_4-1" restart="always" to="1.2"></animate>
+            <animate attributeName="height" begin="w_4-1.end+5s" calcMode="linear" dur="1s" fill="freeze" id="w_4-2" restart="always" to="10.5"></animate>
+        </rect>
+        <rect class="cover-icons" x="341.3" y="342.4" width="5.5" height="1.2"></rect>
+        <rect class="cover-icons" x="354.2" y="342.4" width="5.5" height="10.5"></rect>
+        <rect class="cover-icons" x="367.1" y="342.4" width="5.5" height="10.5">
+            <animate attributeName="height" begin="2s" calcMode="linear" dur="1s" fill="freeze" id="w_7-0" restart="always" to="1.2"></animate>
+            <animate attributeName="height" begin="w_7-0.end+3s;w_7-2.end+3s" calcMode="linear" dur="1s" fill="freeze" id="w_7-1" restart="always" to="10.5"></animate>
+            <animate attributeName="height" begin="w_7-1.end+6s" calcMode="linear" dur="1s" fill="freeze" id="w_7-2" restart="always" to="1.2"></animate>
+        </rect>
+        <rect class="cover-icons" x="380" y="342.4" width="5.5" height="1.2"></rect>
+        <rect class="cover-icons" x="392.9" y="342.4" width="5.5" height="1.2"></rect>
+        <rect class="cover-icons" x="405.8" y="342.4" width="5.5" height="1.2">
+            <animate attributeName="height" begin="2s" calcMode="linear" dur="1s" fill="freeze" id="w_10-0" restart="always" to="10.5"></animate>
+            <animate attributeName="height" begin="w_10-0.end+3s;w_10-2.end+4s" calcMode="linear" dur="1s" fill="freeze" id="w_10-1" restart="always" to="1.2"></animate>
+            <animate attributeName="height" begin="w_10-1.end+2s" calcMode="linear" dur="1s" fill="freeze" id="w_10-2" restart="always" to="10.5"></animate>
+        </rect>
+        <rect class="cover-icons" x="461.4" y="342.4" width="5.5" height="10.5">
+            <animate attributeName="height" begin="0s" calcMode="linear" dur="1s" fill="freeze" id="w_11-0" restart="always" to="1,2"></animate>
+            <animate attributeName="height" begin="w_11-0.end+1s;w_11-2.end+2s" calcMode="linear" dur="1s" fill="freeze" id="w_11-1" restart="always" to="10.5"></animate>
+            <animate attributeName="height" begin="w_11-1.end+5s" calcMode="linear" dur="1s" fill="freeze" id="w_11-2" restart="always" to="1.2"></animate>
+        </rect>
+        <rect class="cover-icons" x="474.3" y="342.4" width="5.5" height="1.2">
+            <animate attributeName="height" begin="0s" calcMode="linear" dur="1s" fill="freeze" id="w_12-0" restart="always" to="10.5"></animate>
+            <animate attributeName="height" begin="w_12-0.end+1s;w_12-2.end+2s" calcMode="linear" dur="1s" fill="freeze" id="w_12-1" restart="always" to="1.2"></animate>
+            <animate attributeName="height" begin="w_12-1.end+5s" calcMode="linear" dur="1s" fill="freeze" id="w_12-2" restart="always" to="10.5"></animate>
+        </rect>
+        <rect class="cover-icons" x="487.2" y="342.4" width="5.5" height="10.5"></rect>
+        <rect class="cover-icons" x="500.1" y="342.4" width="5.5" height="1.2"></rect>
+        <rect class="cover-icons" x="513" y="342.4" width="5.5" height="1.2">
+            <animate attributeName="height" begin="3s" calcMode="linear" dur="1s" fill="freeze" id="w_15-0" restart="always" to="10.5"></animate>
+            <animate attributeName="height" begin="w_15-0.end+5s;w_15-2.end+3s" calcMode="linear" dur="1s" fill="freeze" id="w_15-1" restart="always" to="1.2"></animate>
+            <animate attributeName="height" begin="w_15-1.end+7s" calcMode="linear" dur="1s" fill="freeze" id="w_15-2" restart="always" to="10.5"></animate>
+        </rect>
+        <rect class="cover-icons" x="525.9" y="342.4" width="5.5" height="1.2">
+            <animate attributeName="height" begin="5s" calcMode="linear" dur="1s" fill="freeze" id="w_16-0" restart="always" to="10.5"></animate>
+            <animate attributeName="height" begin="w_16-0.end+2s;w_16-2.end+2s" calcMode="linear" dur="1s" fill="freeze" id="w_16-1" restart="always" to="1.2"></animate>
+            <animate attributeName="height" begin="w_16-1.end+6s" calcMode="linear" dur="1s" fill="freeze" id="w_16-2" restart="always" to="10.5"></animate>
+        </rect>
+        <rect class="cover-icons" x="538.8" y="342.4" width="5.5" height="1.2"></rect>
+        <rect class="cover-icons" x="551.7" y="342.4" width="5.5" height="10.5"></rect>
+        <rect class="cover-icons" x="564.6" y="342.4" width="5.5" height="10.5">
+            <animate attributeName="height" begin="3s" calcMode="linear" dur="1s" fill="freeze" id="w_19-0" restart="always" to="1.2"></animate>
+            <animate attributeName="height" begin="w_19-0.end+5s;w_19-2.end+2s" calcMode="linear" dur="1s" fill="freeze" id="w_19-1" restart="always" to="10.5"></animate>
+            <animate attributeName="height" begin="w_19-1.end+3s" calcMode="linear" dur="1s" fill="freeze" id="w_19-2" restart="always" to="1.2"></animate>
+        </rect>
+        <rect class="cover-icons" x="577.5" y="342.4" width="5.5" height="1.2">
+            <animate attributeName="height" begin="7s" calcMode="linear" dur="1s" fill="freeze" id="w_20-0" restart="always" to="10.5"></animate>
+            <animate attributeName="height" begin="w_20-0.end+1s;w_20-2.end+4s" calcMode="linear" dur="1s" fill="freeze" id="w_20-1" restart="always" to="1.2"></animate>
+            <animate attributeName="height" begin="w_20-1.end+3s" calcMode="linear" dur="1s" fill="freeze" id="w_20-2" restart="always" to="10.5"></animate>
+        </rect>
+        <path class="cover-icons" d="M215.3,335.7h-14.2c-0.8,0-1.4,0.6-1.4,1.4v10.7c0,0.8,0.6,1.4,1.4,1.4h14.2c0.8,0,1.4-0.6,1.4-1.4v-10.7
 		C216.7,336.3,216.1,335.7,215.3,335.7z	">
-      <animate attributeName="fill" begin="0s;train_light.end+2s" calcMode="ease-in-out" dur="3s" fill="remove" id="train_light" restart="always" values="#fff;#FFF59D;#fff"></animate>
-    </path>
-  </g>
-  <path class="cover-icons" d="M646.8,379.5l13.2-29.2l-0.2-0.4c-0.1-0.2-2.3-4.8-11.7-9.3s-14.3-3.5-14.5-3.4l-0.5,0.1L620,366.5l11.3,5.5
+            <animate attributeName="fill" begin="0s;train_light.end+2s" calcMode="ease-in-out" dur="3s" fill="remove" id="train_light" restart="always" values="#fff;#FFF59D;#fff"></animate>
+        </path>
+    </g>
+    <path class="cover-icons" d="M646.8,379.5l13.2-29.2l-0.2-0.4c-0.1-0.2-2.3-4.8-11.7-9.3s-14.3-3.5-14.5-3.4l-0.5,0.1L620,366.5l11.3,5.5
 	c-3.2,7.5-3.5,12.4-1.3,20.3l-0.4,0.9c-0.4,0.8-0.7,1.6-1,2.5l-0.5,1.3h14.1l-6.4-5.2c-2-7-1.9-11.2,0.5-17.3L646.8,379.5z
 	 M629.2,356.9L648,366l-4.3,9.7l-18.8-9.1L629.2,356.9z M634.5,339.1c1.3-0.1,5.5-0.2,12.7,3.3s9.8,6.9,10.6,8l-11.9,26.4l-1.3-0.6
 	l5.8-12.9l-20.6-10l-5.8,12.9l-1.3-0.6L634.5,339.1z M634.5,373.6c-2.6,6.6-2.7,11.4-0.5,19l0.1,0.3l2.4,2H631l1.1-2.5l-0.1-0.3
@@ -188,7 +188,7 @@
 	L695.6,356z M685.9,355l1.5-2.7l6.8,4.1l-1.5,2.7L685.9,355z M684.5,349.4l-8.5-5.2l-2.5,4.5l8.5,5.2L684.5,349.4z M674.8,348.3
 	l1.5-2.7l6.8,4.1l-1.5,2.7L674.8,348.3z M682.6,355.8c-1.1-0.6-2.4-0.2-3,0.8c-0.6,1.1-0.2,2.5,0.8,3.1c1.1,0.6,2.4,0.2,3-0.8
 	C684,357.8,683.6,356.4,682.6,355.8z"></path>
-  <path class="cover-icons" d="M791.7,370.5c-1.7,0-3.3,0.3-4.9,1c1.6-2.2,2.4-4.9,2.4-7.6c0.1-3.2-1-6.4-3-8.9c-1-1.3-1.7-2.4-1.7-4
+    <path class="cover-icons" d="M791.7,370.5c-1.7,0-3.3,0.3-4.9,1c1.6-2.2,2.4-4.9,2.4-7.6c0.1-3.2-1-6.4-3-8.9c-1-1.3-1.7-2.4-1.7-4
 	c0.1-1.5,0.4-3,1.1-4.4c0.7-1.5,1.1-3.1,1.2-4.8c-0.1-6-4.9-10.8-10.9-10.8s-10.8,4.8-10.8,10.8l0,0c0.1,1.7,0.5,3.3,1.2,4.8
 	c0.7,1.4,1,2.9,1.1,4.4c0,1.6-0.8,2.6-1.7,4c-2,2.5-3.1,5.7-3,8.9c0,2.7,0.8,5.3,2.3,7.6c-3.2-1.3-6.7-1.3-9.8,0
 	c4.2-6,2.7-14.2-3.3-18.4c-6-4.2-14.3-2.7-18.5,3.3c-3.2,4.5-3.2,10.6,0,15.1c-1.6-0.6-3.2-1-4.9-1c-7.5-0.1-13.5,5.8-13.5,13.2
@@ -205,39 +205,36 @@
 	c0,2.2,1,3.6,2.1,5.1c1.8,2.2,2.7,4.9,2.7,7.8c0,6.1-4.8,11-10.9,11.3L776.4,371.3L776.4,371.3z M792.2,395v-3.9l6.8-6.8l-0.7-0.7
 	l-6.2,6.1v-10.2h-1v10.3l-6.1-6.2l-0.7,0.7l6.8,6.8v3.9c-6.3-0.3-11.1-5.5-10.8-11.7s5.6-11,11.8-10.8c6.3,0.2,11.2,5.5,10.9,11.7
 	C802.7,390,798,394.7,792.2,395L792.2,395z"></path>
-  <g>
-    <path class="cover-icons_red" d="M888,286h-8.1l8-38.9h-8l8-38.9h-8l8-38.9h-8l8-38.9l-8,0.1l8-38.9h-21.1l-3.2-6.1l2.7-30.8l2.4-5.2l-2.7-5.9
-  h-8.3l1.3-9.9h-6L852,0h-2.2l-0.6,33.7h-6.4l1.7,9.9h-8.7l-2.7,5.9l2.4,5.2l3.6,30.8l-3.2,6.1H815l8,38.9h-8l8,38.9h-8l8,38.9h-8
-  l8,38.9h-8l8,38.8h-8l8.3,39.9l-8.1,71.1h72.7l-8.1-71.1L888,286z"></path>
-    <path class="cover-icons" d="M888,286h-8.1l8-38.9h-8l8-38.9h-8l8-38.9h-8l8-38.9l-8,0.1l8-38.9h-21.1l-3.2-6.1l2.7-30.8l2.4-5.2l-2.7-5.9h-8.3l1.3-9.9
-  h-6L852,0h-2.2l-0.6,33.7h-6.4l1.7,9.9h-8.7l-2.7,5.9l2.4,5.2l3.6,30.8l-3.2,6.1H815l8,38.9h-8l8,38.9h-8l8,38.9h-8l8,38.9h-8
-  l8,38.8h-8l8.3,39.9l-8.1,71.1h72.7l-8.1-71.1L888,286z M856.6,35.7l-1,7.9h-9l-1.4-7.9H856.6z M835.3,49.5l1.8-3.9h27.5l1.8,3.9
-  l-1.8,3.9h-27.4L835.3,49.5z M837.6,55.5h26.6l-2.6,29.2H841L837.6,55.5z M840.7,86.7H862l2.6,4.9h-26.4L840.7,86.7z M817.4,93.6
-  H847v7.8h8.8v-7.8h29.6l-7.6,36.9h-52.7L817.4,93.6z M817.5,132.4H847v7.8h8.8v-7.8h29.7l-7.6,36.9h-52.8L817.5,132.4z
-    M817.5,171.3H847v7.8h8.8v-7.8h29.7l-7.6,36.9h-52.8L817.5,171.3z M817.5,210.2H847v7.8h8.8v-7.8h29.7l-7.6,36.9h-52.8
-  L817.5,210.2z M817.5,249.1H847v7.8h8.8v-7.8h29.7l-7.6,36.9h-52.8L817.5,249.1z M817.5,288H847v7.8h8.8V288h29.7l-7.6,36.9H861
-  c-0.5-5.2-5.2-9-10.5-8.4c-4.5,0.5-8,4-8.5,8.4h-16.9L817.5,288z M855,322.5v6.8h-6.9v-6.8H855z M885.6,395h-68.2l7.8-68.2H842
-  c0.5,5.2,5.2,9,10.5,8.4c4.5-0.5,8-4,8.5-8.4h16.8L885.6,395z"></path>
-    <rect class="cover-icons" x="847" y="93.6" width="8.8" height="7.8">
-      <animate attributeName="fill" begin="0s;light_1.end+4s" calcMode="linear" dur="3s" fill="remove" id="light_1" restart="always" values="#fff;#FFF59D;#fff"></animate>
-    </rect>
-    <rect class="cover-icons" x="847" y="132.4" width="8.8" height="7.8">
-      <animate attributeName="fill" begin="3s;light_2.end+8s" calcMode="linear" dur="3s" fill="remove" id="light_2" restart="always" values="#fff;#FFF59D;#fff"></animate>
-    </rect>
-    <rect class="cover-icons" x="847" y="171.3" width="8.8" height="7.8">
-      <animate attributeName="fill" begin="5s;light_3.end+9s" calcMode="linear" dur="3s" fill="remove" id="light_3" restart="always" values="#fff;#FFF59D;#fff"></animate>
-    </rect>
-    <rect class="cover-icons" x="847" y="210.2" width="8.8" height="7.8">
-      <animate attributeName="fill" begin="4s;light_4.end+5s" calcMode="linear" dur="3s" fill="remove" id="light_4" restart="always" values="#fff;#FFF59D;#fff"></animate>
-    </rect>
-    <rect class="cover-icons" x="847" y="249.1" width="8.8" height="7.8">
-      <animate attributeName="fill" begin="2s;light_5.end+2s" calcMode="linear" dur="3s" fill="remove" id="light_5" restart="always" values="#fff;#FFF59D;#fff"></animate>
-    </rect>
-    <rect class="cover-icons" x="847" y="288" width="8.8" height="7.8">
-      <animate attributeName="fill" begin="6s;light_6.end+6s" calcMode="linear" dur="3s" fill="remove" id="light_6" restart="always" values="#fff;#FFF59D;#fff"></animate>
-    </rect>
-  </g>
-  <path class="cover-icons" id="tree_r" d="M1006.5,370.5c-1.7,0-3.4,0.3-4.9,1c1.6-2.2,2.4-4.9,2.4-7.6c0.1-3.2-1-6.4-3-8.9c-1-1.3-1.7-2.4-1.7-4
+    <g>
+        <path class="cover-icons" d="M888,286h-8.1l8-38.9h-8l8-38.9h-8l8-38.9h-8l8-38.9l-8,0.1l8-38.9h-21.1l-3.2-6.1l2.7-30.8l2.4-5.2l-2.7-5.9h-8.3l1.3-9.9
+		h-6L852,0h-2.2l-0.6,33.7h-6.4l1.7,9.9h-8.7l-2.7,5.9l2.4,5.2l3.6,30.8l-3.2,6.1H815l8,38.9h-8l8,38.9h-8l8,38.9h-8l8,38.9h-8
+		l8,38.8h-8l8.3,39.9l-8.1,71.1h72.7l-8.1-71.1L888,286z M856.6,35.7l-1,7.9h-9l-1.4-7.9H856.6z M835.3,49.5l1.8-3.9h27.5l1.8,3.9
+		l-1.8,3.9h-27.4L835.3,49.5z M837.6,55.5h26.6l-2.6,29.2H841L837.6,55.5z M840.7,86.7H862l2.6,4.9h-26.4L840.7,86.7z M817.4,93.6
+		H847v7.8h8.8v-7.8h29.6l-7.6,36.9h-52.7L817.4,93.6z M817.5,132.4H847v7.8h8.8v-7.8h29.7l-7.6,36.9h-52.8L817.5,132.4z
+		 M817.5,171.3H847v7.8h8.8v-7.8h29.7l-7.6,36.9h-52.8L817.5,171.3z M817.5,210.2H847v7.8h8.8v-7.8h29.7l-7.6,36.9h-52.8
+		L817.5,210.2z M817.5,249.1H847v7.8h8.8v-7.8h29.7l-7.6,36.9h-52.8L817.5,249.1z M817.5,288H847v7.8h8.8V288h29.7l-7.6,36.9H861
+		c-0.5-5.2-5.2-9-10.5-8.4c-4.5,0.5-8,4-8.5,8.4h-16.9L817.5,288z M855,322.5v6.8h-6.9v-6.8H855z M885.6,395h-68.2l7.8-68.2H842
+		c0.5,5.2,5.2,9,10.5,8.4c4.5-0.5,8-4,8.5-8.4h16.8L885.6,395z"></path>
+        <rect class="cover-icons" x="847" y="93.6" width="8.8" height="7.8">
+            <animate attributeName="fill" begin="0s;light_1.end+4s" calcMode="linear" dur="3s" fill="remove" id="light_1" restart="always" values="#fff;#FFF59D;#fff"></animate>
+        </rect>
+        <rect class="cover-icons" x="847" y="132.4" width="8.8" height="7.8">
+            <animate attributeName="fill" begin="3s;light_2.end+8s" calcMode="linear" dur="3s" fill="remove" id="light_2" restart="always" values="#fff;#FFF59D;#fff"></animate>
+        </rect>
+        <rect class="cover-icons" x="847" y="171.3" width="8.8" height="7.8">
+            <animate attributeName="fill" begin="5s;light_3.end+9s" calcMode="linear" dur="3s" fill="remove" id="light_3" restart="always" values="#fff;#FFF59D;#fff"></animate>
+        </rect>
+        <rect class="cover-icons" x="847" y="210.2" width="8.8" height="7.8">
+            <animate attributeName="fill" begin="4s;light_4.end+5s" calcMode="linear" dur="3s" fill="remove" id="light_4" restart="always" values="#fff;#FFF59D;#fff"></animate>
+        </rect>
+        <rect class="cover-icons" x="847" y="249.1" width="8.8" height="7.8">
+            <animate attributeName="fill" begin="2s;light_5.end+2s" calcMode="linear" dur="3s" fill="remove" id="light_5" restart="always" values="#fff;#FFF59D;#fff"></animate>
+        </rect>
+        <rect class="cover-icons" x="847" y="288" width="8.8" height="7.8">
+            <animate attributeName="fill" begin="6s;light_6.end+6s" calcMode="linear" dur="3s" fill="remove" id="light_6" restart="always" values="#fff;#FFF59D;#fff"></animate>
+        </rect>
+    </g>
+    <path class="cover-icons" id="tree_r" d="M1006.5,370.5c-1.7,0-3.4,0.3-4.9,1c1.6-2.2,2.4-4.9,2.4-7.6c0.1-3.2-1-6.4-3-8.9c-1-1.3-1.7-2.4-1.7-4
 	c0.1-1.5,0.4-3,1.1-4.4c0.7-1.5,1.1-3.1,1.2-4.8c-0.1-6-4.9-10.8-10.9-10.8s-10.9,4.8-10.9,10.7c0.1,1.7,0.5,3.3,1.2,4.8
 	c0.7,1.4,1,2.9,1.1,4.4c0,1.6-0.8,2.6-1.7,4c-2,2.5-3.1,5.7-3,8.9c0,2.7,0.8,5.3,2.4,7.6c-3.2-1.3-6.7-1.3-9.8,0
 	c4.2-6,2.7-14.2-3.3-18.4s-14.4-2.7-18.6,3.3c-3.2,4.5-3.2,10.6,0,15.1c-3.2-1.3-6.7-1.3-9.8,0c1.6-2.2,2.4-4.9,2.4-7.6

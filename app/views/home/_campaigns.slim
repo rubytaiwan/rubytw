@@ -5,6 +5,7 @@ section#campaigns
     
       .campaign-info
         h4.campaign-title = campaign[:title]
+        = inline_svg 'icon_ruby.svg'
         p.campaign-desc = campaign[:desc]
         - if campaign[:links].length == 2
           - campaign[:links].each do |key, value|
