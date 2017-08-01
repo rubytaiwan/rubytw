@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   namespace :admin do
+    resources :communities
     resources :events
   end
   # mount Fae below your admin namespec

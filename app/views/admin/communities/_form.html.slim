@@ -1,0 +1,11 @@
+= simple_form_for(['admin', @item]) do |f|
+  header.content-header.js-content-header
+    == render 'fae/shared/form_header', header: @klass_name
+  == render 'fae/shared/errors'
+
+  main.content
+    = fae_input f, :name, label: '名稱'
+    = fae_input f, :link, label: '網址'
+    = fae_radio f, :community_type, collection:['Link', 'Facebook' , 'Twitter'], label: '類別'
+    = fae_radio f, :active, type: 'inline', label: '顯示於首頁'
+

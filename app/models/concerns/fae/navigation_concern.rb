@@ -26,6 +26,7 @@ module Fae
     def structure
       [
         item('活動列表', path: admin_events_path),
+        item('相關社群', path: admin_communities_path),
         # scaffold inject marker
       ]
     end
