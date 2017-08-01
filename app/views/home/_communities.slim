@@ -2,11 +2,16 @@ section#communities
   h3.section-title =t('section.communities')
 
   .communities
-    - t('communities').each_with_index do |community, index|
-      .community-card class="#{index.odd? ? 'odd' : 'even'}"
-        = link_to community[:link], target: :_blank, :class=> "community-info" do
-          = community[:name]
-          - if community[:type] == 'facebook'
-            i.fa.fa-facebook-official aria-hidden="true"
-          - if community[:type] == 'web'
-            i.fa.fa-external-link aria-hidden="true"
+    - if @communities.present?
+      - @communities.each_with_index do |community, index|
+        - if community.active.present?
+          .community class="#{index.odd? ? 'odd' : 'even'}"
+            = link_to community.link, target: :_blank, :class=> "community-card" do
+              .community-info
+                = community.name
+                - if community.community_type == 'Facebook'
+                  i.fa.fa-facebook-official aria-hidden="true"
+                - elsif community.community_type == 'Twitter'
+                  i.fa.fa-twitter aria-hidden="true"
+                - else
+                  i.fa.fa-external-link aria-hidden="true"

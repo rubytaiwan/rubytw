@@ -61,20 +61,3 @@ zh-TW:
       desc: |
         Ruby Taiwan 成立於 2008 年10 月，主要針對 Ruby 程式語言及軟體開發，進行業界的交流及分享，提昇開發人員的技術深度與廣度。
       links: {'FB 專頁': 'https://www.facebook.com/rubyconftw/', '官網': 'http://rubyconf.tw/', '影片回顧': 'https://www.youtube.com/channel/UCqw_z59yI24SivuD573FECA'}
-
-  communities:
-    - name: 'RubyConf Taiwan'
-      type: 'facebook'
-      link: 'https://www.facebook.com/rubyconftw/'
-    - name: 'Ruby on Rails 讀書會'
-      type: 'facebook'
-      link: 'https://www.facebook.com/groups/208890269174940/'
-    - name: 'RailsFun.tw'
-      type: 'facebook'
-      link: 'https://www.facebook.com/groups/railsfun.tw/'
-    - name: 'Rails Fun!! Ruby & Rails 中文論壇'
-      type: 'web'
-      link: 'http://railsfun.tw/'
-    - name: 'Ruby Jobs in Taiwan'
-      type: 'web'
-      link: 'http://jobs.ruby.tw/'
