@@ -20,13 +20,13 @@ main.content
             td = index + 1
             td = fae_index_image item.cover_image, edit_admin_event_path(item)
             td = link_to item.fae_display_field, edit_admin_event_path(item)
-            - if item.start_date != item.end_date
+            - if item.start_on != item.end_on
               td 
-                = item.start_date.strftime("%Y.%m.%d")
+                = item.start_on.strftime("%Y.%m.%d")
                 | -
-                = item.end_date.strftime("%d")
+                = item.end_on.strftime("%d")
             - else
-              td = item.start_date.strftime("%Y.%m.%d")
+              td = item.start_on.strftime("%Y.%m.%d")
             td = fae_toggle item, :need_apply
             td = fae_toggle item, :active
             td = item.updated_at.strftime("%Y-%m-%d at %H:%M")

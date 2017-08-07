@@ -9,14 +9,14 @@ section#events
             - if event.cover_image.asset?
               = image_tag event.cover_image.asset.url, title: event.title, alt: event.cover_image.alt
           .event-info
-            - if event.start_date && event.end_date?
-              - if event.start_date == event.end_date
-                p.event-date = event.start_date.strftime("%Y.%m.%d")
+            - if event.start_on && event.end_on?
+              - if event.start_on == event.end_on
+                p.event-date = event.start_on.strftime("%Y.%m.%d")
               - else
                 p.event-date.period 
-                  = event.start_date.strftime("%Y.%m.%d")
+                  = event.start_on.strftime("%Y.%m.%d")
                   | -
-                  = event.end_date.strftime("%d")
+                  = event.end_on.strftime("%d")
             - if event.apply_link?
               = link_to event.apply_link, target: :_blank, class: "event-title" do
                 = event.title

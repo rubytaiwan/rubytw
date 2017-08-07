@@ -2,7 +2,7 @@ module Admin
   class EventsController < Fae::BaseController
 
     def index
-      @items = Event.order('start_date DESC')
+      @items = Event.order('start_on DESC')
     end
 
     private
