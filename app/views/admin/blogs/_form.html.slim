@@ -6,7 +6,7 @@
   main.content
     = fae_input f, :title, label: '標題'
     = fae_datepicker f, :date_of_news, label: '日期'
-    = fae_input f, :content, label: '內文'
+    = fae_input f, :content, markdown: true, label: '內文'
     = fae_radio f, :active, type: 'inline', label: '顯示於首頁'
 
 

@@ -55,10 +55,23 @@ $(function(){
     }
   })
 
+  // Toggle News Modal Box
+  $('.news-title').click(function(e){
+    e.preventDefault();
+    newsModal = $(this).attr("data-modal");
+    $("#" + newsModal).fadeToggle( 100, "linear" );
+    $("body").addClass("modal-open");
+  });
+
+  $(".modal-close, .modal-sandbox").click(function(){
+    $(".news-modal").fadeToggle( 80, "linear" );
+    $("body").removeClass("modal-open")
+  });
+
   // Toggle Ended Events
   $('.events-more').click(function(e){
     e.preventDefault();
-    var endedEvents = $('.event-card.ended')
+    var endedEvents = $('.event-card.ended');
     endedEvents.toggle();
     $(this).toggleClass( "active" )
   });

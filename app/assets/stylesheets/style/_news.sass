@@ -1,6 +1,17 @@
 #news
   padding: 0
 
+  .text
+    color: $deep-grey
+    font-size: 18px
+    font-weight: 500
+
+  .date
+    color: #fff
+    font-size: 14px
+    text-align: center
+    line-height: 1.3
+
   .news-card
     background-color: #fff
     box-shadow: 0 2px 4px 0 rgba($deep-grey,0.50)
@@ -10,56 +21,143 @@
     @media screen and (min-width: $screen-sm)
       padding: 80px 20px
 
-    .news-item
+    .news-list
       width: 100%
 
       @media screen and (min-width: $screen-sm)
         padding: 30px 10% 0
 
-      + .news-item
-        border-top: solid 1px $light-grey
-        padding-top: 30px
-        margin-top: 30px
-
-      .news-date
-        color: #fff
-        font-size: 14px
-        text-align: center
-        line-height: 1.3
-
-        border-radius: 4px
-        width: 100%
-        background-color: $warm-grey
-        display: inline-block
-        vertical-align: middle
-        padding: 7px
-        margin: 0
-
-        +transition(background-color, 0.3s)
-
-        @media screen and (min-width: $screen-sm)
-          word-spacing: 9999px
-          +size(65px, 65px)
+      .news
+        @extend .flexbox
+        align-items: center
       
-      .news-link, .news-title
-        color: $deep-grey
-        font-size: 16px
-        font-weight: 500
+        + .news
+          border-top: solid 1px $light-grey
+          padding-top: 30px
+          margin-top: 30px
 
-        display: inline-block
-        vertical-align: middle
-        padding: 10px 5px 0
-        margin: 0
-
-        &.news-link
+        .news-title
+          @extend .text
+          padding: 10px 5px 0
+          margin: 0
           +transition(color, 0.3s)
 
-        @media screen and (min-width: $screen-sm)
-          width: calc(100% - 65px)
-          padding: 10px 20px
+          @media screen and (min-width: $screen-sm)
+            width: calc(100% - 65px)
+            padding: 10px 20px
 
-      &:hover
         .news-date
-          background-color: $red
-        .news-link
-          color: $red
+          @extend .date
+          border-radius: 4px
+          width: 100%
+          background-color: $warm-grey
+          padding: 7px
+          margin: 0
+
+          +transition(background-color, 0.3s)
+
+          @media screen and (min-width: $screen-sm)
+            word-spacing: 9999px
+            +size(65px, 65px)
+
+        &:hover
+          .news-date
+            background-color: $red
+          .news-title
+            color: $red
+
+        .news-modal
+          z-index: 999
+          display: none
+          position: fixed
+          width: 100%
+          height: 100%
+          left: 0
+          top: 0
+          background: rgba(0,0,0,.8)
+          overflow: auto
+
+          .modal-sandbox
+            position: fixed
+            +size(100%,100%)
+            top: 0
+            left: 0
+            background: transparent
+
+          .modal-box
+            position: relative
+            width: 80%
+            box-shadow: 0 2px 4px 0 rgba($deep-grey,0.50)
+            max-width: 1020px
+            margin: 100px auto
+            background: #fff
+
+            .modal-close
+              $size: 30px
+              height: $size
+              width: $size
+              position: absolute
+              right: 0
+              margin: 20px
+              box-sizing: border-box
+              line-height: $size
+              z-index: 99
+              cursor: pointer
+              box-shadow: 0 2px 4px 0 rgba($deep-grey,0.50)
+              +transform(translateY(50%))
+
+              &:before, &:after
+                content: ''
+                position: absolute
+                top: 0
+                $width: 30px
+                $height: 2px
+                transform: rotate(-45deg)
+                height: $height
+                width: $width
+                background-color: #fff
+                transition: all 0.2s ease-out
+
+              &:after
+                transform: rotate(45deg)
+
+              &:hover
+                &:before, &:after
+                  transform: rotate(0deg)
+
+            .cover-image
+              position: relative
+              +size(100%, 480px)
+              overflow: hidden
+
+              img
+                position: absolute
+                top: 50%
+                +transform(translateY(-50%))
+                width: 100%
+
+            .content
+              padding: 40px 60px
+
+              .content-date
+                color: $warm-grey
+
+              svg
+                display: block
+                margin: 20px auto 30px
+
+              h2
+                font-size: 24px
+                margin: 30px 0 20px
+
+              h3
+                font-size: 20px
+                margin: 30px 0 20px
+
+              p
+                font-size: 16px
+                line-height: 24px
+
+              blockquote
+                color: $dark-grey
+                font-style: italic

@@ -8,8 +8,7 @@ main.content
         th data-sorter="false" 封面照片
         th 標題
         th 日期
-        th.-action-wide 顯示於首頁
-        th.-action-wide 活動狀態
+        th 顯示於首頁
         th.-action-wide 更新時間
         th.-action data-sorter="false"
 
@@ -18,8 +17,8 @@ main.content
         - @items.each_with_index do |item, index|
           tr id=fae_sort_id(item)
             td = index + 1
-            td = fae_index_image item.cover_image, edit_admin_event_path(item)
-            td = link_to item.fae_display_field, edit_admin_event_path(item)
+            td = fae_index_image item.cover_image, edit_admin_blog_path(item)
+            td = link_to item.fae_display_field, edit_admin_blog_path(item)
             td = item.date_of_news.strftime("%b %m, %Y")
             td = fae_toggle item, :active
             td = item.updated_at.strftime("%Y-%m-%d at %H:%M")
