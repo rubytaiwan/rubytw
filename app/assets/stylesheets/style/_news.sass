@@ -1,12 +1,12 @@
 #news
   padding: 0
 
-  .text
+  .news-text
     color: $deep-grey
     font-size: 18px
     font-weight: 500
 
-  .date
+  .news-date
     color: #fff
     font-size: 14px
     text-align: center
@@ -30,16 +30,21 @@
       .news
         @extend .flexbox
         align-items: center
+        justify-content: flex-start
       
         + .news
           border-top: solid 1px $light-grey
           padding-top: 30px
           margin-top: 30px
 
+        &.more
+          display: none
+
         .news-title
-          @extend .text
+          @extend .news-text
           padding: 10px 5px 0
           margin: 0
+          cursor: pointer
           +transition(color, 0.3s)
 
           @media screen and (min-width: $screen-sm)
@@ -47,18 +52,18 @@
             padding: 10px 20px
 
         .news-date
-          @extend .date
+          @extend .news-date
           border-radius: 4px
-          width: 100%
           background-color: $warm-grey
+          width: 100%
           padding: 7px
           margin: 0
 
           +transition(background-color, 0.3s)
 
           @media screen and (min-width: $screen-sm)
-            word-spacing: 9999px
             +size(65px, 65px)
+            word-spacing: 9999px
 
         &:hover
           .news-date
@@ -70,8 +75,7 @@
           z-index: 999
           display: none
           position: fixed
-          width: 100%
-          height: 100%
+          +size(100%,100%)
           left: 0
           top: 0
           background: rgba(0,0,0,.8)
@@ -86,24 +90,23 @@
 
           .modal-box
             position: relative
-            width: 80%
+            background: #fff
             box-shadow: 0 2px 4px 0 rgba($deep-grey,0.50)
+            width: 80%
             max-width: 1020px
             margin: 100px auto
-            background: #fff
 
             .modal-close
+              z-index: 99
               $size: 30px
               height: $size
               width: $size
               position: absolute
               right: 0
-              margin: 20px
+              margin: 15px
               box-sizing: border-box
               line-height: $size
-              z-index: 99
               cursor: pointer
-              box-shadow: 0 2px 4px 0 rgba($deep-grey,0.50)
               +transform(translateY(50%))
 
               &:before, &:after
@@ -115,7 +118,7 @@
                 transform: rotate(-45deg)
                 height: $height
                 width: $width
-                background-color: #fff
+                background-color: $warm-grey
                 transition: all 0.2s ease-out
 
               &:after
@@ -127,8 +130,15 @@
 
             .cover-image
               position: relative
-              +size(100%, 480px)
+              width: 100%
+              height: 180px
               overflow: hidden
+
+              @media screen and (min-width: $screen-sm)
+                height: 360px
+
+              @media screen and (min-width: $screen-md)
+                height: 480px
 
               img
                 position: absolute
@@ -137,7 +147,7 @@
                 width: 100%
 
             .content
-              padding: 40px 60px
+              padding: 20px
 
               .content-date
                 color: $warm-grey
@@ -146,12 +156,20 @@
                 display: block
                 margin: 20px auto 30px
 
-              h2
+              img
+                display: block
+                width: 80%
+                margin: 30px auto
+
+              h1
                 font-size: 24px
+
+              h2
+                font-size: 20px
                 margin: 30px 0 20px
 
               h3
-                font-size: 20px
+                font-size: 18px
                 margin: 30px 0 20px
 
               p
@@ -161,3 +179,15 @@
               blockquote
                 color: $dark-grey
                 font-style: italic
+
+              @media screen and (min-width: $screen-sm)
+                padding: 40px 60px
+
+                h1
+                  font-size: 28px
+              
+                h2
+                  font-size: 24px
+
+                h3
+                  font-size: 20px

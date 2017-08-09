@@ -35,6 +35,8 @@ $(function(){
           scrollTop: ($($anchor.attr('href')).offset().top - 57)
       }, 1000, 'easeInOutExpo');
       event.preventDefault();
+      $(".news-modal").css("display","none");
+      $("body").removeClass("modal-open");
   });
 
   // Highlight the top nav as scrolling occurs
@@ -56,23 +58,40 @@ $(function(){
   })
 
   // Toggle News Modal Box
-  $('.news-title').click(function(e){
-    e.preventDefault();
+  $('.news-title').click(function(){
     newsModal = $(this).attr("data-modal");
-    $("#" + newsModal).fadeToggle( 100, "linear" );
+    $("#" + newsModal).toggle();
     $("body").addClass("modal-open");
   });
 
   $(".modal-close, .modal-sandbox").click(function(){
-    $(".news-modal").fadeToggle( 80, "linear" );
-    $("body").removeClass("modal-open")
+    $(this).parents(".news-modal").toggle();
+    $("body").removeClass("modal-open");
+  });
+
+  $(document).keydown(function(e) {
+    if (e.keyCode == 27) {
+      $(".news-modal").css("display","none");
+      $("body").removeClass("modal-open")
+    }
+  });
+
+  // Toggle More News
+  $('.news-more').click(function(){
+    var moreNews = $('.news.more');
+    if ($(this).hasClass( "active" )){
+      moreNews.css("display","none");
+      $(this).removeClass( "active" );
+      return
+    }
+    moreNews.css("display","flex");
+    $(this).addClass( "active" );
   });
 
   // Toggle Ended Events
-  $('.events-more').click(function(e){
-    e.preventDefault();
+  $('.events-more').click(function(){
     var endedEvents = $('.event-card.ended');
     endedEvents.toggle();
-    $(this).toggleClass( "active" )
+    $(this).toggleClass( "active" );
   });
 });

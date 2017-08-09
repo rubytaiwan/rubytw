@@ -21,18 +21,9 @@ zh-TW:
     apply_none: 無需報名
     ended_events: 活動結束
     order_events: 已結束的活動
-    empty_events: 尚無活動
+    empty_events: 目前沒有進行中的活動 ಥ_ಥ
     subscription: 訂閱
     placeholder: 請輸入 Email
-
-  news:
-    - title: |
-        矽谷新創都風靡的程式技術！絕不能錯過的 RubyConf Taiwan 2015
-      date: 'Aug 14 2015'
-      link: 'https://5xruby.tw'
-    - title: |
-        RubyConf Taiwan 2015 徵求贊助
-      date: 'May 25 2015'
 
   campaigns:
     - title: 'Ruby Taiwan'

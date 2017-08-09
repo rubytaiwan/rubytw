@@ -8,9 +8,12 @@
     justify-content: center
 
     .event-empty
+      display: block
+      width: 100%
       font-size: 20px
       color: $warm-grey
-      margin-top: 30px
+      text-align: center
+      margin: 30px auto 20px
 
     .event-card
       position: relative
@@ -35,12 +38,6 @@
         height: 200px
         background: $warm-grey url(asset-path("default_cover.svg")) no-repeat center center
         background-size: 150px 150px
-
-        @media screen and (min-width: $screen-sm)
-          height: 240px
-
-        @media screen and (min-width: $screen-md)
-          height: 200px
 
         img
           width: 100%
@@ -122,14 +119,3 @@
           &:hover
             color: #fff
             background-color: $red
-
-  .button-more
-    width: 150px
-
-    &:visited
-      color: $dark-grey
-  
-    &:hover, &.active
-      color: #fff
-      background: $dark-grey
-      border-color: $dark-grey

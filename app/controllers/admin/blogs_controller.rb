@@ -1,6 +1,10 @@
 module Admin
   class BlogsController < Fae::BaseController
 
+    def index
+      @items = Blog.order('date_of_news DESC')
+    end
+
     private
 
     def build_assets
