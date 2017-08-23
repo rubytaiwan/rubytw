@@ -4,24 +4,24 @@ main.content
   table.js-sort-column
     thead
       tr
-        th.-action-wide data-sorter="false" 編號
-        th data-sorter="false" 封面照片
+        th.width-50 data-sorter="false"
+        th.width-150.text-center data-sorter="false" 封面照片
         th 標題
-        th 日期
-        th 發佈於首頁
-        th.-action-wide 更新時間
+        th.width-120.text-center 日期
+        th.width-140.text-center 發佈於首頁
+        th.width-170.text-center 更新時間
         th.-action data-sorter="false"
 
     tbody
       - if @items.present?
         - @items.each_with_index do |item, index|
           tr id=fae_sort_id(item)
-            td = index + 1
+            td.text-center = index + 1
             td = fae_index_image item.cover_image, edit_admin_blog_path(item)
             td = link_to item.fae_display_field, edit_admin_blog_path(item)
-            td = item.date_of_news.strftime("%Y.%m.%d")
+            td.text-center = item.date_of_news.strftime("%Y.%m.%d")
             td = fae_toggle item, :active
-            td = item.updated_at.strftime("%Y-%m-%d at %H:%M")
+            td.text-center = item.updated_at.strftime("%Y-%m-%d at %H:%M")
             td = fae_delete_button item
       - else
         tr: td colspan="4" No items found

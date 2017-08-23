@@ -4,11 +4,11 @@ main.content
   table.js-sort-column
     thead
       tr
-        th.-action-wide data-sorter="false" 編號
+        th.width-50 data-sorter="false"
         th 社群名稱
-        th 社群類別
-        th 顯示於首頁
-        th 更新時間
+        th.width-150.text-center 社群類別
+        th.width-140.text-center 顯示於首頁
+        th.width-170.text-center 更新時間
         th.-action data-sorter="false"
 
     tbody
@@ -17,9 +17,9 @@ main.content
           tr id=fae_sort_id(item)
             td = index + 1
             td = link_to item.fae_display_field, edit_admin_community_path(item)
-            td = item.community_type
+            td.text-center = item.community_type
             td = fae_toggle item, :active
-            td = item.updated_at.strftime("%Y-%m-%d at %H:%M")
+            td.text-center = item.updated_at.strftime("%Y-%m-%d at %H:%M")
             td = fae_delete_button item
       - else
         tr: td colspan="3" No items found

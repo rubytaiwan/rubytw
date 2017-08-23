@@ -1,2 +1,171 @@
 // Do Not Delete this page! FAE depends on it in order to set its highlight color.
 // $c-custom-highlight: #9aa142;
+@import "base/styleguide";
+
+// Navigation
+$dark-red: #A4352A;
+
+.main-header{
+  background: $red !important;
+  border-bottom: 4px solid $dark-red !important;
+
+  a{
+    color: #fff !important;
+  }
+
+  .main-header-nav{
+    a:hover{
+      background: $dark-red;
+    }
+    li.-parent-current > a{
+      background: $dark-red;
+    }
+  }
+
+  .utility-nav{
+    .grabatar-link:after{
+      color: #fff
+    }
+    .utility-dropdown ul, .utility-dropdown .utility-search-wrapper{
+      background: $dark-grey;
+      border-top: 4px solid $dark-red;
+      a:hover{
+        background: $deep-grey;
+      }
+    }
+  }
+}
+
+.content-header, .breadcrumbs{
+  color: $deep-grey !important;
+  strong{
+    color: $deep-grey !important;
+  }
+  a:hover{
+    color: $red !important;
+  }
+}
+
+.breadcrumbs li:last-child, .breadcrumbs li:last-child a{
+  color: $dark-red !important;
+}
+
+.content-header-buttons{
+  .add-button{ 
+    &:hover{
+      color: #fff !important;
+      border: 1px solid $dark-red;
+      background: $dark-red !important;
+    }
+  }
+  .button{ 
+    &:hover{
+      color: $dark-red !important;
+    }
+  }
+  input{
+    &:hover{
+      color: #fff !important;
+      border: 1px solid $dark-red;
+      background: $dark-red !important;
+    } 
+  }
+} 
+
+.content{
+  a{
+    color: $deep-grey;
+    font-size: 16px;
+    &:hover{
+      color: $red;
+    }
+  }
+
+  table{
+    th,td {
+      &.text-center{
+        text-align: center
+      }
+      &.width-40{
+        width: 40px;
+      }
+      &.width-50{
+        width: 50px;
+      }
+      &.width-60{
+        width: 60px;
+      }
+      &.width-70{
+        width: 70px;
+      }
+      &.width-80{
+        width: 80px;
+      }
+      &.width-90{
+        width: 90px;
+      }
+      &.width-100{
+        width: 100px;
+      }
+      &.width-110{
+        width: 110px;
+      }
+      &.width-120, &.-action-wide{
+        width: 120px;
+      }
+      &.width-130{
+        width: 130px;
+      }
+      &.width-140{
+        width: 140px;
+      }
+      &.width-150{
+        width: 150px;
+      }
+      &.width-160{
+        width: 160px;
+      }
+      &.width-170{
+        width: 170px;
+      }
+      &.width-180{
+        width: 180px;
+      }
+      .image-mat{
+        margin: 0 auto;
+      }
+      .slider-wrapper{
+        margin: 0 auto;
+        .slider-option-yes{
+          background: $dark-red;
+        }
+      }
+      .tooltip{
+        background: $dark-red;
+        width: auto;
+        top: -30px;
+        left: -3px;
+        &:after{
+          border-top-color: $dark-red;
+        }
+      }
+      .tooltip-parent:hover{
+        .icon-trash{
+          color: $dark-red;
+        }
+      }
+    }
+    tbody tr:hover td:first-child{
+      border-left-color: $dark-red;
+    }
+  }
+
+  .tablesorter-header-inner{
+    font-size: 16px !important;
+
+    &:after, .th-sortable-title:after{
+      top: 0;
+      color: $dark-grey;
+    }
+  }
+}
