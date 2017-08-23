@@ -38,12 +38,13 @@ gem 'jbuilder', '~> 2.5'
 gem 'rails-i18n'
 
 # assets
+gem 'fae-rails'
 gem 'slim-rails'
 gem 'bootstrap-sass'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 gem 'inline_svg'
-gem "jquery-rails"
 gem 'jquery-easing-rails'
+gem 'redcarpet'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

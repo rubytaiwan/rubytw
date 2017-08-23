@@ -135,54 +135,6 @@
 
   .ruby_taiwan
 
-    /** Animation Section **/
-
-    @-webkit-keyframes slide-in
-      0%
-        -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0)
-        -webkit-transform-origin: 50% 100%
-        opacity: 0
-
-      100%
-        -webkit-transform: translateY(0) rotateX(0) scale(1)
-        -webkit-transform-origin: 50% 1400px
-        opacity: 1
-
-    @keyframes slide-in
-      0%
-        transform: translateY(-600px) rotateX(-30deg) scale(0)
-        transform-origin: 50% 100%
-        opacity: 0
-
-      100%
-        transform: translateY(0) rotateX(0) scale(1)
-        transform-origin: 50% 1400px
-        opacity: 1
-
-    @-webkit-keyframes tracking-in-expand
-      0%
-        letter-spacing: -0.5em
-        opacity: 0
-
-      40%
-        opacity: 0.6
-
-      100%
-        letter-spacing: 1px
-        opacity: 1
-
-    @keyframes tracking-in-expand
-      0%
-        letter-spacing: -0.5em
-        opacity: 0
-
-      40%
-        opacity: 0.6
-
-      100%
-        letter-spacing: 1px
-        opacity: 1
-
     @-webkit-keyframes fade-in
       0%
         opacity: 0
@@ -200,8 +152,8 @@
     /** Animation END **/
 
     .ruby_taiwan_logo
-      -webkit-animation: slide-in 1s ease-out
-      animation: slide-in 1s ease-out
+      -webkit-animation: fade-in 1s ease-out
+      animation: fade-in 1s ease-out
 
       #ruby_taiwan_logo
         +transform(translateX(-50%))
@@ -218,8 +170,8 @@
           top: 100px
       
     .ruby_taiwan_logotype
-      -webkit-animation: slide-in 1.5s ease-out
-      animation: slide-in 1.5s ease-out
+      -webkit-animation: fade-in 1.5s ease-out
+      animation: fade-in 1.5s ease-out
 
       #ruby_taiwan_logotype
         +transform(translateX(-50%))
@@ -246,8 +198,8 @@
       left: 50%
       opacity: 0
       
-      -webkit-animation: tracking-in-expand 1s ease-in-out 1.2s
-      animation: tracking-in-expand 1s ease-in-out 1.2s
+      -webkit-animation: fade-in 1s ease-in-out
+      animation: fade-in 1s ease-in-out
       animation-fill-mode: forwards
 
       @media screen and (min-width: $screen-sm)
@@ -259,10 +211,8 @@
       +transform(translateX(-50%))
       top: 430px
       left: 50%
-      width: 224px
 
       @media screen and (min-width: $screen-sm)
-        width: 245px
         top: 580px
       
       .social-links
@@ -272,8 +222,8 @@
         opacity: 0
         +transition(color, 0.3s)
 
-        -webkit-animation: fade-in 1s ease-in-out 1.2s
-        animation: fade-in 1s ease-in-out 1.2s
+        -webkit-animation: fade-in 1s ease-in-out
+        animation: fade-in 1s ease-in-out
         animation-fill-mode: forwards
 
         @media screen and (min-width: $screen-sm)

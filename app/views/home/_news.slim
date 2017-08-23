@@ -2,14 +2,24 @@ section#news
   .news-card
     h3.section-title =t('section.news')
     
-    - t('news').each do |article|
-      .news-item
-        p.news-date = article[:date]
-        - if article[:link].present?
-          = link_to article[:link], target: :_blank, :class => "news-link" do
-            = article[:title]
-        - else
-            p.news-title = article[:title]
-
-    a.button-more href="#"
-      =t('helper.view_more')
+    .news-list
+      - if @blogs.present?
+        - @blogs.each_with_index do |news, index|
+          .news class="#{index < 5 ? '' : 'more'}"
+            span.news-date = news.date_of_news.strftime("%b %d %Y")
+            h2.news-title data-modal="news-#{news.id}" = news.title
+            .news-modal id="news-#{news.id}"
+              .modal-sandbox
+              .modal-box
+                .modal-close aria-label="Close"
+                - if news.cover_image.asset?
+                  .cover-image
+                    = image_tag news.cover_image.asset.url, title: news.title, alt: news.cover_image.alt, class: "news-cover"
+                .content
+                  span.content-date = news.date_of_news.strftime("%b %d, %Y")
+                  h1.content-title = news.title
+                  = inline_svg 'icon_ruby.svg'
+                  = markdown(news.content)
+    
+    - if @blogs.length >= 5
+      button.button-more.news-more =t('helper.view_more')

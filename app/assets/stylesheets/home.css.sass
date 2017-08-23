@@ -1,19 +1,21 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 @import "base/mixin"
 @import "base/styleguide"
+
+/* Section */
+@import "style/nav"
+@import "style/cover"
+@import "style/news"
+@import "style/events"
+@import "style/campaigns"
+@import "style/communities"
+@import "style/subscription"
+
+body
+  font-family: 'Montserrat', sans-serif
 
 .main
   background: $light-grey
   box-shadow: 0 0 8px 0 rgba($deep-grey, 0.5)
-
-  @media screen and (min-width: $screen-sm)
-    padding: 0 35px
-
-body
-  font-family: 'Montserrat', sans-serif
 
 section
   max-width: 1020px
@@ -28,19 +30,26 @@ section
   font-size: 14px
   text-align: center
   color: $dark-grey
+  background: transparent
 
   display: block
-  width: 120px
   border-radius: 4px
   border: solid 1px $dark-grey
-  padding: 10px 20px
+  padding: 10px 30px
   margin: 60px auto 0
   
   +transition(all, 0.3s)
 
-  &:hover
-    color: $red
-    border-color: $red
+  &:hover, &.active
+    color: #fff
+    background: $dark-grey
+    border-color: $dark-grey
+
+  &:focus
+    outline: none
+
+  &:visited
+    color: $dark-grey
 
 .section-title
   font-size: 24px
@@ -59,15 +68,6 @@ section
     +transform(translateX(-35%) translateY(100%))
     bottom: 0
     left: 50%
-
-/* Section */
-@import "style/nav"
-@import "style/cover"
-@import "style/news"
-@import "style/events"
-@import "style/campaigns"
-@import "style/communities"
-@import "style/subscription"
 
 #footer p
   font-size: 12px

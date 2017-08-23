@@ -1,0 +1,13 @@
+= simple_form_for(['admin', @item]) do |f|
+  header.content-header.js-content-header
+    == render 'fae/shared/form_header', header: @klass_name
+  == render 'fae/shared/errors'
+
+  main.content
+    = fae_input f, :title, label: '標題'
+    = fae_datepicker f, :date_of_news, label: '日期'
+    = fae_input f, :content, markdown: true, label: '內文'
+    = fae_radio f, :active, type: 'inline', label: '發佈於首頁'
+
+
+    = fae_image_form f, :cover_image, label: '封面照片', alt_label: '封面照片替代文字', alt_helper_text: '請輸入有助於 SEO 的替代文字'

@@ -1,5 +1,9 @@
 #campaigns
   padding-top: 0
+
+  @media screen and (min-width: $screen-sm)
+    padding-left: 60px
+    padding-right: 60px
   
   .campaign-card
     @extend .flexbox
@@ -156,6 +160,3 @@
           +size(12px, 12px)
           margin: 0 4px
           background-color: #fff
-
-  .button-more
-    margin-top: 60px
