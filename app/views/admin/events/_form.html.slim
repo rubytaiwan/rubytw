@@ -6,7 +6,7 @@
   main.content
     = fae_input f, :title, label: '活動名稱'
     = fae_input f, :location, label: '活動地點'
-    = fae_daterange f, [:start_on, :end_on], label: '活動日期'
+    = fae_daterange f, [:start_on, :end_on], label: '活動日期', helper_text: '請先點選開始日期，再點選結束日期。若為當日活動，點選兩次該日期即可。'
     = fae_input f, :start_time, label: '開始時間'
     = fae_input f, :end_time, label: '結束時間'
     = fae_input f, :description, label: '活動簡介'

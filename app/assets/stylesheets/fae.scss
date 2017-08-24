@@ -1,10 +1,34 @@
 // Do Not Delete this page! FAE depends on it in order to set its highlight color.
 // $c-custom-highlight: #9aa142;
 @import "base/styleguide";
-
-// Navigation
 $dark-red: #A4352A;
 
+// Login
+.login-content .login-area{
+  a{
+    color: $dark-grey;
+    &:hover{
+      color: $red;
+    }
+  }
+  border-top: 10px solid $dark-red;
+  input{
+    &:focus{
+      border-color: $dark-red;
+    }
+  }
+  .checkbox.focused::before{
+    border-color: $dark-red !important;
+  }
+}
+.login-helper a{
+  color: $dark-grey;
+  &:hover{
+    color: $red;
+  }
+}
+
+// Navigation
 .main-header{
   background: $red !important;
   border-bottom: 4px solid $dark-red !important;
@@ -36,6 +60,7 @@ $dark-red: #A4352A;
   }
 }
 
+// Content Header & Breadcrumbs
 .content-header, .breadcrumbs{
   color: $deep-grey !important;
   strong{
@@ -72,6 +97,7 @@ $dark-red: #A4352A;
   }
 } 
 
+// Content 
 .content{
   a{
     color: $deep-grey;
@@ -81,7 +107,16 @@ $dark-red: #A4352A;
     }
   }
 
-  table{
+  // Table
+  .tablesorter{
+    .tablesorter-header-inner{
+      font-size: 16px !important;
+  
+      &:after, .th-sortable-title:after{
+        top: 0;
+        color: $dark-grey;
+      }
+    }
     th,td {
       &.text-center{
         text-align: center
@@ -160,12 +195,51 @@ $dark-red: #A4352A;
     }
   }
 
-  .tablesorter-header-inner{
-    font-size: 16px !important;
-
-    &:after, .th-sortable-title:after{
-      top: 0;
+  // Edit
+  .input{
+    label{
+      color: $deep-grey;
+      font-size: 16px;
+  
+      abbr{
+        color: $dark-red;
+        font-size: 18px;
+        text-decoration: none;
+      }
+    }
+    input, textarea{
+      &:focus{
+        border-color: $dark-red;
+      }
+    }
+    .markdown-support{
       color: $dark-grey;
+      &:hover{
+        color: $dark-red;
+      }
+    }
+    &.mde-focus .CodeMirror-wrap, &.mde-focus .editor-toolbar{
+      border-color: $dark-red;
     }
   }
+  .chosen-container-single{
+    width: 80px !important;
+
+    &.chosen-with-drop .chosen-single, &.chosen-container-active .chosen-single{
+      border-color: $dark-red !important;
+    }
+    b{
+      margin-top: 10px !important;
+      margin-left: -12px;
+    }
+    .chosen-drop{
+      border-color: $dark-red;
+    }
+  }
+  .radio_collection.focused .radio_collection-bullet{
+    border-color: $dark-red !important;
+  }
+}
+.ui-datepicker-calendar .ui-state-active, .date-picker-wrapper .checked, {
+  background: $dark-red !important;
 }
