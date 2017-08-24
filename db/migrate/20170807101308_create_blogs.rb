@@ -4,6 +4,7 @@ class CreateBlogs < ActiveRecord::Migration[5.0]
       t.string :title
       t.date :date_of_news
       t.text :content
+      t.boolean :show
       t.boolean :active
 
       t.timestamps

@@ -35,17 +35,19 @@ ActiveRecord::Schema.define(version: 20170809053524) do
 
   create_table "events", force: :cascade do |t|
     t.string   "title"
-    t.date     "start_on"
+    t.date     "start_date"
     t.string   "location"
+    t.date     "start_on"
+    t.date     "end_on"
     t.time     "start_time"
     t.time     "end_time"
     t.text     "description"
     t.string   "apply_link"
-    t.boolean  "active",      default: true
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
-    t.boolean  "need_apply",  default: true
-    t.date     "end_on"
+    t.boolean  "active"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.boolean  "need_apply"
+    t.date     "end_date"
   end
 
   create_table "fae_changes", force: :cascade do |t|
