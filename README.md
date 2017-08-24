@@ -1,13 +1,43 @@
-# README
+Ruby Taiwan Official Site
+===
 
-環境
+## Requirements
 
-- Rails 5.1
-- Ruby >= 2.3
-- PostgreSQL
+- Ruby 2.4.1+
+- PostgreSQL 9.6
+- Node.js 8.0+
+- Yarn
 
-開始
+## Development
 
-- createdb rubytw_new_development -O 你的帳號
-- bundle
-- rails s 開始
+Install dependencies
+```
+$ bundle install
+```
+
+If you didn't create database, please run below command
+```
+$ rake db:create
+```
+
+Create tables
+```
+$ rake db:migrate
+```
+
+Install Front-end scripts
+```
+$ yarn
+```
+
+Prepare FAE
+```
+$ rake fae:db_seed
+```
+
+Starting Rails
+```
+$ rails server
+```
+
+> `./bin/webpack-dev-server` didn't necessary now
