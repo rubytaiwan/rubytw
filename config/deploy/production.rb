@@ -1,12 +1,6 @@
-set :stage, :production
+# frozen_string_literal: true
 
-set :ssh_options, {
-  forward_agent: true
-}
-
-role :app, %w{5xruby@srv.5xruby.tw:14159}
-role :web, %w{5xruby@srv.5xruby.tw:14159}
-role :db,  %w{5xruby@srv.5xruby.tw:14159}
-
-set :deploy_to, '/home/5xruby/ruby.tw'
-set :default_env, path: '/usr/local/ruby24/bin:$PATH'
+set :deploy_to, '/home/deploy/ruby.tw'
+role :app, %w(deploy@10.128.128.154)
+role :web, %w(deploy@10.128.128.154)
+role :db, %w(deploy@10.128.128.154)
