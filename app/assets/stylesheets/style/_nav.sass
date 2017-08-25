@@ -10,6 +10,8 @@
   @media (min-width: $screen-md)
     padding: 5px 40px
     opacity: 0
+    &.affix-top
+      pointer-events: none
     &.affix
       opacity: 1
       background-color: #fff
@@ -50,7 +52,7 @@
   .nav
     li 
       &.social-media
-        width: 25%
+        width: calc(100%/3)
         display: inline-block
         a
           text-align: center
