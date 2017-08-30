@@ -1,53 +1,51 @@
-.navbar-custom
-  background: #fff
-  border-width: 0
-  margin: 0
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1)
-  padding: 11px 20px
+#affixNav
   +transition(opacity, 0.5s)
 
   // Navbar Change on Scroll
   @media (min-width: $screen-md)
-    padding: 5px 40px
     opacity: 0
     &.affix-top
       pointer-events: none
     &.affix
       opacity: 1
-      background-color: #fff
-      padding: 5px 40px
+
+.navbar-custom
+  background: #fff
+  border-width: 0
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1)
+  min-height: 60px
+  padding: 0
+
+  @media (min-width: $screen-sm)
+    padding: 5px 40px
 
   .navbar-header
     position: relative
-    padding: 5px 0
+
+    /*Hamburger Menu on Mobile*/
+    .navbar-toggle
+      color: $dark-grey
+      font-size: 20px
+      border-width: 0
+      padding: 0
+      margin: 15px 20px
+
+      &:hover, &:visited, &:link, &:active
+        background-color: #fff
     
     .navbar-brand
-      position: absolute
-      width: 130px
-      left: 50%
-      top: 10px
-      +transform(translateX(-50%))
-      padding: 0
-      .cover-icons
-        fill: $red
+      display: block
+      float: none
+      width: 150px
+      padding: 16px 0 0
+      margin: 0 auto
 
       @media (min-width: $screen-sm)
-        width: 150px
-        top: 12px
-        +transform(translateX(0%))
-  
-  .navbar-collapse
-    border-width: 0
+        padding-top: 12px
 
-  .navbar-toggle
-    color: $dark-grey
-    font-size: 20px
-    border-width: 0
-    padding: 0
-    margin: 0
-
-    &:hover, &:visited, &:link, &:active
-      background-color: #fff
+      #ruby_taiwan_logotype
+        .cover-icons
+          fill: $red
   
   .nav
     li 

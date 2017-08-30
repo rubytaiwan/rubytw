@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
     @seo = {
       meta: {
         site: t('landing.site'),
+        title: t('landing.site'),
         description: t('landing.description')
       },
       google: {
