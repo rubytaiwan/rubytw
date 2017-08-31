@@ -1,6 +1,7 @@
-#landing data-turbolinks-permanent=""
+#landing data-turbolinks-permanent=true
   = render 'shared/nav'
   = render 'cover'
+  
   .main
     .container-fluid
       = render 'blogs'
@@ -9,4 +10,4 @@
       = render 'communities'
       = render 'subscription'
 
-= render 'shared/footer'
+  = render 'shared/footer'

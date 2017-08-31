@@ -45,7 +45,7 @@ $document.on('turbolinks:render', () => {
 
 $document.ready(function () {
   // Enable Bootstrap Carousel
-  $('.carousel').carousel()
+  $('.carousel').carousel();
 
   $(".carousel").swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -82,7 +82,7 @@ $document.ready(function () {
     offset: {
       top: 100
     }
-  })
+  });
 
   // Toggle More News
   $('.news-more').click(function(){
