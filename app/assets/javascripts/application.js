@@ -15,10 +15,37 @@
 //= require jquery-touchswipe/jquery.touchSwipe.min
 //= require_tree .
 
-$(function(){
+let $window = $(window);
+let $document = $(document);
+let _isTurboRender = false;
 
+$document.on('turbolinks:load', () => {
+  // Recreate object
+  $window = $(window);
+  $document = $(document);
+
+  if (_isTurboRender) {
+    $("#blog-modal").modal('show').on('hidden.bs.modal', () => {
+      return Turbolinks.visit('/');
+    });
+  } else {
+    $("#blog-info").removeClass('hidden');
+  }
+});
+
+let _lastScrollTop = 0;
+$document.on('turbolinks:before-render', () => {
+  return _lastScrollTop = $window.scrollTop();
+});
+
+$document.on('turbolinks:render', () => {
+  _isTurboRender = true;
+  return $window.scrollTop(_lastScrollTop);
+});
+
+$document.ready(function () {
   // Enable Bootstrap Carousel
-  $('.carousel').carousel()
+  $('.carousel').carousel();
 
   $(".carousel").swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -51,28 +78,9 @@ $(function(){
   });
 
   // Offset for Main Navigation
-  $('#mainNav').affix({
+  $('#affixNav').affix({
     offset: {
       top: 100
-    }
-  })
-
-  // Toggle News Modal Box
-  $('.news-title').click(function(){
-    newsModal = $(this).attr("data-modal");
-    $("#" + newsModal).toggle();
-    $("body").addClass("modal-open");
-  });
-
-  $(".modal-close, .modal-sandbox").click(function(){
-    $(this).parents(".news-modal").toggle();
-    $("body").removeClass("modal-open");
-  });
-
-  $(document).keydown(function(e) {
-    if (e.keyCode == 27) {
-      $(".news-modal").css("display","none");
-      $("body").removeClass("modal-open")
     }
   });
 

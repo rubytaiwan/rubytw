@@ -1,0 +1,52 @@
+- if request.headers['HTTP_TURBOLINKS_REFERRER']
+  #landing data-turbolinks-permanent=true
+
+#blog-info.hidden
+  nav.navbar.navbar-default.navbar-custom
+    .container-fluid
+      .navbar-header
+        button.navbar-toggle data-target="#navbar-collapse" data-toggle="collapse" type="button" 
+          i.fa.fa-bars
+        a.navbar-brand href="/"
+          = inline_svg 'cover/ruby_taiwan_logotype.svg', title: 'Ruby Taiwan Logotype'
+
+      #navbar-collapse.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li.social-media
+            = link_to t('social-media.twitter'), target: '_blank' do
+              i.fa.fa-twitter aria-hidden="true"
+          li.social-media
+            = link_to t('social-media.github'), target: '_blank' do
+              i.fa.fa-github aria-hidden="true"
+          li.social-media
+            = link_to t('social-media.facebook'), target: '_blank' do
+              i.fa.fa-facebook-official aria-hidden="true"
+
+  - if @blog.cover_image.asset?
+    .cover-image
+      = image_tag @blog.cover_image.asset.url, title: @blog.title, alt: @blog.cover_image.alt
+
+  .content
+    span.content-date = @blog.date_of_news.strftime("%b %d, %Y")
+    h1.content-title = @blog.title
+    = inline_svg 'icon_ruby.svg'
+    = markdown(@blog.content)
+
+#blogs
+  #blog-modal.modal
+    .modal-dialog role="document" 
+      .modal-content
+        .modal-header
+          button.close aria-label="Close" data-dismiss="modal" type="button" 
+            span aria-hidden="true"  &times;
+        .modal-body
+          - if @blog.cover_image.asset?
+            .cover-image
+              = image_tag @blog.cover_image.asset.url, title: @blog.title, alt: @blog.cover_image.alt
+          .content
+            span.content-date = @blog.date_of_news.strftime("%b %d, %Y")
+            h1.content-title = @blog.title
+            = inline_svg 'icon_ruby.svg'
+            = markdown(@blog.content)
+
+= render 'shared/footer'

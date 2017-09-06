@@ -1,11 +1,13 @@
-= render 'nav'
-= render 'cover'
-.main
-  .container-fluid
-    = render 'news'
-    = render 'events'
-    = render 'campaigns'
-    = render 'communities'
-    = render 'subscription'
+#landing data-turbolinks-permanent=true
+  = render 'shared/nav'
+  = render 'cover'
+  
+  .main
+    .container-fluid
+      = render 'blogs'
+      = render 'events'
+      = render 'campaigns'
+      = render 'communities'
+      = render 'subscription'
 
-= render 'footer'
+  = render 'shared/footer'
