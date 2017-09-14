@@ -1,4 +1,6 @@
 - content_for :title, @blog.title
+- content_for :description, strip_tags(markdown(@blog.content)).gsub(/\n|\r/, ' ').truncate(150)
+- content_for :image, image_url(@blog.cover_image.asset.url)
 - if home_page_loaded?
   #landing data-turbolinks-permanent=true
 
@@ -8,7 +10,7 @@
       .navbar-header
         button.navbar-toggle data-target="#navbar-collapse" data-toggle="collapse" type="button"
           i.fa.fa-bars
-        a.navbar-brand href="/"
+        = link_to root_path, class: 'navbar-brand' do
           = inline_svg 'cover/ruby_taiwan_logotype.svg', title: 'Ruby Taiwan Logotype'
 
       #navbar-collapse.collapse.navbar-collapse

@@ -30,4 +30,17 @@ module ApplicationHelper
   def page_title
     [content_for(:title), t('landing.site')].compact.join(' | ')
   end
+
+  def page_description
+    content_for(:description) || t('landing.description')
+  end
+
+  def page_image
+    content_for(:image) || image_url('og_image.png')
+  end
+
+  def page_type
+    return :website if request.path == root_path
+    :article
+  end
 end
