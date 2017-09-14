@@ -1,6 +1,6 @@
 - content_for :title, @blog.title
 - content_for :description, strip_tags(markdown(@blog.content)).gsub(/\n|\r/, ' ').truncate(150)
-- content_for :image, image_url(@blog.cover_image.asset.url)
+- content_for :image, @blog.cover_image&.asset_url
 - if home_page_loaded?
   #landing data-turbolinks-permanent=true
 
