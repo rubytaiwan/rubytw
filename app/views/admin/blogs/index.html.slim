@@ -17,11 +17,11 @@ main.content
         - @items.each_with_index do |item, index|
           tr id=fae_sort_id(item)
             td.text-center = index + 1
-            td = fae_index_image item.cover_image, edit_admin_blog_path(item)
-            td = link_to item.fae_display_field, edit_admin_blog_path(item)
+            td = fae_index_image item.cover_image, edit_admin_blog_path(item.id)
+            td = link_to item.fae_display_field, edit_admin_blog_path(item.id)
             td.text-center = item.date_of_news.strftime("%Y.%m.%d")
             td = fae_toggle item, :active
             td.text-center = item.updated_at.strftime("%Y-%m-%d at %H:%M")
-            td = fae_delete_button item
+            td = fae_delete_button item, id: item.id
       - else
         tr: td colspan="4" No items found
