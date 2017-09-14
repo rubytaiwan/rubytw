@@ -19,13 +19,13 @@ var $window = $(window);
 var $document = $(document);
 var _isTurboRender = false;
 
-$document.on('turbolinks:load', () => {
+$document.on('turbolinks:load', function() {
   // Recreate object
   $window = $(window);
   $document = $(document);
 
   if (_isTurboRender) {
-    $("#blog-modal").modal('show').on('hidden.bs.modal', () => {
+    $("#blog-modal").modal('show').on('hidden.bs.modal', function() {
       return Turbolinks.visit('/');
     });
   } else {
@@ -34,11 +34,11 @@ $document.on('turbolinks:load', () => {
 });
 
 var _lastScrollTop = 0;
-$document.on('turbolinks:before-render', () => {
+$document.on('turbolinks:before-render', function() {
   return _lastScrollTop = $window.scrollTop();
 });
 
-$document.on('turbolinks:render', () => {
+$document.on('turbolinks:render', function() {
   _isTurboRender = true;
   return $window.scrollTop(_lastScrollTop);
 });
