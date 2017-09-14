@@ -6,6 +6,8 @@ html
     = seo_meta_tags
     meta content="yes" name="apple-mobile-web-app-capable" /
     meta content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" /
+    - unless home_page_loaded?
+      meta name="turbolinks-cache-control" content="no-cache"
     = csrf_meta_tags
     = action_cable_meta_tag
 

@@ -1,11 +1,11 @@
-- if request.headers['HTTP_TURBOLINKS_REFERRER']
+- if home_page_loaded?
   #landing data-turbolinks-permanent=true
 
 #blog-info.hidden
   nav.navbar.navbar-default.navbar-custom
     .container-fluid
       .navbar-header
-        button.navbar-toggle data-target="#navbar-collapse" data-toggle="collapse" type="button" 
+        button.navbar-toggle data-target="#navbar-collapse" data-toggle="collapse" type="button"
           i.fa.fa-bars
         a.navbar-brand href="/"
           = inline_svg 'cover/ruby_taiwan_logotype.svg', title: 'Ruby Taiwan Logotype'
@@ -34,10 +34,10 @@
 
 #blogs
   #blog-modal.modal
-    .modal-dialog role="document" 
+    .modal-dialog role="document"
       .modal-content
         .modal-header
-          button.close aria-label="Close" data-dismiss="modal" type="button" 
+          button.close aria-label="Close" data-dismiss="modal" type="button"
             span aria-hidden="true"  &times;
         .modal-body
           - if @blog.cover_image.asset?

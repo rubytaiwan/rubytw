@@ -22,4 +22,8 @@ module ApplicationHelper
 
     markdown.render(text).html_safe
   end
+
+  def home_page_loaded?
+    request.path == root_path || request.headers['HTTP_TURBOLINKS_REFERRER'].present?
+  end
 end
