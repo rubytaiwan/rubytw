@@ -1,17 +1,15 @@
-nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
+nav#affixNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
   .container-fluid
     .navbar-header.page-scroll
       button.navbar-toggle data-target="#navbar-collapse" data-toggle="collapse" type="button" 
         i.fa.fa-bars
       a.navbar-brand.page-scroll href="#cover"
-        = inline_svg 'cover/ruby_taiwan_logotype.svg', title: 'Ruby Taiwan Logotype'
+        = inline_svg 'cover/ruby_taiwan_logotype.svg', title: 'Ruby Taiwan'
 
     #navbar-collapse.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
-        li.hidden
-          a href="#home" 
         li
-          a.page-scroll href="#news"  =t('section.news')
+          a.page-scroll href="#blogs"  =t('section.blog')
         li
           a.page-scroll href="#events"  =t('section.events')
         li

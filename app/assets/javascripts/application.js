@@ -15,10 +15,37 @@
 //= require jquery-touchswipe/jquery.touchSwipe.min
 //= require_tree .
 
-$(function(){
+var $window = $(window);
+var $document = $(document);
+var _isTurboRender = false;
 
+$document.on('turbolinks:load', function() {
+  // Recreate object
+  $window = $(window);
+  $document = $(document);
+
+  if (_isTurboRender) {
+    $("#blog-modal").modal('show').on('hidden.bs.modal', function() {
+      return Turbolinks.visit('/');
+    });
+  } else {
+    $("#blog-info").removeClass('hidden');
+  }
+});
+
+var _lastScrollTop = 0;
+$document.on('turbolinks:before-render', function() {
+  return _lastScrollTop = $window.scrollTop();
+});
+
+$document.on('turbolinks:render', function() {
+  _isTurboRender = true;
+  return $window.scrollTop(_lastScrollTop);
+});
+
+$document.ready(function () {
   // Enable Bootstrap Carousel
-  $('.carousel').carousel()
+  $('.carousel').carousel();
 
   $(".carousel").swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -46,33 +73,14 @@ $(function(){
   });
 
   // Closes the Responsive Menu on Menu Item Click
-  $('.navbar-collapse ul li a').click(function(){ 
+  $('.navbar-collapse ul li a').click(function(){
      $('.navbar-toggle:visible').click();
   });
 
   // Offset for Main Navigation
-  $('#mainNav').affix({
+  $('#affixNav').affix({
     offset: {
       top: 100
-    }
-  })
-
-  // Toggle News Modal Box
-  $('.news-title').click(function(){
-    newsModal = $(this).attr("data-modal");
-    $("#" + newsModal).toggle();
-    $("body").addClass("modal-open");
-  });
-
-  $(".modal-close, .modal-sandbox").click(function(){
-    $(this).parents(".news-modal").toggle();
-    $("body").removeClass("modal-open");
-  });
-
-  $(document).keydown(function(e) {
-    if (e.keyCode == 27) {
-      $(".news-modal").css("display","none");
-      $("body").removeClass("modal-open")
     }
   });
 

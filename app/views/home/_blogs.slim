@@ -1,0 +1,13 @@
+section#blogs
+  .blog-card
+    h3.section-title =t('section.blog')
+    
+    .blog-list
+      - if @blogs.present?
+        - @blogs.each_with_index do |blog, index|
+          .blog class="#{index < 5 ? '' : 'more'}"
+            span.blog-date = blog.date_of_news.strftime("%b %d %Y")
+            = link_to blog.title, blog, class:"blog-title"
+    
+    - if @blogs.length >= 5
+      button.button-more.blog-more =t('helper.view_more')

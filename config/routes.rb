@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     resources :communities
     resources :events
   end
+
+  resources :blogs, only: :show
   # mount Fae below your admin namespec
   mount Fae::Engine => '/admin'
 

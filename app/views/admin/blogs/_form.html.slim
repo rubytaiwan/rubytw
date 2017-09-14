@@ -1,10 +1,11 @@
-= simple_form_for(['admin', @item]) do |f|
+= simple_form_for(@item, url: admin_blog_path(@item.id)) do |f|
   header.content-header.js-content-header
     == render 'fae/shared/form_header', header: @klass_name
   == render 'fae/shared/errors'
 
   main.content
-    = fae_input f, :title, label: '標題'
+    = fae_input f, :title, label: '標題', input_class: 'slugger'
+    = fae_input f, :slug, label: '網址', placeholder: 'some-blog-post'
     = fae_datepicker f, :date_of_news, label: '日期'
     = fae_input f, :content, markdown: true, markdown_supported: true, label: '內文'
     = fae_radio f, :active, type: 'inline', label: '發佈於首頁'

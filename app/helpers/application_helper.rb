@@ -22,4 +22,25 @@ module ApplicationHelper
 
     markdown.render(text).html_safe
   end
+
+  def home_page_loaded?
+    request.path == root_path || request.headers['HTTP_TURBOLINKS_REFERRER'].present?
+  end
+
+  def page_title
+    [content_for(:title), t('landing.site')].compact.join(' | ')
+  end
+
+  def page_description
+    content_for(:description) || t('landing.description')
+  end
+
+  def page_image
+    content_for(:image) || 'og_image.png'
+  end
+
+  def page_type
+    return :website if request.path == root_path
+    :article
+  end
 end
