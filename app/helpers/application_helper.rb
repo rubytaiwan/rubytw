@@ -36,7 +36,7 @@ module ApplicationHelper
   end
 
   def page_image
-    content_for(:image) || image_url('og_image.png')
+    content_for(:image) || 'og_image.png'
   end
 
   def page_type

@@ -51,7 +51,7 @@ module SeoHelper
     @seo ||= SEO.new(
       title: page_title,
       description: page_description,
-      image: page_image,
+      image: image_url(page_image),
       url: request.url,
       type: page_type
     )
