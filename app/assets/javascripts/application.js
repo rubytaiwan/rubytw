@@ -15,9 +15,9 @@
 //= require jquery-touchswipe/jquery.touchSwipe.min
 //= require_tree .
 
-let $window = $(window);
-let $document = $(document);
-let _isTurboRender = false;
+var $window = $(window);
+var $document = $(document);
+var _isTurboRender = false;
 
 $document.on('turbolinks:load', () => {
   // Recreate object
@@ -33,7 +33,7 @@ $document.on('turbolinks:load', () => {
   }
 });
 
-let _lastScrollTop = 0;
+var _lastScrollTop = 0;
 $document.on('turbolinks:before-render', () => {
   return _lastScrollTop = $window.scrollTop();
 });
@@ -73,7 +73,7 @@ $document.ready(function () {
   });
 
   // Closes the Responsive Menu on Menu Item Click
-  $('.navbar-collapse ul li a').click(function(){ 
+  $('.navbar-collapse ul li a').click(function(){
      $('.navbar-toggle:visible').click();
   });
 
