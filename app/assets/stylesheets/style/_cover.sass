@@ -134,6 +134,13 @@
 
 
   .ruby_taiwan
+    padding-top: 150px
+
+    @media screen and (min-width: $screen-sm)
+      padding-top: 190px
+
+    @media screen and (min-width: $screen-md)
+      padding-top: 120px
 
     @-webkit-keyframes fade-in
       0%
@@ -149,25 +156,20 @@
       100%
         opacity: 1
 
-    /** Animation END **/
-
     .ruby_taiwan_logo
+      position: absolute
+      +transform(translateX(-50%))
+      width: 130px
+      left: 49%
+
       -webkit-animation: fade-in 1s ease-out
       animation: fade-in 1s ease-out
 
-      #ruby_taiwan_logo
-        +transform(translateX(-50%))
-        width: 150px
-        top: 140px
-        left: 50%
+      @media screen and (min-width: $screen-sm)
+        width: 200px
 
-        @media screen and (min-width: $screen-sm)
-          width: 200px
-          top: 170px
-
-        @media screen and (min-width: $screen-md)
-          width: 245px
-          top: 100px
+      @media screen and (min-width: $screen-md)
+        width: 240px
       
     .ruby_taiwan_logotype
       -webkit-animation: fade-in 1.5s ease-out

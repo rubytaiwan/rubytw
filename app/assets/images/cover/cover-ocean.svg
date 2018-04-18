@@ -42,16 +42,16 @@
     }
 
     #boat_m {
-      -webkit-transform-origin: 50% 100%;
-      -ms-transform-origin: 50% 100%;
-      transform-origin: 50% 100%;
+      -webkit-transform-origin: 86.6px 155px;
+      -ms-transform-origin: 86.6px 155px;
+      transform-origin: 86.6px 155px;
       -webkit-animation: shake-bottom 5s ease-in-out infinite both;
       animation: shake-bottom 5s ease-in-out infinite both;
     }
     #boat_s {
-      -webkit-transform-origin: 50% 100%;
-      -ms-transform-origin: 50% 100%;
-      transform-origin: 50% 100%;
+      -webkit-transform-origin: 343px 46px;
+      -ms-transform-origin: 343px 46px;
+      transform-origin: 343px 46px;
       -webkit-animation: shake-bottom 4s ease-in-out infinite both;
       animation: shake-bottom 4s ease-in-out infinite both;
     }
