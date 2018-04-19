@@ -1,9 +1,9 @@
 <svg version="1.1" id="cover-platform_r" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 280 182" style="enable-background:new 0 0 280 182;" xml:space="preserve">
   <style type="text/css">
     #cars {
-      -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-      transform-origin: 50% 50%;
+      -webkit-transform-origin: 81.6px 78px;
+      -ms-transform-origin: 81.6px 78px;
+      transform-origin: 81.6px 78px;
       -webkit-animation: rotate-center 10s linear infinite both;
       animation: rotate-center 10s linear infinite both;
     }
@@ -16,10 +16,55 @@
       100% { transform: rotate(360deg);}
     }
 
+    #car_1 {
+      -webkit-transform-origin: 81.6px 13.8px;
+      -ms-transform-origin: 81.6px 13.8px;
+      transform-origin: 81.6px 13.8px;
+    }
+
+    #car_2 {
+      -webkit-transform-origin: 127px 32.7px;
+      -ms-transform-origin: 127px 32.7px;
+      transform-origin: 127px 32.7px;
+    }
+
+    #car_3 {
+      -webkit-transform-origin: 146px 78px;
+      -ms-transform-origin: 146px 78px;
+      transform-origin: 146px 78px;
+    }
+
+    #car_4 {
+      -webkit-transform-origin: 127px 123.6px;
+      -ms-transform-origin: 127px 123.6px;
+      transform-origin: 127px 123.6px;
+    }
+
+    #car_5 {
+      -webkit-transform-origin: 81.6px 142.4px;
+      -ms-transform-origin: 81.6px 142.4px;
+      transform-origin: 81.6px 142.4px;
+    }
+
+    #car_6 {
+      -webkit-transform-origin: 36.1px 123.6px;
+      -ms-transform-origin: 36.1px 123.6px;
+      transform-origin: 36.1px 123.6px;
+    }
+
+    #car_7 {
+      -webkit-transform-origin: 17.3px 78px;
+      -ms-transform-origin: 17.3px 78px;
+      transform-origin: 17.3px 78px;
+    }
+
+    #car_8 {
+      -webkit-transform-origin: 36.1px 32.6px;
+      -ms-transform-origin: 36.1px 32.6px;
+      transform-origin: 36.1px 32.6px;
+    }
+
     #car_1, #car_2, #car_3, #car_4, #car_5, #car_6, #car_7, #car_8 {
-      -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-      transform-origin: 50% 50%;
       -webkit-animation: rotate-center_reverse 10s linear infinite both;
       animation: rotate-center_reverse 10s linear infinite both;
     }
@@ -31,12 +76,6 @@
       0% { transform: rotate(0);}
       100% { transform: rotate(-360deg);}
     }
-
-		@-moz-document url-prefix() {
-			#cars,#car_1, #car_2, #car_3, #car_4, #car_5, #car_6, #car_7, #car_8 {
-				animation: none !important;
-			}
-		}
   </style>
   <polygon class="cover-icons" points="0,170 280,170 280,172 2,172 2,180 280,180 280,182 0,182 	"></polygon>
   <g>

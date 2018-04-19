@@ -6,40 +6,40 @@
 			animation: swinging_alt 8s ease-in-out infinite both;
 		}
 		#cloud_2 {
-			-webkit-animation: swinging_alt 17s ease-in-out infinite both;
-			animation: swinging_alt 17s ease-in-out infinite both;
+			-webkit-animation: swinging_alt 6s ease-in-out infinite both;
+			animation: swinging_alt 6s ease-in-out infinite both;
 		}
 		#cloud_3 {
-			-webkit-animation: swinging_alt 12s ease-in-out infinite both;
-			animation: swinging_alt 12s ease-in-out infinite both;
+			-webkit-animation: swinging_alt 4s ease-in-out infinite both;
+			animation: swinging_alt 4s ease-in-out infinite both;
 		}
 		#cloud_4 {
-			-webkit-animation: swinging 15s ease-in-out infinite both;
-			animation: swinging 15s ease-in-out infinite both;
+			-webkit-animation: swinging 3s ease-in-out infinite both;
+			animation: swinging 3s ease-in-out infinite both;
 		}
 		#cloud_5 {
-			-webkit-animation: swinging 10s ease-in-out infinite both;
-			animation: swinging 10s ease-in-out infinite both;
+			-webkit-animation: swinging 4s ease-in-out infinite both;
+			animation: swinging 4s ease-in-out infinite both;
 		}
 		@-webkit-keyframes swinging {
-			0%, 100% { -webkit-transform: translateX(0); }
-			25% { -webkit-transform: translateX(-20px); }
-			75% { -webkit-transform: translateX(10px); }
+			0% { -webkit-transform: translateX(0); }
+			50% { -webkit-transform: translateX(-50px); }
+			100% { -webkit-transform: translateX(0); }
 		}
 		@keyframes swinging {
-			0%, 100% { transform: translateX(0); }
-			25% { transform: translateX(-20px); }
-			75% { transform: translateX(10px); }
+			0%{ transform: translateX(0); }
+			50% { transform: translateX(-20px); }
+			100% { transform: translateX(0); }
 		}
 		@-webkit-keyframes swinging_alt {
-			0%, 100% { -webkit-transform: translateX(0); }
-			25% { -webkit-transform: translateX(30px); }
-			75% { -webkit-transform: translateX(-20px); }
+			0% { -webkit-transform: translateX(0); }
+			50% { -webkit-transform: translateX(50px); }
+			100% { -webkit-transform: translateX(0px); }
 		}
 		@keyframes swinging_alt {
-			0%, 100% { transform: translateX(0); }
-			25% { transform: translateX(30px); }
-			75% { transform: translateX(-20px); }
+			0% { transform: translateX(0); }
+			50% { transform: translateX(50px); }
+			100% { transform: translateX(0px); }
 		}
 
 		#ballon_m {
@@ -75,12 +75,6 @@
 			0% { transform: scale(1) translate(0, 0);}
 			50% { transform: scale(0.8) translate(0, -15px); }
 			100% { transform: scale(1) translate(0, 0);}
-		}
-
-		@-moz-document url-prefix() {
-			#cloud_1, #cloud_2, #cloud_3, #cloud_4, #cloud_5 {
-				animation: none !important;
-			}
 		}
 	</style>
 	<path class="cover-icons" id="ballon_m" d="M318,152.1c-10.7,3.2-18.1,13.1-18,24.3c0,12.3,6.9,20.8,12.4,27.6c3,3.7,5.6,6.9,6.3,9.8l0.2,0.8h2.5l0.4,2.3

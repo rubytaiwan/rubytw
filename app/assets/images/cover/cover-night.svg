@@ -1,23 +1,23 @@
 <svg version="1.1" id="cover-night" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 457" style="enable-background:new 0 0 500 457;" xml:space="preserve">
 <style type="text/css">
 	#gondola_1 {
-		-webkit-transform-origin: 35% 0%;
-		-ms-transform-origin: 35% 0%;
-		transform-origin: 35% 0%;
+		-webkit-transform-origin: 418px 194px;
+		-ms-transform-origin: 418px 194px;
+		transform-origin: 418px 194px;
 		-webkit-animation: wobble-hor-top 2.5s infinite 0.5s both;
 		animation: wobble-hor-top 2.5s infinite 0.5s both;
 	}
 	#gondola_2 {
-		-webkit-transform-origin: 35% 0%;
-		-ms-transform-origin: 35% 0%;
-		transform-origin: 35% 0%;
+		-webkit-transform-origin: 346px 234px;
+		-ms-transform-origin: 346px 234px;
+		transform-origin: 346px 234px;
 		-webkit-animation: wobble-hor-top 2s infinite both;
 		animation: wobble-hor-top 2s infinite both;
 	}
 	#gondola_3 {
-		-webkit-transform-origin: 35% 0%;
-		-ms-transform-origin: 35% 0%;
-		transform-origin: 35% 0%;
+		-webkit-transform-origin: 276px 274px;
+		-ms-transform-origin: 276px 274px;
+		transform-origin: 276px 274px;
 		-webkit-animation: wobble-hor-top 3s infinite both;
 		animation: wobble-hor-top 3s infinite both;
 	}
@@ -39,9 +39,9 @@
 	}
 
 	#firework_g {
-		-webkit-transform-origin: 50% 50%;
-		-ms-transform-origin: 50% 50%;
-		transform-origin: 50% 50%;
+		-webkit-transform-origin: 198px 332px;
+		-ms-transform-origin: 198px 332px;
+		transform-origin: 198px 332px;
 		-webkit-animation: pulsate_firework 5s ease-in-out infinite both;
 		animation: pulsate_firework 5s ease-in-out infinite both;
 	}
@@ -57,30 +57,30 @@
 	}
 
 	#firework_1 {
-		-webkit-transform-origin: 50% 50%;
-		-ms-transform-origin: 50% 50%;
-		transform-origin: 50% 50%;
+		-webkit-transform-origin: 205px 60px;
+		-ms-transform-origin: 205px 60px;
+		transform-origin: 205px 60px;
 		-webkit-animation: firework 2s ease-out infinite both;
 		animation: firework 2s ease-out infinite both;
 	}
 	#firework_2 {
-		-webkit-transform-origin: 50% 50%;
-		-ms-transform-origin: 50% 50%;
-		transform-origin: 50% 50%;
+		-webkit-transform-origin: 63px 250px;
+		-ms-transform-origin: 63px 250px;
+		transform-origin: 63px 250px;
 		-webkit-animation: firework 2.5s ease-out 0.5s infinite both;
 		animation: firework 2.5s ease-out 0.5s infinite both;
 	}
 	#firework_3 {
-		-webkit-transform-origin: 50% 50%;
-		-ms-transform-origin: 50% 50%;
-		transform-origin: 50% 50%;
+		-webkit-transform-origin: 412.5px 397.5px;
+		-ms-transform-origin: 412.5px 397.5px;
+		transform-origin: 412.5px 397.5px;
 		-webkit-animation: firework 2s ease-out infinite both;
 		animation: firework 2s ease-out infinite both;
 	}
 	#firework_4 {
-		-webkit-transform-origin: 50% 50%;
-		-ms-transform-origin: 50% 50%;
-		transform-origin: 50% 50%;
+		-webkit-transform-origin: 327px 132px;
+		-ms-transform-origin: 327px 132px;
+		transform-origin: 327px 132px;
 		-webkit-animation: firework 2s ease-out 0.5s infinite both;
 		animation: firework 2s ease-out 0.5s infinite both;
 	}
@@ -97,16 +97,16 @@
 	}
 
 	#lantern_1 {
-		-webkit-transform-origin: 50% 50%;
-		-ms-transform-origin: 50% 50%;
-		transform-origin: 50% 50%;
+		-webkit-transform-origin: 178px 182px;
+		-ms-transform-origin: 178px 182px;
+		transform-origin: 178px 182px;
 		-webkit-animation: pulsate 8s ease-in-out infinite both;
 		animation: pulsate 8s ease-in-out infinite both;
 	}
 	#lantern_2 {
-		-webkit-transform-origin: 50% 50%;
-		-ms-transform-origin: 50% 50%;
-		transform-origin: 50% 50%;
+		-webkit-transform-origin: 60px 75.5px;
+		-ms-transform-origin: 60px 75.5px;
+		transform-origin: 60px 75.5px;
 		-webkit-animation: pulsate 6s ease-in-out infinite both;
 		animation: pulsate 6s ease-in-out infinite both;
 	}
@@ -123,9 +123,9 @@
 	}
 
 	#lantern_3{
-		-webkit-transform-origin: 50% 50%;
-		-ms-transform-origin: 50% 50%;
-		transform-origin: 50% 50%;
+		-webkit-transform-origin: 426.5px 67.5px;
+		-ms-transform-origin: 426.5px 67.5px;
+		transform-origin: 426.5px 67.5px;
 		-webkit-animation: pulsate_alt 8s ease-in-out infinite both;
 		animation: pulsate_alt 8s ease-in-out infinite both;
 	}
@@ -139,12 +139,6 @@
 		50% { transform: scale(0.8) translate(0, -15px); }
 		100% { transform: scale(1) translate(0, 0);}
 	}
-
-  @-moz-document url-prefix() {
-    #gondola_1, #gondola_2, #gondola_3, #firework_g {
-      animation: none !important;
-    }
-  }
 </style>
     <path class="cover-icons" id="firework_1" d="M180,59h7.7v2H180V59z M186.7,77l5.4-5.4l1.4,1.4l-5.4,5.4L186.7,77z M204,77.3h2V85h-2V77.3z M216.6,72.9
 	l1.4-1.4l5.4,5.4l-1.4,1.4L216.6,72.9z M222.3,59h7.7v2h-7.7V59z M216.5,47l5.4-5.4l1.4,1.4l-5.4,5.4L216.5,47z M204,35h2v7.7h-2V35
