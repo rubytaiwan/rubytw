@@ -2,7 +2,7 @@
 lock "3.9.0"
 
 set :application, 'RubyTaiwan'
-set :repo_url, 'git@git.5xruby.tw:5xruby/rubytw_renew.git'
+set :repo_url, 'git@github.com:rubytaiwan/rubytw.git'
 
 # Default branch is :master
 if ENV['CI_BUILD_REF_NAME'].nil?
@@ -35,7 +35,7 @@ append :linked_files,
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-set :default_env, path: '/usr/local/ruby-2.4.1/bin:$PATH'
+set :default_env, path: '/usr/local/ruby-2.3.6/bin:$PATH'
 
 # Default value for local_user is ENV['USER']
 # set :local_user, -> { `git config user.name`.chomp }
