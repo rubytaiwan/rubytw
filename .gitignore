@@ -18,6 +18,9 @@
 
 .byebug_history
 
+.DS_Store
+*.DS_Store
+
 public/system/uploads/*
 public/uploads/*
 /public/packs
