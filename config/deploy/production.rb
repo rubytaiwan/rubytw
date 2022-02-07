@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
 set :deploy_to, '/home/deploy/ruby.tw'
-role :app, %w(deploy@do.5xruby.tw)
-role :web, %w(deploy@do.5xruby.tw)
-role :db, %w(deploy@do.5xruby.tw)
+role :app, %w(deploy@ruby.tw)
+role :web, %w(deploy@ruby.tw)
+role :db, %w(deploy@ruby.tw)
