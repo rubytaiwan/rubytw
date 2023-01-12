@@ -21,12 +21,12 @@ main.content
             td = fae_index_image item.cover_image, edit_admin_event_path(item)
             td = link_to item.fae_display_field, edit_admin_event_path(item)
             - if item.start_on != item.end_on
-              td.text-center 
+              td.text-center
                 = item.start_on.strftime("%Y.%m.%d")
                 | -
                 = item.end_on.strftime("%d")
             - else
-              td.text-center = item.start_on.strftime("%Y.%m.%d")
+              td.text-center = item.start_on.strftime("%Y.%m.%d") if item.start_on
             td = fae_toggle item, :need_apply
             td = fae_toggle item, :active
             td.text-center = item.updated_at.strftime("%Y-%m-%d at %H:%M")
