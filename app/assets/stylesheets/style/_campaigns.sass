@@ -27,14 +27,12 @@
         color: $red
       .campaign-photos .carousel-indicators li.active
         background-color: $red
-
-    &.mokumokukai
+    &.rubyjam
       background-color: $blue
       .campaign-link:hover
         color: $blue
       .campaign-photos .carousel-indicators li.active
         background-color: $blue
-
     &.railsgirlstaipei
       background-color: $purple
       .campaign-link:hover
@@ -147,7 +145,7 @@
         @media screen and (min-width: $screen-md)
           height: 380px
 
-      @each $name in 'rubytaiwan' 'mokumokukai' 'railsgirlstaipei' 'rubyconftaiwan'
+      @each $name in 'rubytaiwan','rubyjam', 'railsgirlstaipei', 'rubyconftaiwan'
         @for $i from 0 through 4
           ##{$name}-photo-#{$i}
             background-image: image-url("campaigns/#{$name}-#{$i}.jpg")

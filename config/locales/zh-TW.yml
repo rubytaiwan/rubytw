@@ -33,14 +33,14 @@ zh-TW:
       desc: |
         Ruby Taiwan 成立於 2008 年10 月，主要針對 Ruby 程式語言及軟體開發，進行業界的交流及分享，提昇開發人員的技術深度與廣度。
       links: {'Facebook 專頁': 'https://www.facebook.com/ruby.taiwan', 'Facebook 社團': 'https://www.facebook.com/groups/142197385837507/'}
-    - title: 'Ruby 默默會'
-      id: 'mokumokukai'
-      photo: ['mokumokukai-0.jpg', 'mokumokukai-1.jpg', 'mokumokukai-2.jpg', 'mokumokukai-3.jpg', 'mokumokukai-4.jpg']
+    - title: 'Ruby Jam'
+      id: 'rubyjam'
+      photo: ['rubyjam-0.jpg', 'rubyjam-1.jpg', 'rubyjam-2.jpg']
       desc: |
-        每週（二）19:00 ~ 22:00
-        在默默會上你可以：Ruby / Rails 交流、找人才 / 找工作、純哈拉閒聊⋯來發呆也可以！
-      facebookPage: 'https://www.facebook.com/rubymokumokukai/'
-      links: {'Facebook 專頁': 'https://www.facebook.com/rubymokumokukai/', '工作職缺看板': 'https://github.com/5xRuby/mokumokukai'}
+        Ruby 社群每月一次的技術交流聚會
+        以主題技術分享 + Lightning talk + 交流的形式呈現
+        分享及吸收知識的小聚會
+      links: {'FB 專頁': 'https://www.facebook.com/RubyJamTW', 'YouTube': 'https://www.youtube.com/channel/UC5YyLQH-M9_tSXIKv29bstg', 'IG': 'https://www.instagram.com/rubytaiwan2008/'}
     - title: 'Rails Girls Taipei'
       id: 'railsgirlstaipei'
       photo: ['railsgirlstaipei-0.jpg', 'railsgirlstaipei-1.jpg', 'railsgirlstaipei-2.jpg', 'railsgirlstaipei-3.jpg', 'railsgirlstaipei-4.jpg']
