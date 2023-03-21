@@ -34,7 +34,7 @@ section#events
             .event-location
               i.fa.fa-map-marker aria-hidden="true"
               p = event.location
-            p.event-desc = event.description
+            p.event-desc = text_to_safe_html event.description
           - if event.active && event.need_apply
             = link_to event.apply_link, target: :_blank, class:'button-apply active' do
               =t('helper.apply_now')

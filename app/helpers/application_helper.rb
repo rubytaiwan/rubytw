@@ -43,4 +43,8 @@ module ApplicationHelper
     return :website if request.path == root_path
     :article
   end
+
+  def text_to_safe_html(text)
+    sanitize(text, tags: []).gsub("\n", '<br>').html_safe
+  end
 end
