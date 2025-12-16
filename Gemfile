@@ -5,13 +5,13 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'ffi', '~> 1.17'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.7'
+gem 'rails', '~> 5.0.7.2'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 0.18'
+gem 'pg', '~> 1.5.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 5.6.0'
 # Use SCSS for stylesheets
 gem 'sassc-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -22,7 +22,7 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails','~> 4.3.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -31,7 +31,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'webpacker'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -39,13 +38,13 @@ gem 'webpacker'
 gem 'rails-i18n'
 
 # assets
-gem 'fae-rails'
-gem 'slim-rails'
+gem 'fae-rails','~> 2.2.0'
+gem 'slim-rails','~> 3.0'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'inline_svg'
 gem 'jquery-easing-rails'
-gem 'redcarpet'
+gem 'redcarpet', '~> 3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -59,15 +58,10 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-
-  gem 'capistrano', '~> 3.6'
-  gem 'capistrano-rails'
-  gem 'capistrano-passenger'
-  gem 'capistrano-upload-config'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "openbox", "~> 0.5.1"
+gem "liveness", "~> 0.3.2"

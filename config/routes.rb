@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Liveness::Status => '/status'
 
   namespace :admin do
     resources :blogs
