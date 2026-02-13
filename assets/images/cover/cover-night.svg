@@ -1,0 +1,273 @@
+<svg version="1.1" id="cover-night" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 457" style="enable-background:new 0 0 500 457;" xml:space="preserve">
+<style type="text/css">
+	#gondola_1 {
+		-webkit-transform-origin: 418px 194px;
+		-ms-transform-origin: 418px 194px;
+		transform-origin: 418px 194px;
+		-webkit-animation: wobble-hor-top 2.5s infinite 0.5s both;
+		animation: wobble-hor-top 2.5s infinite 0.5s both;
+	}
+	#gondola_2 {
+		-webkit-transform-origin: 346px 234px;
+		-ms-transform-origin: 346px 234px;
+		transform-origin: 346px 234px;
+		-webkit-animation: wobble-hor-top 2s infinite both;
+		animation: wobble-hor-top 2s infinite both;
+	}
+	#gondola_3 {
+		-webkit-transform-origin: 276px 274px;
+		-ms-transform-origin: 276px 274px;
+		transform-origin: 276px 274px;
+		-webkit-animation: wobble-hor-top 3s infinite both;
+		animation: wobble-hor-top 3s infinite both;
+	}
+	@-webkit-keyframes wobble-hor-top {
+		0%, 100% { -webkit-transform: rotate(0deg); }
+		15% { -webkit-transform: rotate(8deg); }
+		30% { -webkit-transform: rotate(-8deg); }
+		45% { -webkit-transform: rotate(4.2deg); }
+		60% { -webkit-transform: rotate(-3.6deg); }
+		75% { -webkit-transform: rotate(1.8deg); }
+	}
+	@keyframes wobble-hor-top {
+		0%, 100% { transform: rotate(0deg); }
+		15% { transform: rotate(8deg); }
+		30% { transform: rotate(-8deg); }
+		45% { transform: rotate(4.2deg); }
+		60% { transform: rotate(-3.6deg); }
+		75% { transform: rotate(1.8deg); }
+	}
+
+	#firework_g {
+		-webkit-transform-origin: 198px 332px;
+		-ms-transform-origin: 198px 332px;
+		transform-origin: 198px 332px;
+		-webkit-animation: pulsate_firework 5s ease-in-out infinite both;
+		animation: pulsate_firework 5s ease-in-out infinite both;
+	}
+	@-webkit-keyframes pulsate_firework {
+		0% { -webkit-transform: scale(1);}
+		50% { -webkit-transform: scale(1.2); }
+		100% { -webkit-transform: scale(1); }
+	}
+	@keyframes pulsate_firework {
+		0% { transform: scale(1);}
+		50% { transform: scale(1.2); }
+		100% { transform: scale(1); }
+	}
+
+	#firework_1 {
+		-webkit-transform-origin: 205px 60px;
+		-ms-transform-origin: 205px 60px;
+		transform-origin: 205px 60px;
+		-webkit-animation: firework 2s ease-out infinite both;
+		animation: firework 2s ease-out infinite both;
+	}
+	#firework_2 {
+		-webkit-transform-origin: 63px 250px;
+		-ms-transform-origin: 63px 250px;
+		transform-origin: 63px 250px;
+		-webkit-animation: firework 2.5s ease-out 0.5s infinite both;
+		animation: firework 2.5s ease-out 0.5s infinite both;
+	}
+	#firework_3 {
+		-webkit-transform-origin: 412.5px 397.5px;
+		-ms-transform-origin: 412.5px 397.5px;
+		transform-origin: 412.5px 397.5px;
+		-webkit-animation: firework 2s ease-out infinite both;
+		animation: firework 2s ease-out infinite both;
+	}
+	#firework_4 {
+		-webkit-transform-origin: 327px 132px;
+		-ms-transform-origin: 327px 132px;
+		transform-origin: 327px 132px;
+		-webkit-animation: firework 2s ease-out 0.5s infinite both;
+		animation: firework 2s ease-out 0.5s infinite both;
+	}
+
+	@-webkit-keyframes firework {
+		0% { -webkit-transform: scale(0.2); opacity: 0.8; }
+		80% { -webkit-transform: scale(1.2); opacity: 0; }
+		100% { -webkit-transform: scale(2.2); opacity: 0; }
+	}
+	@keyframes firework {
+		0% { transform: scale(0.2); opacity: 0.8; }
+		80% { transform: scale(1.2); opacity: 0; }
+		100% { transform: scale(2.2); opacity: 0; }
+	}
+
+	#lantern_1 {
+		-webkit-transform-origin: 178px 182px;
+		-ms-transform-origin: 178px 182px;
+		transform-origin: 178px 182px;
+		-webkit-animation: pulsate 8s ease-in-out infinite both;
+		animation: pulsate 8s ease-in-out infinite both;
+	}
+	#lantern_2 {
+		-webkit-transform-origin: 60px 75.5px;
+		-ms-transform-origin: 60px 75.5px;
+		transform-origin: 60px 75.5px;
+		-webkit-animation: pulsate 6s ease-in-out infinite both;
+		animation: pulsate 6s ease-in-out infinite both;
+	}
+
+	@-webkit-keyframes pulsate {
+		0% { -webkit-transform: scale(0.9) -webkit-translate(0, 0);}
+		50% { -webkit-transform: scale(1.1) -webkit-translate(0, -10px); }
+		100% { -webkit-transform: scale(0.9) -webkit-translate(0, 0); }
+	}
+	@keyframes pulsate {
+		0% { transform: scale(0.9) translate(0, 0);}
+		50% { transform: scale(1.1) translate(0, -10px); }
+		100% { transform: scale(0.9) translate(0, 0);}
+	}
+
+	#lantern_3{
+		-webkit-transform-origin: 426.5px 67.5px;
+		-ms-transform-origin: 426.5px 67.5px;
+		transform-origin: 426.5px 67.5px;
+		-webkit-animation: pulsate_alt 8s ease-in-out infinite both;
+		animation: pulsate_alt 8s ease-in-out infinite both;
+	}
+	@-webkit-keyframes pulsate_alt {
+		0% { -webkit-transform: scale(1) -webkit-translate(0, 0);}
+		50% { -webkit-transform: scale(0.8) -webkit-translate(0, -15px); }
+		100% { -webkit-transform: scale(1) -webkit-translate(0, 0); }
+	}
+	@keyframes pulsate_alt {
+		0% { transform: scale(1) translate(0, 0);}
+		50% { transform: scale(0.8) translate(0, -15px); }
+		100% { transform: scale(1) translate(0, 0);}
+	}
+</style>
+    <path class="cover-icons" id="firework_1" d="M180,59h7.7v2H180V59z M186.7,77l5.4-5.4l1.4,1.4l-5.4,5.4L186.7,77z M204,77.3h2V85h-2V77.3z M216.6,72.9
+	l1.4-1.4l5.4,5.4l-1.4,1.4L216.6,72.9z M222.3,59h7.7v2h-7.7V59z M216.5,47l5.4-5.4l1.4,1.4l-5.4,5.4L216.5,47z M204,35h2v7.7h-2V35
+	z M186.6,43.1l1.4-1.4l5.4,5.4l-1.4,1.4L186.6,43.1z M180,59h7.7v2H180V59z M186.7,77l5.4-5.4l1.4,1.4l-5.4,5.4L186.7,77z M204,77.3
+	h2V85h-2V77.3z M216.6,72.9l1.4-1.4l5.4,5.4l-1.4,1.4L216.6,72.9z M222.3,59h7.7v2h-7.7V59z M216.5,47l5.4-5.4l1.4,1.4l-5.4,5.4
+	L216.5,47z M204,35h2v7.7h-2V35z M186.6,43.1l1.4-1.4l5.4,5.4l-1.4,1.4L186.6,43.1z"></path>
+    <path class="cover-icons" id="firework_2" d="M38,249h7.7v2H38V249z M44.7,267l5.4-5.4l1.4,1.4l-5.4,5.4L44.7,267z M62,267.3h2v7.7h-2V267.3z
+	 M74.6,262.9l1.4-1.4l5.4,5.4l-1.4,1.4L74.6,262.9z M80.3,249H88v2h-7.7V249z M74.5,237l5.4-5.4l1.4,1.4l-5.4,5.4L74.5,237z M62,225
+	h2v7.7h-2V225z M44.6,233.1l1.4-1.4l5.4,5.4l-1.4,1.4L44.6,233.1z M38,249h7.7v2H38V249z M44.7,267l5.4-5.4l1.4,1.4l-5.4,5.4
+	L44.7,267z M62,267.3h2v7.7h-2V267.3z M74.6,262.9l1.4-1.4l5.4,5.4l-1.4,1.4L74.6,262.9z M80.3,249H88v2h-7.7V249z M74.5,237
+	l5.4-5.4l1.4,1.4l-5.4,5.4L74.5,237z M62,225h2v7.7h-2V225z M44.6,233.1l1.4-1.4l5.4,5.4l-1.4,1.4L44.6,233.1z"></path>
+    <path class="cover-icons" id="firework_3" d="M399.6,367.7l0.9-0.4l2.3,5.5l-0.9,0.4L399.6,367.7z M387.8,374.2l1.4-1.4l10.6,10.6l-1.4,1.4L387.8,374.2z
+	 M436.7,386.9l5.5-2.3l0.4,0.9l-5.5,2.3L436.7,386.9z M425.2,383.4l10.6-10.6l1.4,1.4l-10.6,10.6L425.2,383.4z M404.2,379.5
+	c0.8-0.8,2-0.8,2.8,0s0.8,2,0,2.8s-2,0.8-2.8,0C403.4,381.5,403.4,380.3,404.2,379.5z M394.5,403c0.8-0.8,2-0.8,2.8,0s0.8,2,0,2.8
+	s-2,0.8-2.8,0S393.7,403.8,394.5,403z M427.7,389.2c0.8-0.8,2-0.8,2.8,0s0.8,2,0,2.8s-2,0.8-2.8,0
+	C426.9,391.2,426.9,390,427.7,389.2z M395.9,388.6c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S394.8,388.6,395.9,388.6z M382.3,385.5
+	l0.4-0.9l5.5,2.3l-0.4,0.9L382.3,385.5z M419.4,378.9c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S418.3,378.9,419.4,378.9z M429.1,402.4
+	c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S428,402.4,429.1,402.4z M422.2,372.8l2.3-5.5l0.9,0.4l-2.3,5.5L422.2,372.8z M411.5,365h2
+	v12h-2V365z M418,412.7c0.8-0.8,2-0.8,2.8,0s0.8,2,0,2.8s-2,0.8-2.8,0S417.2,413.4,418,412.7z M425.2,411.6l1.4-1.4l10.6,10.6
+	l-1.4,1.4L425.2,411.6z M380,396.5h12v2h-12V396.5z M422.2,422.1l0.9-0.4l2.3,5.5l-0.9,0.4L422.2,422.1z M436.8,408.1l0.4-0.9
+	l5.5,2.3l-0.4,0.9L436.8,408.1z M433,396.5h12v2h-12V396.5z M427.5,398.5v-2h-12.6l6.8-6.8l-1.4-1.4l-6.8,6.8v-12.6h-2v12.6
+	l-6.8-6.8l-1.4,1.4l6.8,6.8h-12.6v2h12.6l-6.8,6.8l1.4,1.4l6.8-6.8v12.6h2v-12.6l6.8,6.8l1.4-1.4l-6.8-6.8H427.5z M382.3,409.5
+	l5.5-2.3l0.4,0.9l-5.5,2.3L382.3,409.5z M387.8,420.8l10.6-10.6l1.4,1.4l-10.6,10.6L387.8,420.8z M411.5,418h2v12h-2V418z
+	 M399.6,427.3l2.3-5.5l0.9,0.4l-2.3,5.5L399.6,427.3z M405.6,412.1c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S404.5,412.1,405.6,412.1z
+	"></path>
+    <path class="cover-icons" id="firework_4" d="M327,87c1.5,0,2.8,1.3,2.8,2.8s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S325.5,87,327,87z M303.5,105.7
+	c1.5,0,2.8,1.3,2.8,2.8s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S302,105.7,303.5,105.7z M350.5,105.7c1.5,0,2.8,1.3,2.8,2.8
+	s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S349,105.7,350.5,105.7z M327,171.4c1.5,0,2.8,1.3,2.8,2.8s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8
+	S325.5,171.4,327,171.4z M284.8,129.2c1.5,0,2.8,1.3,2.8,2.8s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S283.3,129.2,284.8,129.2z
+	 M369.2,129.2c1.5,0,2.8,1.3,2.8,2.8s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S367.7,129.2,369.2,129.2z M303.5,152.7
+	c1.5,0,2.8,1.3,2.8,2.8s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S302,152.7,303.5,152.7z M350.5,152.7c1.5,0,2.8,1.3,2.8,2.8
+	s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S349,152.7,350.5,152.7z M326,100.9h2V123h-2V100.9z M326,141h2v22.2h-2V141z M336,131h22.2v2
+	H336V131z M295.9,131H318v2h-22.1V131z M333.7,119.2l13.8-24l0.9,0.5l-13.8,24L333.7,119.2z M305.4,168.3l13.8-24l0.9,0.5l-13.8,24
+	L305.4,168.3z M339.3,124.3l24-13.9l0.5,0.9l-24,13.9L339.3,124.3z M290.2,152.7l24-13.9l0.5,0.9l-24,13.9L290.2,152.7z
+	 M339.4,139.8l0.5-0.9l24,13.9l-0.5,0.9L339.4,139.8z M290.2,111.4l0.5-0.9l24,13.8l-0.5,0.9L290.2,111.4z M333.8,144.8l0.9-0.5
+	l13.9,24l-0.9,0.5L333.8,144.8z M305.4,95.7l0.9-0.5l13.9,24l-0.9,0.5L305.4,95.7z"></path>
+    <g>
+        <polygon class="cover-icons" points="500,158.7 499,157 230.3,312.1 231.3,313.8 	"></polygon>
+        <g class="cover-icons" id="gondola_1">
+            <path d="M446.5,220.6l-0.3-0.3h-6.5c-0.5-2.1-2.7-3.4-4.9-2.9c-0.4,0.1-0.8,0.3-1.1,0.5c-3.5-1-5.2-3.5-5.2-7.5
+			c0.2-3.3,1-6.4,2.4-9.4c0.3,0.1,0.5,0.1,0.8,0.1c2.2,0,4-1.8,4-4s-1.8-4-4-4s-4,1.8-4,4c0,1.2,0.6,2.3,1.4,3
+			c-1.5,3.2-2.4,6.7-2.6,10.3c0,4.5,2,7.7,5.8,9.1c-0.1,0.3-0.2,0.5-0.3,0.8h-6.5l-0.3,0.3c-0.4,0.4-10.3,10-10.3,21
+			c0,10.5,9.4,20.5,9.8,21l0.3,0.3h21.8l0.3-0.3c0.4-0.4,9.8-10.4,9.8-21C456.8,230.6,446.9,221,446.5,220.6z M431.5,195.1
+			c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S430.4,195.1,431.5,195.1z M445.8,260.8L445.8,260.8h-20.1c-1.6-1.7-9-10.5-9-19.3
+			c0-9.2,7.8-17.7,9.4-19.3h19.2c1.6,1.6,9.4,10.1,9.4,19.3C454.8,250.3,447.3,259.1,445.8,260.8z"></path>
+            <path d="M443.3,226.1h-15l-0.1,0.2c-2.2,2.2-7.2,8.2-7.2,14.7v0.5h29.5V241C450.5,234.5,445.5,228.5,443.3,226.1L443.3,226.1z
+			 M422,240.5c0.2-6,5-11.6,6.6-13.4h14.2c1.7,1.9,6.4,7.5,6.7,13.4H422z"></path>
+            <path d="M447.2,239.2l1-0.2c-0.7-3.1-2.1-6-4-8.5l-0.8,0.6C445.2,233.4,446.5,236.2,447.2,239.2z"></path>
+            <path d="M441.9,229.2c0.3,0.3,0.7,0.8,1,1.2l0.8-0.6c-0.4-0.5-0.8-0.9-1.1-1.3L441.9,229.2z"></path>
+            <path d="M431.2,245.6l-3.7,4.4l8.2,8.3l8.3-8.3l-3.7-4.4L431.2,245.6L431.2,245.6z M437.9,250.5l-2.1,5.7l-2.1-5.7L437.9,250.5
+			L437.9,250.5z M433.9,249.5l1.9-2.6l1.9,2.6H433.9z M436.8,246.6h2.6l-0.9,2.4L436.8,246.6z M433,249l-0.9-2.4h2.6L433,249z
+			 M432.1,249.5h-2.9l2-2.4L432.1,249.5z M432.5,250.5l1.9,5.2l-5.1-5.2H432.5z M438.9,250.5h3.1l-5.1,5.1L438.9,250.5z
+			 M439.3,249.5l0.9-2.4l2,2.4H439.3z"></path>
+        </g>
+        <g class="cover-icons" id="gondola_2">
+            <path d="M377,260.8l-0.3-0.3h-6.5c-0.5-2.1-2.7-3.4-4.9-2.9c-0.4,0.1-0.8,0.3-1.1,0.5c-3.5-1-5.2-3.5-5.2-7.5
+			c0.2-3.3,1-6.4,2.4-9.4c0.3,0.1,0.5,0.1,0.8,0.1c2.2,0,4-1.8,4-4s-1.8-4-4-4s-4,1.8-4,4c0,1.2,0.6,2.3,1.4,3
+			c-1.5,3.2-2.4,6.7-2.6,10.3c0,4.5,2,7.7,5.8,9.1c-0.1,0.3-0.2,0.5-0.3,0.8H356l-0.3,0.3c-0.4,0.4-10.3,10-10.3,21
+			c0,10.5,9.4,20.5,9.8,21l0.3,0.3h21.8l0.3-0.3c0.4-0.4,9.8-10.4,9.8-21C387.4,270.8,377.5,261.2,377,260.8z M362.1,235.3
+			c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S361,235.3,362.1,235.3z M376.4,301.1L376.4,301.1h-20.1c-1.6-1.7-9-10.5-9-19.3
+			c0-9.2,7.8-17.7,9.4-19.3h19.2c1.6,1.6,9.4,10.1,9.4,19.3C385.4,290.6,377.9,299.3,376.4,301.1z"></path>
+            <path d="M373.8,266.3h-15l-0.1,0.2c-2.1,2.3-7.1,8.3-7.1,14.8v0.5h29.5v-0.5c0-6.5-5-12.5-7.1-14.8L373.8,266.3z M352.6,280.7
+			c0.2-6,5-11.6,6.6-13.4h14.2c1.7,1.9,6.4,7.5,6.7,13.4H352.6z"></path>
+            <path d="M377.8,279.4l1-0.2c-0.7-3.1-2.1-6-4-8.5l-0.8,0.6C375.8,273.7,377.1,276.4,377.8,279.4z"></path>
+            <path d="M372.5,269.5c0.3,0.3,0.7,0.8,1,1.2l0.8-0.6c-0.4-0.5-0.8-0.9-1.1-1.3L372.5,269.5z"></path>
+            <path d="M361.8,285.8l-3.7,4.4l8.2,8.3l8.2-8.3l-3.7-4.4H361.8z M368.5,290.7l-2.1,5.7l-2.1-5.7H368.5z M364.5,289.7l1.9-2.6
+			l1.9,2.6H364.5z M367.4,286.8h2.6l-0.9,2.4L367.4,286.8z M363.6,289.2l-0.9-2.4h2.6L363.6,289.2z M362.7,289.8h-2.9l2-2.4
+			L362.7,289.8z M363.1,290.8l1.9,5.1l-5.1-5.1H363.1z M369.5,290.8h3.1l-5.1,5.1L369.5,290.8z M369.9,289.8l0.9-2.4l2,2.4H369.9z"></path>
+        </g>
+        <g class="cover-icons" id="gondola_3">
+            <path d="M307.5,300.7l-0.3-0.3h-6.5c-0.5-2.1-2.7-3.4-4.9-2.9c-0.4,0.1-0.8,0.3-1.1,0.5c-3.5-1-5.3-3.5-5.3-7.5
+			c0.2-3.3,1-6.4,2.4-9.4c0.3,0.1,0.5,0.1,0.8,0.1c2.2,0,4-1.8,4-4s-1.8-4-4-4s-4,1.8-4,4c0,1.2,0.6,2.3,1.4,3
+			c-1.5,3.2-2.4,6.7-2.6,10.3c0,4.5,2,7.7,5.8,9.1c-0.1,0.3-0.2,0.5-0.3,0.8h-6.5l-0.3,0.3c-0.4,0.4-10.3,10-10.3,21
+			c0,10.5,9.4,20.5,9.8,21l0.3,0.3h21.8l0.3-0.3c0.4-0.4,9.8-10.4,9.8-21C317.9,310.7,308,301.1,307.5,300.7z M292.6,275.2
+			c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S291.5,275.2,292.6,275.2z M306.9,340.9L306.9,340.9h-20.1c-1.6-1.7-9-10.5-9-19.3
+			c0-9.2,7.8-17.7,9.4-19.3h19.2c1.6,1.6,9.4,10.1,9.4,19.3C315.9,330.4,308.4,339.2,306.9,340.9z"></path>
+            <path d="M304.3,306.1h-15l-0.1,0.2c-2.1,2.3-7.1,8.3-7.1,14.8v0.5h29.5v-0.5c0-6.5-5-12.5-7.1-14.8L304.3,306.1z M283.1,320.6
+			c0.2-6,5-11.6,6.6-13.4h14.2c1.7,1.9,6.4,7.5,6.7,13.4H283.1z"></path>
+            <path d="M308.3,319.2l1-0.2c-0.7-3.1-2.1-6-4-8.5l-0.8,0.6C306.3,313.5,307.6,316.3,308.3,319.2z"></path>
+            <path d="M303,309.3c0.3,0.4,0.7,0.8,1,1.2l0.8-0.6c-0.4-0.5-0.8-0.9-1.1-1.3L303,309.3z"></path>
+            <path d="M292.3,325.7l-3.7,4.4l8.2,8.3l8.2-8.3l-3.7-4.4H292.3z M299,330.6l-2.1,5.7l-2.1-5.7H299z M295,329.6l1.9-2.6l1.9,2.6
+			H295z M297.9,326.7h2.6l-0.9,2.4L297.9,326.7z M294.1,329.1l-0.9-2.4h2.6L294.1,329.1z M293.2,329.6h-2.9l2-2.4L293.2,329.6z
+			 M293.6,330.6l1.9,5.1l-5.1-5.1H293.6z M300,330.6h3.1l-5.1,5.1L300,330.6z M300.4,329.6l0.9-2.4l2,2.4H300.4z"></path>
+        </g>
+        <path class="cover-icons" id="firework_g" d="M197,293.9h2v30.4h-2V293.9z M197,339.6h2V370h-2V339.6z M217,331.4h15.1v1H217V331.4z M164,331.4h15.1v1
+		H164V331.4z M191,334.9l-26.2,15.2l1,1.7l26.2-15.2L191,334.9z M230.3,312.1l-26.2,15.3l1,1.7l26.2-15.3L230.3,312.1z M204.1,336.6
+		l26.2,15.2l1-1.7l-26.2-15.2L204.1,336.6z M192,327.3L165.8,312l-1,1.8L191,329L192,327.3z M207.9,315.7l7.6-13.2l-0.9-0.5
+		l-7.5,13.2L207.9,315.7z M188.2,348.2l-7.6,13.2l0.9,0.5l7.5-13.2L188.2,348.2z M189,315.2l-7.5-13.2l-0.9,0.5l7.6,13.2L189,315.2z
+		 M207.1,348.7l7.5,13.2l0.9-0.5l-7.6-13.2L207.1,348.7z M226.5,337.7c1,0,1.9,0.9,1.9,1.9s-0.9,1.9-1.9,1.9s-1.9-0.9-1.9-1.9
+		S225.5,337.7,226.5,337.7z M205.7,301.4c1,0,1.9,0.9,1.9,1.9s-0.9,1.9-1.9,1.9s-1.9-0.9-1.9-1.9S204.7,301.4,205.7,301.4z
+		 M169.6,322.4c1,0,1.9,0.9,1.9,1.9s-0.9,1.9-1.9,1.9s-1.9-0.9-1.9-1.9S168.6,322.4,169.6,322.4z M190.4,358.7c1,0,1.9,0.9,1.9,1.9
+		s-0.9,1.9-1.9,1.9s-1.9-0.9-1.9-1.9S189.4,358.7,190.4,358.7z M227.4,325.9c0.9-0.5,1.2-1.7,0.7-2.6s-1.7-1.2-2.6-0.7l0,0
+		c-0.9,0.5-1.2,1.7-0.7,2.6C225.4,326.1,226.5,326.4,227.4,325.9L227.4,325.9z M191.4,305c0.9-0.5,1.2-1.7,0.7-2.6s-1.7-1.2-2.6-0.7
+		l0,0c-0.9,0.5-1.2,1.7-0.7,2.6C189.3,305.2,190.5,305.5,191.4,305L191.4,305z M176.3,312.6c0.9,0.5,2.1,0.2,2.6-0.7l0,0
+		c0.5-0.9,0.2-2.1-0.7-2.6s-2.1-0.2-2.6,0.7l0,0C175.1,310.9,175.4,312.1,176.3,312.6z M168.7,338c-0.9,0.5-1.2,1.7-0.7,2.6
+		s1.7,1.2,2.6,0.7l0,0c0.9-0.5,1.2-1.7,0.7-2.6C170.7,337.8,169.6,337.5,168.7,338L168.7,338z M178.2,351.2
+		c-0.9-0.5-2.1-0.2-2.6,0.7l0,0c-0.5,0.9-0.2,2.1,0.7,2.6s2.1,0.2,2.6-0.7l0,0C179.4,352.9,179.1,351.8,178.2,351.2z M204.7,358.9
+		c-0.9,0.5-1.2,1.7-0.7,2.6s1.7,1.2,2.6,0.7l0,0c0.9-0.5,1.2-1.7,0.7-2.6S205.6,358.4,204.7,358.9L204.7,358.9z M219.8,351.2
+		c-0.9-0.5-2.1-0.2-2.6,0.7l0,0c-0.5,0.9-0.2,2.1,0.7,2.6s2.1,0.2,2.6-0.7l0,0C221,352.9,220.7,351.8,219.8,351.2z M217.9,312.6
+		c0.9,0.5,2.1,0.2,2.6-0.7l0,0c0.5-0.9,0.2-2.1-0.7-2.6s-2.1-0.2-2.6,0.7l0,0C216.7,310.9,217,312.1,217.9,312.6z">
+			<animate attributeName="fill" begin="1s;firework_light_1.end+2s" calcMode="ease-in-out" dur="1.5s" fill="remove" id="firework_light_1" restart="always" values="#fff;#FFF59D;#fff"></animate>
+		</path>
+    </g>
+    <path class="cover-icons" id="lantern_1" d="M182.2,153.9l-20.5,7.5l-8,19.3l24.8,29.3l11.5-2.5l10.4-5.5l0.2-38.4L182.2,153.9z M183.6,206.3L163.7,178
+	l3.8-15.9l-0.2,15.4L183.6,206.3z M194.3,202.4l-6-32.5l-10.1-11.7l13.1,9.7L194.3,202.4z">
+        <animate attributeName="fill" begin="1s;lantern_light_1.end+2s" calcMode="ease-in-out" dur="3s" fill="remove" id="lantern_light_1" restart="always" values="#fff;#FFF59D;#fff"></animate>
+    </path>
+    <g class="cover-icons" id="lantern_2">
+        <path d="M49,98.1L39.3,93l-0.2-33.7l16.8-8.7l18.3,6.7l7.2,17.4l-21.8,25.7L49,98.1z M41.4,91.8l8.3,4.4l9.2,2l20.3-23.9l-6.5-15.5
+		l-16.5-6l-14.9,7.7L41.4,91.8z	">
+            <animate attributeName="fill" begin="1.5s;lantern_light_2.end+3s" calcMode="ease-in-out" dur="2.5s" fill="remove" id="lantern_light_2" restart="always" values="#fff;#FFF59D;#fff"></animate>
+        </path>
+        <polygon points="45.6,92.9 50.8,65.3 59.3,55.4 48.2,63.6 	">
+            <animate attributeName="fill" begin="1.5s;lantern_light_2.end+3s" calcMode="ease-in-out" dur="2.5s" fill="remove" restart="always" values="#fff;#FFF59D;#fff"></animate>
+        </polygon>
+        <polygon points="54.8,96.3 68.6,71.8 68.5,58.8 71.7,72.2 	">
+            <animate attributeName="fill" begin="1.5s;lantern_light_2.end+3s" calcMode="ease-in-out" dur="2.5s" fill="remove" restart="always" values="#fff;#FFF59D;#fff"></animate>
+        </polygon>
+    </g>
+    <g class="cover-icons" id="lantern_3">
+        <path d="M435.2,85l-8.3,1.8l-17-20l5.7-13.6l14.3-5.2l13,6.8L442.7,81L435.2,85z M427.6,85l7.1-1.5l6.5-3.4l0.1-24.4l-11.6-6
+		l-12.9,4.7l-5.1,12L427.6,85z	">
+            <animate attributeName="fill" begin="2s;lantern_light_3.end+1.5s" calcMode="ease-in-out" dur="3s" fill="remove" id="lantern_light_3" restart="always" values="#fff;#FFF59D;#fff"></animate>
+        </path>
+        <polygon points="430.7,83.6 420,64.5 420.1,54.4 417.6,64.8 	">
+            <animate attributeName="fill" begin="2s;lantern_light_3.end+1.5s" calcMode="ease-in-out" dur="3s" fill="remove" id="lantern_light_3" restart="always" values="#fff;#FFF59D;#fff"></animate>
+        </polygon>
+        <polygon points="437.8,81 433.8,59.5 427.2,51.8 435.8,58.2 	">
+            <animate attributeName="fill" begin="2s;lantern_light_3.end+1.5s" calcMode="ease-in-out" dur="3s" fill="remove" id="lantern_light_3" restart="always" values="#fff;#FFF59D;#fff"></animate>
+        </polygon>
+    </g>
+</svg>

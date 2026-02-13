@@ -1,0 +1,18 @@
+<section id="blogs">
+  <div class="blog-card">
+    <h3 class="section-title">{{ site.data.i18n.section.blog }}</h3>
+
+    <div class="blog-list">
+      {% for post in site.posts %}
+      <div class="blog{% if forloop.index > 5 %} more{% endif %}">
+        <span class="blog-date">{{ post.date | date: "%b %d %Y" }}</span>
+        <a href="{{ post.url }}" class="blog-title">{{ post.title }}</a>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if site.posts.size >= 5 %}
+    <button class="button-more blog-more">{{ site.data.i18n.helper.view_more }}</button>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,119 @@
+<svg version="1.1" id="cover-sky" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 415 367" style="enable-background:new 0 0 415 367;" xml:space="preserve">
+	<style type="text/css">
+		#cloud_1 {
+			-webkit-animation: swinging_alt 8s ease-in-out infinite both;
+			animation: swinging_alt 8s ease-in-out infinite both;
+		}
+		#cloud_2 {
+			-webkit-animation: swinging_alt 6s ease-in-out infinite both;
+			animation: swinging_alt 6s ease-in-out infinite both;
+		}
+		#cloud_3 {
+			-webkit-animation: swinging_alt 4s ease-in-out infinite both;
+			animation: swinging_alt 4s ease-in-out infinite both;
+		}
+		#cloud_4 {
+			-webkit-animation: swinging 3s ease-in-out infinite both;
+			animation: swinging 3s ease-in-out infinite both;
+		}
+		#cloud_5 {
+			-webkit-animation: swinging 4s ease-in-out infinite both;
+			animation: swinging 4s ease-in-out infinite both;
+		}
+		@-webkit-keyframes swinging {
+			0% { -webkit-transform: translateX(0); }
+			50% { -webkit-transform: translateX(-50px); }
+			100% { -webkit-transform: translateX(0); }
+		}
+		@keyframes swinging {
+			0%{ transform: translateX(0); }
+			50% { transform: translateX(-20px); }
+			100% { transform: translateX(0); }
+		}
+		@-webkit-keyframes swinging_alt {
+			0% { -webkit-transform: translateX(0); }
+			50% { -webkit-transform: translateX(50px); }
+			100% { -webkit-transform: translateX(0px); }
+		}
+		@keyframes swinging_alt {
+			0% { transform: translateX(0); }
+			50% { transform: translateX(50px); }
+			100% { transform: translateX(0px); }
+		}
+
+		#ballon_m {
+			-webkit-transform-origin: 50% 50%;
+			-ms-transform-origin: 50% 50%;
+			transform-origin: 50% 50%;
+			-webkit-animation: pulsate 8s ease-in-out infinite both;
+			animation: pulsate 8s ease-in-out infinite both;
+		}
+		#ballon_s {
+			-webkit-transform-origin: 50% 50%;
+			-ms-transform-origin: 50% 50%;
+			transform-origin: 50% 50%;
+			-webkit-animation: pulsate_alt 8s ease-in-out infinite both;
+			animation: pulsate_alt 8s ease-in-out infinite both;
+		}
+		@-webkit-keyframes pulsate {
+			0% { -webkit-transform: scale(1) -webkit-translate(0, 0);}
+			50% { -webkit-transform: scale(1.2) -webkit-translate(0, -10px); }
+			100% { -webkit-transform: scale(1) -webkit-translate(0, 0); }
+		}
+		@keyframes pulsate {
+			0% { transform: scale(1) translate(0, 0);}
+			50% { transform: scale(1.2) translate(0, -10px); }
+			100% { transform: scale(1) translate(0, 0);}
+		}
+		@-webkit-keyframes pulsate_alt {
+			0% { -webkit-transform: scale(1) -webkit-translate(0, 0);}
+			50% { -webkit-transform: scale(0.8) -webkit-translate(0, -15px); }
+			100% { -webkit-transform: scale(1) -webkit-translate(0, 0); }
+		}
+		@keyframes pulsate_alt {
+			0% { transform: scale(1) translate(0, 0);}
+			50% { transform: scale(0.8) translate(0, -15px); }
+			100% { transform: scale(1) translate(0, 0);}
+		}
+	</style>
+	<path class="cover-icons" id="ballon_m" d="M318,152.1c-10.7,3.2-18.1,13.1-18,24.3c0,12.3,6.9,20.8,12.4,27.6c3,3.7,5.6,6.9,6.3,9.8l0.2,0.8h2.5l0.4,2.3
+		H318v7.1c0,2.2,1.8,3.9,3.9,4l0,0h6.9c2.2,0,3.9-1.8,3.9-4v-7h-3.8l0.4-2.3h2.6l0.2-0.8c0.7-2.9,3.3-6.1,6.3-9.8
+		c5.8-6.9,12.6-15.4,12.6-27.7c0.1-14-11.3-25.3-25.4-25.4C323.1,151,320.5,151.4,318,152.1L318,152.1z M325.8,153
+		c2.2,0,4.4,0.4,6.5,1h0.1c1.5,2.8,5.5,11.6,5.5,24.7c0,13.1-7.9,29.7-10,33.9h-2.1c2.8-10.4,4.2-21,4.2-31.8
+		C330,169.8,328.3,159.6,325.8,153L325.8,153z M327.9,214.6l-0.4,2.3h-4l-0.5-2.3H327.9z M318.7,154c2.1-0.6,4.2-1,6.4-1
+		c-2.5,6.6-4.1,16.8-4.1,27.8c0,10.7,1.4,21.4,4.2,31.8h-2c-2.1-4.2-10.1-20.7-10.1-33.8C313.1,165.7,317.3,156.8,318.7,154z
+		M320.4,212.6c-1-3.1-3.6-6.3-6.5-9.9c-5.2-6.6-11.9-14.8-11.9-26.3c0-10.2,6.6-19.2,16.4-22.3c-5.9,6.9-9.1,15.6-9.1,24.6
+		c0,14.5,10.7,29.9,13.7,33.9H320.4z M331.3,218.5v3.2h-11.6v-3.2H331.3z M328.1,212.6c3-4.1,13.7-19.4,13.7-33.8
+		c0-9-3.2-17.7-9-24.5c9.7,3.1,16.2,12,16.1,22.1c0,11.5-6.6,19.8-11.9,26.3c-2.9,3.6-5.4,6.8-6.5,9.9H328.1z"/>
+	<path class="cover-icons" id="ballon_s" d="M158,116.1c-10.7,3.2-18.1,13.1-18,24.3c0,12.3,6.9,20.8,12.4,27.6c3,3.7,5.6,6.9,6.3,9.8l0.2,0.8h2.5l0.4,2.3
+		H158v7.1c0,2.2,1.8,3.9,3.9,4l0,0h6.9c2.2,0,3.9-1.8,3.9-4v-7h-3.8l0.4-2.3h2.6l0.2-0.8c0.7-2.9,3.3-6.1,6.3-9.8
+		c5.8-6.9,12.6-15.4,12.6-27.7c0.1-14-11.3-25.3-25.4-25.4C163.1,115,160.5,115.4,158,116.1L158,116.1z M165.8,117
+		c2.2,0,4.4,0.4,6.5,1h0.1c1.5,2.8,5.5,11.6,5.5,24.7c0,13.1-7.9,29.7-10,33.9h-2.1c2.8-10.4,4.2-21,4.2-31.8
+		C170,133.8,168.3,123.6,165.8,117L165.8,117z M167.9,178.6l-0.4,2.3h-4l-0.5-2.3H167.9z M158.7,118c2.1-0.6,4.2-1,6.4-1
+		c-2.5,6.6-4.1,16.8-4.1,27.8c0,10.7,1.4,21.4,4.2,31.8h-2c-2.1-4.2-10.1-20.7-10.1-33.8C153.1,129.7,157.3,120.8,158.7,118z
+		M160.4,176.6c-1-3.1-3.6-6.3-6.5-9.9c-5.2-6.6-11.9-14.8-11.9-26.3c0-10.2,6.6-19.2,16.4-22.3c-5.9,6.9-9.1,15.6-9.1,24.6
+		c0,14.5,10.7,29.9,13.7,33.9H160.4z M171.3,182.5v3.2h-11.6v-3.2H171.3z M168.1,176.6c3-4.1,13.7-19.4,13.7-33.8
+		c0-9-3.2-17.7-9-24.5c9.7,3.1,16.2,12,16.1,22.1c0,11.5-6.6,19.8-11.9,26.3c-2.9,3.6-5.4,6.8-6.5,9.9H168.1z"/>
+	<path id="cloud_1" class="cover-icons" d="M81.6,76L81.6,76c-3.1,0-5.6-2.5-5.6-5.5c0-2.9,2.3-5.3,5.1-5.5v-0.1c0-3.4,2.6-6.3,6-6.8
+		c3.2-0.5,6.4,1.4,7.5,4.4c1.4-0.6,3-0.5,4.4,0.1c1.5,0.6,2.6,1.9,3,3.4c2.5,0.6,4.2,2.9,4,5.4c-0.2,2.6-2.5,4.6-5.1,4.6l0,0H81.6z
+		M81.6,65.9c-2.6,0-4.7,2-4.7,4.6s2.1,4.6,4.6,4.6h19.2l0,0c2.2,0,4-1.7,4.2-3.8s-1.3-4.1-3.5-4.4l-0.3-0.1l-0.1-0.3
+		c-0.3-1.3-1.3-2.5-2.6-3.1c-1.3-0.6-2.8-0.5-4,0.1L94,63.8l-0.2-0.6c-0.8-2.8-3.7-4.7-6.6-4.3c-3,0.4-5.2,2.9-5.2,5.9
+		c0,0.1,0,0.2,0,0.3s0,0.2,0,0.3v0.5H81.6z"/>
+	<path id="cloud_2" class="cover-icons" d="M47.5,235L47.5,235c-4.2,0-7.5-3.2-7.5-7c0-3.7,3.1-6.8,6.8-7v-0.2c0-4.3,3.5-8.1,8-8.7
+		c4.3-0.6,8.5,1.8,10,5.6c1.9-0.8,4-0.6,5.9,0.1c2,0.8,3.5,2.4,4,4.3c3.3,0.8,5.6,3.7,5.3,6.9c-0.3,3.3-3.3,5.9-6.8,5.9l0,0H47.5V235
+		z M47.5,222.1c-3.5,0-6.3,2.6-6.3,5.9s2.8,5.9,6.1,5.9h25.6l0,0c2.9,0,5.3-2.2,5.6-4.9s-1.7-5.2-4.7-5.6l-0.4-0.1l-0.1-0.4
+		c-0.4-1.7-1.7-3.2-3.5-4c-1.7-0.8-3.7-0.6-5.3,0.1l-0.5,0.4l-0.3-0.8c-1.1-3.6-4.9-6-8.8-5.5c-4,0.5-6.9,3.7-6.9,7.6
+		c0,0.1,0,0.3,0,0.4c0,0.1,0,0.3,0,0.4v0.6C48,222.1,47.5,222.1,47.5,222.1z"/>
+	<path id="cloud_3" class="cover-icons" d="M223.3,288L223.3,288c-5.1,0-9.3-4.2-9.3-9.2c0-4.8,3.8-8.8,8.5-9.2v-0.2c0-5.7,4.3-10.5,10-11.3
+		c5.3-0.8,10.7,2.4,12.5,7.4c2.3-1,5-0.8,7.3,0.2c2.5,1,4.3,3.2,5,5.7c4.2,1,7,4.8,6.7,9c-0.3,4.3-4.2,7.7-8.5,7.7l0,0L223.3,288
+		L223.3,288z M223.3,271.1c-4.3,0-7.8,3.3-7.8,7.7s3.5,7.7,7.7,7.7h32l0,0c3.7,0,6.7-2.8,7-6.3c0.3-3.5-2.2-6.8-5.8-7.3l-0.5-0.2
+		l-0.2-0.5c-0.6-2.2-2.2-4.2-4.4-5.2s-4.7-0.8-6.7,0.2l-0.6,0.4l-0.3-1c-1.3-4.7-6.2-7.8-11-7.2c-5,0.7-8.7,4.8-8.7,9.8
+		c0,0.2,0,0.3,0,0.5c0,0.2,0,0.3,0,0.5v0.8L223.3,271.1L223.3,271.1z"/>
+	<path id="cloud_4" class="cover-icons" d="M262.6,104L262.6,104c-3.1,0-5.6-2.5-5.6-5.5c0-2.9,2.3-5.3,5.1-5.5v-0.1c0-3.4,2.6-6.3,6-6.8
+		c3.2-0.5,6.4,1.4,7.5,4.4c1.4-0.6,3-0.5,4.4,0.1c1.5,0.6,2.6,1.9,3,3.4c2.5,0.6,4.2,2.9,4,5.4c-0.2,2.6-2.5,4.6-5.1,4.6l0,0H262.6z"
+		/>
+	<path id="cloud_5" class="cover-icons" d="M131.5,352L131.5,352c-4.2,0-7.5-3.3-7.5-7.3c0-3.9,3.1-7.1,6.8-7.3v-0.2c0-4.5,3.5-8.4,8-9.1
+		c4.3-0.7,8.5,1.9,10,5.9c1.9-0.8,4-0.7,5.9,0.1c2,0.8,3.5,2.5,4,4.5c3.3,0.8,5.6,3.9,5.3,7.2c-0.3,3.5-3.3,6.1-6.8,6.1l0,0h-25.7
+		V352z"/>
+</svg>

@@ -1,0 +1,122 @@
+#events
+  @media screen and (min-width: $screen-sm)
+    padding-left: 60px
+    padding-right: 60px
+
+  .events-list
+    @extend .flexbox
+    justify-content: center
+
+    .event-empty
+      display: block
+      width: 100%
+      font-size: 20px
+      color: $warm-grey
+      text-align: center
+      margin: 30px auto 20px
+
+    .event-card
+      position: relative
+      width: 100%
+      background: #fff
+      box-shadow: 0 2px 4px 0 rgba($deep-grey, 0.5)
+      margin-top: 30px
+
+      @media screen and (min-width: $screen-sm)
+        margin: 30px 10px 0
+        width: calc(50% - 20px)
+
+      @media screen and (min-width: $screen-md)
+        width: calc(100%/3 - 20px)
+
+      &.ended
+        display: none
+
+      .event-photo
+        position: relative
+        overflow: hidden
+        height: 200px
+        background: $warm-grey url("../images/default_cover.svg") no-repeat center center
+        background-size: 150px 150px
+
+        img
+          width: 100%
+          position: absolute
+          +transform(translateX(-50%) translateY(-50%))
+          top: 50%
+          left: 50%
+
+      .event-info
+        position: relative
+        padding: 30px 20px
+
+        .event-date
+          color: #fff
+          font-size: 14px
+          font-weight: 300
+          text-align: center
+          line-height: 30px
+          letter-spacing: 2px
+          position: absolute
+          +size(150px, 30px)
+          border-radius: 100px
+          background-color: $red
+          box-shadow: 0 2px 4px 0 rgba($deep-grey, 0.5)
+          +transform(translateX(-50%))
+          top: -15px
+          left: 50%
+          margin: 0 auto
+
+          &.period
+            width: 180px
+
+        .event-title
+          color: $deep-grey
+          font-size: 16px
+          font-weight: 500
+
+          display: block
+          min-height: 45px
+          margin: 5px 0 20px
+
+          +transition(color, 0.3s)
+
+        a.event-title:hover
+          color: $red
+
+        .event-location, .event-time
+          font-size: 15px
+          color: $warm-grey
+
+          i, p
+            display: inline
+            padding-right: 5px
+
+          &.event-location
+            padding-top: 5px
+
+        .event-desc
+          font-size: 14px
+          line-height: 1.6
+          color: $dark-grey
+          margin: 20px 0 50px
+          overflow-wrap: break-word
+
+      .button-apply
+        color: $warm-grey
+        font-size: 15px
+        text-align: center
+        position: absolute
+        width: 100%
+        bottom: 0
+        border-top: 1px solid $warm-grey
+        padding: 15px 0
+        +transition(background, 0.3s)
+
+        &.active
+          color: $red
+          border-top: 1px solid $red
+
+          &:hover
+            color: #fff
+            background-color: $red

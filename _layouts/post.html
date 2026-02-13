@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div id="blog-info">
+  <nav class="navbar navbar-default navbar-custom">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
+          {% include cover/ruby_taiwan_logotype.svg %}
+        </a>
+      </div>
+
+      <div id="navbar-collapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="social-media">
+            <a href="{{ site.data.social_media.twitter }}" target="_blank">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="social-media">
+            <a href="{{ site.data.social_media.github }}" target="_blank">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="social-media">
+            <a href="{{ site.data.social_media.facebook }}" target="_blank">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  {% if page.cover_image %}
+  <div class="cover-image">
+    <img src="{{ page.cover_image }}" title="{{ page.title }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  <div class="content">
+    <span class="content-date">{{ page.date | date: "%b %d, %Y" }}</span>
+    <h1 class="content-title">{{ page.title }}</h1>
+    {% include icon_ruby.svg %}
+    {{ content }}
+  </div>
+</div>
+
+{% include footer.html %}

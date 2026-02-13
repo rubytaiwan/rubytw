@@ -1,0 +1,68 @@
+<section id="events">
+  <h3 class="section-title">{{ site.data.i18n.section.events }}</h3>
+
+  <div class="events-list">
+    {% assign active_events = site.data.events | where: "ended", false %}
+    {% assign ended_events = site.data.events | where: "ended", true %}
+
+    {% if site.data.events and site.data.events.size > 0 %}
+      {% if active_events.size == 0 %}
+      <span class="event-empty">{{ site.data.i18n.helper.empty_events }}</span>
+      {% endif %}
+
+      {% for event in site.data.events %}
+      <div class="event-card{% if event.ended %} ended{% endif %}">
+        <div class="event-photo">
+          {% if event.image %}
+          <img src="{{ event.image | relative_url }}" title="{{ event.title }}" alt="{{ event.title }}">
+          {% endif %}
+        </div>
+
+        <div class="event-info">
+          {% if event.date %}
+          <p class="event-date">{{ event.date }}</p>
+          {% endif %}
+
+          {% if event.url %}
+          <a href="{{ event.url }}" target="_blank" class="event-title">{{ event.title }}</a>
+          {% else %}
+          <p class="event-title">{{ event.title }}</p>
+          {% endif %}
+
+          {% if event.time %}
+          <div class="event-time">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <p>{{ event.time }}</p>
+          </div>
+          {% endif %}
+
+          {% if event.location %}
+          <div class="event-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p>{{ event.location }}</p>
+          </div>
+          {% endif %}
+
+          {% if event.description %}
+          <p class="event-desc">{{ event.description }}</p>
+          {% endif %}
+        </div>
+
+        {% if event.ended == false and event.url %}
+        <a href="{{ event.url }}" target="_blank" class="button-apply active">{{ site.data.i18n.helper.apply_now }}</a>
+        {% elsif event.ended %}
+        <div class="button-apply">{{ site.data.i18n.helper.ended_events }}</div>
+        {% else %}
+        <div class="button-apply">{{ site.data.i18n.helper.apply_none }}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    {% else %}
+      <span class="event-empty">{{ site.data.i18n.helper.empty_events }}</span>
+    {% endif %}
+  </div>
+
+  {% if ended_events.size > 0 %}
+  <button class="button-more events-more">{{ site.data.i18n.helper.order_events }}</button>
+  {% endif %}
+</section>
