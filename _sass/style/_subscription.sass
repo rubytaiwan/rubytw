@@ -1,3 +1,6 @@
+@use "sass:color"
+@use "../base" as *
+
 #subscription
   max-width: inherit
   padding-left: 30px
@@ -60,4 +63,4 @@
         border-radius: 0 4px 4px 0
 
       &:hover
-        background-color: darken($red, 7%)
+        background-color: color.adjust($red, $lightness: -7%)

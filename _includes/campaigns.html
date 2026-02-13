@@ -23,7 +23,7 @@
       <div class="carousel-inner" role="listbox">
         {% for photo in campaign.photo %}
         <div class="item{% if forloop.first %} active{% endif %}" id="{{ campaign.id }}-photo-{{ forloop.index0 }}">
-          <img src="{{ '/assets/img/campaigns/' | append: photo | relative_url }}" alt="{{ campaign.title }}" title="{{ campaign.title }}">
+          <img src="{{ '/assets/images/campaigns/' | append: photo | relative_url }}" alt="{{ campaign.title }}" title="{{ campaign.title }}">
         </div>
         {% endfor %}
       </div>
