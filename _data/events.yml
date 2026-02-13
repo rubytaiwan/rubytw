@@ -1,9 +1,22 @@
-# Active events
-# - title: "Event Name"
-#   date: "2024-01-01"
-#   time: "19:00 - 21:00"
-#   location: "Location"
-#   description: "Description"
-#   url: "https://..."
-#   image: "events/photo.jpg"
-#   ended: false
+---
+- title: Ruby Jam - 8月場
+  date: '2023-08-29'
+  location: 台北市大安區光復南路102號3樓
+  ended: true
+  time: 19:30 - 21:30
+  description: "\U0001F9CA講者：Cadie"
+  url: https://rubytaiwan.kktix.cc/events/rubyjam2308
+- title: RubyConf Taiwan 2023 CFP
+  date: '2023-10-20'
+  location: 徵稿啦啦啦啦～
+  ended: true
+  time: 00:00 - 23:59
+  description: RubyConf Taiwan 2023 開始徵稿囉～
+  url: https://cfp.rubyconf.tw/activities/2023
+- title: Ruby track After party
+  date: '2023-07-30'
+  location: 台北市大安區光復南路102號3樓
+  ended: true
+  time: 18:00 - 20:00
+  description: "### 活動簡介"
+  url: https://rubytaiwan.kktix.cc/events/rtap
