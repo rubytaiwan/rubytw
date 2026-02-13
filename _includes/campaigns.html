@@ -7,9 +7,9 @@
       <h4 class="campaign-title">{{ campaign.title }}</h4>
       {% include icon_ruby.svg %}
       <p class="campaign-desc">{{ campaign.desc }}</p>
-      {% for link in campaign.links %}
+      {%- for link in campaign.links -%}
       <a href="{{ link.url }}" target="_blank" class="campaign-link {% if campaign.links.size == 2 %}double{% elsif campaign.links.size == 3 %}triple{% endif %}">{{ link.name }}</a>
-      {% endfor %}
+      {%- endfor -%}
     </div>
 
     <div class="campaign-photos carousel slide" data-ride="carousel" id="{{ campaign.id }}-photo">

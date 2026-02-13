@@ -39,7 +39,7 @@ $(document).ready(function () {
 
   // Toggle More Blog Posts
   $('.blog-more').click(function() {
-    var morePosts = $('.news.more');
+    var morePosts = $('.blog.more');
     if ($(this).hasClass('active')) {
       morePosts.css('display', 'none');
       $(this).removeClass('active');
