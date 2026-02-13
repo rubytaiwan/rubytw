@@ -19,7 +19,8 @@ bundle exec rubocop             # Ruby code style check
 
 Jekyll static site with data-driven architecture:
 
-- **`_data/`** — YAML data files (events, campaigns, communities, i18n, social_media), the primary content source
+- **`_data/`** — YAML data files (campaigns, communities, i18n, social_media), the primary content source
+- **`_events/`** — Event collection files (Markdown with front matter), sorted by date
 - **`_layouts/`** — Page templates: `default.html` (base HTML), `landing.html` (homepage), `post.html` (blog post)
 - **`_includes/`** — Reusable Liquid template partials (nav, cover, blogs, events, campaigns, communities, subscription)
 - **`_posts/`** — Markdown/HTML blog posts using date-based naming convention
@@ -34,7 +35,7 @@ Jekyll static site with data-driven architecture:
 
 ## Content Conventions
 
-- Add events: edit `_data/events.yml`, mark ended events with `ended: true`
+- Add events: create `YYYY-MM-DD-slug.md` in `_events/`, front matter requires `title`, `date`, `location`, `time`, `event_url`; mark ended events with `ended: true`
 - Add community campaigns: edit `_data/campaigns.yml`
 - Add blog posts: create `YYYY-MM-DD-slug.md` in `_posts/`, front matter requires `title` and optional `cover`
 - UI translations: `_data/i18n.yml`

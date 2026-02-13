@@ -4,6 +4,11 @@ description: >-
 baseurl: ""
 url: ""
 
+collections:
+  events:
+    output: false
+    sort_by: date
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -12,6 +17,9 @@ permalink: /blogs/:slug/
 
 kramdown:
   hard_wrap: true
+
+exclude:
+  - CLAUDE.md
 
 sass:
   sass_dir: _sass
@@ -23,3 +31,8 @@ defaults:
       type: "posts"
     values:
       layout: post
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      ended: false

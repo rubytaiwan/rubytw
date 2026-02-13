@@ -2,15 +2,16 @@
   <h3 class="section-title">{{ site.data.i18n.section.events }}</h3>
 
   <div class="events-list">
-    {% assign ended_events = site.data.events | where: "ended", true %}
-    {% assign active_events = site.data.events | where_exp: "event", "event.ended != true" %}
+    {% assign ended_events = site.events | where: "ended", true %}
+    {% assign active_events = site.events | where_exp: "event", "event.ended != true" %}
 
-    {% if site.data.events and site.data.events.size > 0 %}
+    {% if site.events and site.events.size > 0 %}
       {% if active_events.size == 0 %}
       <span class="event-empty">{{ site.data.i18n.helper.empty_events }}</span>
       {% endif %}
 
-      {% for event in site.data.events %}
+      {% assign sorted_events = site.events | sort: "date" | reverse %}
+      {% for event in sorted_events %}
       <div class="event-card{% if event.ended %} ended{% endif %}">
         <div class="event-photo">
           {% if event.image %}
@@ -20,11 +21,11 @@
 
         <div class="event-info">
           {% if event.date %}
-          <p class="event-date">{{ event.date | replace: "-", "." }}</p>
+          <p class="event-date">{{ event.date | date: "%Y.%m.%d" }}</p>
           {% endif %}
 
-          {% if event.url %}
-          <a href="{{ event.url }}" target="_blank" class="event-title">{{ event.title }}</a>
+          {% if event.event_url %}
+          <a href="{{ event.event_url }}" target="_blank" class="event-title">{{ event.title }}</a>
           {% else %}
           <p class="event-title">{{ event.title }}</p>
           {% endif %}
@@ -43,13 +44,13 @@
           </div>
           {% endif %}
 
-          {% if event.description %}
-          <p class="event-desc">{{ event.description | newline_to_br }}</p>
+          {% if event.content != "" %}
+          <div class="event-desc">{{ event.content }}</div>
           {% endif %}
         </div>
 
-        {% if event.ended == false and event.url %}
-        <a href="{{ event.url }}" target="_blank" class="button-apply active">{{ site.data.i18n.helper.apply_now }}</a>
+        {% if event.ended == false and event.need_apply and event.event_url %}
+        <a href="{{ event.event_url }}" target="_blank" class="button-apply active">{{ site.data.i18n.helper.apply_now }}</a>
         {% elsif event.ended %}
         <div class="button-apply">{{ site.data.i18n.helper.ended_events }}</div>
         {% else %}
