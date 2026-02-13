@@ -36,12 +36,6 @@ layout: default
     </div>
   </nav>
 
-  {% if page.cover_image %}
-  <div class="cover-image">
-    <img src="{{ page.cover_image }}" title="{{ page.title }}" alt="{{ page.title }}">
-  </div>
-  {% endif %}
-
   <div class="content">
     <span class="content-date">{{ page.date | date: "%b %d, %Y" }}</span>
     <h1 class="content-title">{{ page.title }}</h1>

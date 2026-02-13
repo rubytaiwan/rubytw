@@ -10,6 +10,9 @@ plugins:
 
 permalink: /blogs/:slug/
 
+kramdown:
+  hard_wrap: true
+
 sass:
   sass_dir: _sass
   style: compressed

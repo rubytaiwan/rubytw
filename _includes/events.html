@@ -2,8 +2,8 @@
   <h3 class="section-title">{{ site.data.i18n.section.events }}</h3>
 
   <div class="events-list">
-    {% assign active_events = site.data.events | where: "ended", false %}
     {% assign ended_events = site.data.events | where: "ended", true %}
+    {% assign active_events = site.data.events | where_exp: "event", "event.ended != true" %}
 
     {% if site.data.events and site.data.events.size > 0 %}
       {% if active_events.size == 0 %}
@@ -20,7 +20,7 @@
 
         <div class="event-info">
           {% if event.date %}
-          <p class="event-date">{{ event.date }}</p>
+          <p class="event-date">{{ event.date | replace: "-", "." }}</p>
           {% endif %}
 
           {% if event.url %}
@@ -44,7 +44,7 @@
           {% endif %}
 
           {% if event.description %}
-          <p class="event-desc">{{ event.description }}</p>
+          <p class="event-desc">{{ event.description | newline_to_br }}</p>
           {% endif %}
         </div>
 

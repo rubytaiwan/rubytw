@@ -1,22 +1,40 @@
 ---
-- title: Ruby Jam - 8月場
-  date: '2023-08-29'
-  location: 台北市大安區光復南路102號3樓
-  ended: true
-  time: 19:30 - 21:30
-  description: "\U0001F9CA講者：Cadie"
-  url: https://rubytaiwan.kktix.cc/events/rubyjam2308
 - title: RubyConf Taiwan 2023 CFP
   date: '2023-10-20'
   location: 徵稿啦啦啦啦～
-  ended: true
+  ended: false
   time: 00:00 - 23:59
-  description: RubyConf Taiwan 2023 開始徵稿囉～
+  description: |-
+    RubyConf Taiwan 2023 開始徵稿囉～
+    久違的大型實體研討會，是不是已經迫不及待想要一展長才了呢？
+    Ruby Taiwan 為大家準備好大大的舞台了！
+
+    徵稿日期：即日起～2023/10/20 23:59
+    徵稿詳細內容請點選報名連結
+  need_apply: false
   url: https://cfp.rubyconf.tw/activities/2023
+- title: Ruby Jam - 8月場
+  date: '2023-08-29'
+  location: 台北市大安區光復南路102號3樓
+  ended: false
+  time: 19:30 - 21:30
+  description: "\U0001F9CA講者：Cadie\n\U0001F9CA主題：Why do we need View Component in
+    coding life?\n\U0001F9CA主題簡介：View Component is a powerful tool for modern developers
+    nowadays. It makes your creative team could work faster and more effectively.
+    Furthermore, it is also easy to set up and debug, making your project more lightweight
+    and beautiful. Not only make your frontend code lightweight and aesthetically
+    pleasing, but also streamline teamwork and project scalability."
+  need_apply: false
+  url: https://rubytaiwan.kktix.cc/events/rubyjam2308
 - title: Ruby track After party
   date: '2023-07-30'
   location: 台北市大安區光復南路102號3樓
-  ended: true
+  ended: false
   time: 18:00 - 20:00
-  description: "### 活動簡介"
+  description: "### 活動簡介\nCOSCUP 結束後 Ruby TW 另外加碼 After party，歡迎各位來吃、喝、聊\n\n### 活動描述\n-
+    簡介：\n隨著社群實體活動的重啟，我們很開心能夠見到這麼多 Ruby 愛好者，無論是在社群平台上的關心或是活動上的支持，都讓我們在推廣程式語言的路上可以更用心和堅持地繼續走下去\n歡迎在
+    COSCUP 結束後帶著三五好友一起參加 Ruby track 的 After party，希望可以藉由本次活動，促進社群朋友們的交流。 \n活動當天將準備美食、酒水和軟性飲料，歡迎社群的朋友或是其他各路好手跟我們一起齊聚一堂
+    \ \n\n- 對象：各位舊友新知，歡迎呼朋引伴，攜家帶眷，無論是否有程式背景，都很歡迎一起來參與 「Ruby track After party」   \n\n-
+    入場費用：免費"
+  need_apply: false
   url: https://rubytaiwan.kktix.cc/events/rtap
