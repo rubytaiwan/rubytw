@@ -49,6 +49,36 @@ $(document).ready(function () {
     $(this).addClass('active');
   });
 
+  // Toggle Blog Modal
+  var blogModalClosedByPopstate = false;
+
+  $('.blog-title').click(function(e) {
+    e.preventDefault();
+    var blogIndex = $(this).data('blog-index');
+    var content = $('#blog-content-' + blogIndex).html();
+    var postUrl = $(this).attr('href');
+    var $modal = $('#blog-modal');
+    $modal.find('.modal-body .content').html(content);
+    $modal.modal('show');
+    history.pushState({ blogModal: true }, '', postUrl);
+  });
+
+  $('#blog-modal').on('hidden.bs.modal', function() {
+    $(this).find('.modal-body .content').empty();
+    if (!blogModalClosedByPopstate) {
+      history.back();
+    }
+    blogModalClosedByPopstate = false;
+  });
+
+  $(window).on('popstate', function() {
+    var $modal = $('#blog-modal');
+    if ($modal.hasClass('in')) {
+      blogModalClosedByPopstate = true;
+      $modal.modal('hide');
+    }
+  });
+
   // Toggle Ended Events
   $('.events-more').click(function() {
     var endedEvents = $('.event-card.ended');

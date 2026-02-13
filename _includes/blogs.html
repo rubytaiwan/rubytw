@@ -6,7 +6,13 @@
       {% for post in site.posts %}
       <div class="blog{% if forloop.index > 5 %} more{% endif %}">
         <span class="blog-date">{{ post.date | date: "%b %d %Y" }}</span>
-        <a href="{{ post.url }}" class="blog-title">{{ post.title }}</a>
+        <a href="{{ post.url }}" class="blog-title"
+           data-blog-index="{{ forloop.index0 }}">{{ post.title }}</a>
+        <div class="blog-modal-content" id="blog-content-{{ forloop.index0 }}" style="display:none">
+          <span class="content-date">{{ post.date | date: "%b %d, %Y" }}</span>
+          <h1 class="content-title">{{ post.title }}</h1>
+          {{ post.content }}
+        </div>
       </div>
       {% endfor %}
     </div>
@@ -14,5 +20,16 @@
     {% if site.posts.size >= 5 %}
     <button class="button-more blog-more">{{ site.data.i18n.helper.view_more }}</button>
     {% endif %}
+  </div>
+
+  <div id="blog-modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-close" data-dismiss="modal" aria-label="Close"></div>
+        <div class="modal-body">
+          <div class="content"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

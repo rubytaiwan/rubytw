@@ -88,18 +88,35 @@
       position: relative
       border-radius: 0
 
-      .modal-header
-        z-index: 999
+      .modal-close
+        $size: 30px
+        height: $size
+        width: $size
         position: absolute
-        border-width: 0
         right: 0
-        padding: 10px 15px
+        margin: 20px
+        box-sizing: border-box
+        line-height: $size
+        z-index: 99
+        cursor: pointer
+        +transform(translateY(50%))
 
-        @media screen and (min-width: $screen-sm)
-          padding: 15px 20px
+        &:before, &:after
+          content: ''
+          position: absolute
+          top: 0
+          width: 30px
+          height: 2px
+          transform: rotate(-45deg)
+          background-color: $warm-grey
+          transition: all 0.2s ease-out
 
-        button.close
-          font-size: 36px
+        &:after
+          transform: rotate(45deg)
+
+        &:hover
+          &:before, &:after
+            transform: rotate(0deg)
 
       .modal-body
         padding: 0
@@ -110,8 +127,3 @@
             padding: 40px
           @media screen and (min-width: $screen-md)
             padding: 60px
-
-      .modal-footer p
-        text-align: center
-        color: $warm-grey
-        margin: 5px 0
