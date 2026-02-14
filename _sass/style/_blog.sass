@@ -33,7 +33,7 @@
         @extend .flexbox
         align-items: center
         justify-content: flex-start
-      
+
         + .blog
           border-top: solid 1px $light-grey
           padding-top: 30px
@@ -72,3 +72,6 @@
             background-color: $red
           .blog-title
             color: $red
+
+      &.more--visible .blog.more
+        display: flex

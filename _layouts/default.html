@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>{{ page.title | default: site.title }}</title>
   {% seo %}
-  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="mobile-web-app-capable">
   <meta content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
   <!-- Favicons -->
@@ -23,10 +23,14 @@
   {{ content }}
 
   <!-- JS -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
-  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  <script type="importmap" data-turbo-permanent id="importmap">
+  {
+    "imports": {
+      "@hotwired/turbo": "https://cdn.jsdelivr.net/npm/@hotwired/turbo@8/dist/turbo.es2017-esm.min.js",
+      "@hotwired/stimulus": "https://cdn.jsdelivr.net/npm/@hotwired/stimulus@3/dist/stimulus.js"
+    }
+  }
+  </script>
+  <script type="module" src="{{ '/assets/js/application.js' | relative_url }}"></script>
 </body>
 </html>

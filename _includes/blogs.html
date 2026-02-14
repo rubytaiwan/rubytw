@@ -1,33 +1,33 @@
-<section id="blogs">
-  <div class="blog-card">
+<section id="blogs" data-controller="modal">
+  <div class="blog-card" data-controller="toggle">
     <h3 class="section-title">{{ site.data.i18n.section.blog }}</h3>
 
-    <div class="blog-list">
+    <div class="blog-list" data-toggle-target="wrapper">
       {% for post in site.posts %}
       <div class="blog{% if forloop.index > 5 %} more{% endif %}">
         <span class="blog-date">{{ post.date | date: "%b %d %Y" }}</span>
         <a href="{{ post.url }}" class="blog-title"
-           data-blog-index="{{ forloop.index0 }}">{{ post.title }}</a>
-        <div class="blog-modal-content" id="blog-content-{{ forloop.index0 }}" style="display:none">
-          <span class="content-date">{{ post.date | date: "%b %d, %Y" }}</span>
-          <h1 class="content-title">{{ post.title }}</h1>
-          {{ post.content }}
-        </div>
+           data-turbo-frame="blog-modal-content"
+           data-turbo-action="advance"
+           data-action="click->modal#open">{{ post.title }}</a>
       </div>
       {% endfor %}
     </div>
 
     {% if site.posts.size >= 5 %}
-    <button class="button-more blog-more">{{ site.data.i18n.helper.view_more }}</button>
+    <button class="button-more blog-more" data-action="click->toggle#toggle">{{ site.data.i18n.helper.view_more }}</button>
     {% endif %}
   </div>
 
-  <div id="blog-modal" class="modal fade" tabindex="-1">
+  <div id="blog-modal" class="modal fade" tabindex="-1" data-modal-target="dialog"
+       data-action="click->modal#closeOnOverlay">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-close" data-dismiss="modal" aria-label="Close"></div>
+        <div class="modal-close" data-action="click->modal#close" aria-label="Close"></div>
         <div class="modal-body">
-          <div class="content"></div>
+          <turbo-frame id="blog-modal-content">
+            <div class="content"></div>
+          </turbo-frame>
         </div>
       </div>
     </div>

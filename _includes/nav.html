@@ -1,24 +1,31 @@
-<nav id="affixNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+<nav id="affixNav" class="navbar navbar-default navbar-custom navbar-fixed-top"
+     data-controller="navbar scroll">
   <div class="container-fluid">
     <div class="navbar-header page-scroll">
-      <button class="navbar-toggle" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+      <button class="navbar-toggle" type="button"
+              data-action="click->navbar#toggleCollapse">
         <i class="fa fa-bars"></i>
       </button>
-      <a class="navbar-brand page-scroll" href="#cover">
+      <a class="navbar-brand page-scroll" href="#cover"
+         data-action="click->scroll#scroll">
         {% include cover/ruby_taiwan_logotype.svg %}
       </a>
     </div>
 
-    <div id="navbar-collapse" class="collapse navbar-collapse">
+    <div id="navbar-collapse" class="collapse navbar-collapse"
+         data-navbar-target="collapse">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a class="page-scroll" href="#blogs">{{ site.data.i18n.section.blog }}</a>
+          <a class="page-scroll" href="#blogs"
+             data-action="click->scroll#scroll click->navbar#closeCollapse">{{ site.data.i18n.section.blog }}</a>
         </li>
         <li>
-          <a class="page-scroll" href="#events">{{ site.data.i18n.section.events }}</a>
+          <a class="page-scroll" href="#events"
+             data-action="click->scroll#scroll click->navbar#closeCollapse">{{ site.data.i18n.section.events }}</a>
         </li>
         <li>
-          <a class="page-scroll" href="#communities">{{ site.data.i18n.section.communities }}</a>
+          <a class="page-scroll" href="#communities"
+             data-action="click->scroll#scroll click->navbar#closeCollapse">{{ site.data.i18n.section.communities }}</a>
         </li>
         <li class="social-media">
           <a href="{{ site.data.social_media.twitter }}" target="_blank">

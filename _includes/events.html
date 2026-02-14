@@ -1,7 +1,7 @@
-<section id="events">
+<section id="events" data-controller="toggle">
   <h3 class="section-title">{{ site.data.i18n.section.events }}</h3>
 
-  <div class="events-list">
+  <div class="events-list" data-toggle-target="wrapper">
     {% assign ended_events = site.events | where: "ended", true %}
     {% assign active_events = site.events | where_exp: "event", "event.ended != true" %}
 
@@ -64,6 +64,6 @@
   </div>
 
   {% if ended_events.size > 0 %}
-  <button class="button-more events-more">{{ site.data.i18n.helper.order_events }}</button>
+  <button class="button-more events-more" data-action="click->toggle#toggle">{{ site.data.i18n.helper.order_events }}</button>
   {% endif %}
 </section>
