@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - master
-      - static # Current branch, after merging, will be deleted
 
   workflow_dispatch:
 
