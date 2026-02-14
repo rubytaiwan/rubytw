@@ -36,12 +36,14 @@ layout: default
     </div>
   </nav>
 
-  <div class="content">
-    <span class="content-date">{{ page.date | date: "%b %d, %Y" }}</span>
-    <h1 class="content-title">{{ page.title }}</h1>
-    {% include icon_ruby.svg %}
-    {{ content }}
-  </div>
+  <turbo-frame id="blog-modal-content">
+    <div class="content">
+      <span class="content-date">{{ page.date | date: "%b %d, %Y" }}</span>
+      <h1 class="content-title">{{ page.title }}</h1>
+      {% include icon_ruby.svg %}
+      {{ content }}
+    </div>
+  </turbo-frame>
 </div>
 
 {% include footer.html %}

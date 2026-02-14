@@ -12,17 +12,23 @@
       {%- endfor -%}
     </div>
 
-    <div class="campaign-photos carousel slide" data-ride="carousel" id="{{ campaign.id }}-photo">
+    <div class="campaign-photos carousel slide" id="{{ campaign.id }}-photo"
+         data-controller="carousel"
+         data-action="touchstart->carousel#onTouchStart touchend->carousel#onTouchEnd">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         {% for photo in campaign.photo %}
-        <li data-slide-to="{{ forloop.index0 }}" data-target="#{{ campaign.id }}-photo"{% if forloop.first %} class="active"{% endif %}></li>
+        <li data-carousel-target="indicator"
+            data-action="click->carousel#goToIndicator"
+            {% if forloop.first %}class="active"{% endif %}></li>
         {% endfor %}
       </ol>
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         {% for photo in campaign.photo %}
-        <div class="item{% if forloop.first %} active{% endif %}" id="{{ campaign.id }}-photo-{{ forloop.index0 }}">
+        <div class="item{% if forloop.first %} active{% endif %}"
+             data-carousel-target="slide"
+             id="{{ campaign.id }}-photo-{{ forloop.index0 }}">
           <img src="{{ '/assets/images/campaigns/' | append: photo | relative_url }}" alt="{{ campaign.title }}" title="{{ campaign.title }}">
         </div>
         {% endfor %}
