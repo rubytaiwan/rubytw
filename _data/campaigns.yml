@@ -1,0 +1,67 @@
+- title: "Ruby Taiwan"
+  id: "rubytaiwan"
+  photo:
+    - "rubytaiwan-0.jpg"
+    - "rubytaiwan-1.jpg"
+    - "rubytaiwan-2.jpg"
+    - "rubytaiwan-3.jpg"
+    - "rubytaiwan-4.jpg"
+  desc: >
+    Ruby Taiwan 成立於 2008 年10 月，主要針對 Ruby 程式語言及軟體開發，進行業界的交流及分享，提昇開發人員的技術深度與廣度。
+  links:
+    - name: "Facebook 專頁"
+      url: "https://www.facebook.com/ruby.taiwan"
+    - name: "Facebook 社團"
+      url: "https://www.facebook.com/groups/142197385837507/"
+
+- title: "Ruby Jam"
+  id: "rubyjam"
+  photo:
+    - "rubyjam-0.jpg"
+    - "rubyjam-1.jpg"
+    - "rubyjam-2.jpg"
+  desc: >
+    Ruby 社群每月一次的技術交流聚會
+    以主題技術分享 + Lightning talk + 交流的形式呈現
+    分享及吸收知識的小聚會
+  links:
+    - name: "FB 專頁"
+      url: "https://www.facebook.com/RubyJamTW"
+    - name: "YouTube"
+      url: "https://www.youtube.com/channel/UC5YyLQH-M9_tSXIKv29bstg"
+    - name: "IG"
+      url: "https://www.instagram.com/rubytaiwan2008/"
+
+- title: "Rails Girls Taipei"
+  id: "railsgirlstaipei"
+  photo:
+    - "railsgirlstaipei-0.jpg"
+    - "railsgirlstaipei-1.jpg"
+    - "railsgirlstaipei-2.jpg"
+    - "railsgirlstaipei-3.jpg"
+    - "railsgirlstaipei-4.jpg"
+  desc: >
+    為期 2 天的 Rails Girls 工作坊，幫助女生們進入 Ruby 以及 Rails 的世界, 讓妳們有能力實現自己的點子與理想！
+  links:
+    - name: "Facebook 專頁"
+      url: "https://www.facebook.com/railsgirlstw/"
+    - name: "Rails Girls 官網"
+      url: "http://railsgirls.tw"
+
+- title: "RubyConf Taiwan"
+  id: "rubyconftaiwan"
+  photo:
+    - "rubyconftaiwan-0.jpg"
+    - "rubyconftaiwan-1.jpg"
+    - "rubyconftaiwan-2.jpg"
+    - "rubyconftaiwan-3.jpg"
+    - "rubyconftaiwan-4.jpg"
+  desc: >
+    Ruby Taiwan 成立於 2008 年10 月，主要針對 Ruby 程式語言及軟體開發，進行業界的交流及分享，提昇開發人員的技術深度與廣度。
+  links:
+    - name: "FB 專頁"
+      url: "https://www.facebook.com/rubyconftw/"
+    - name: "官網"
+      url: "http://rubyconf.tw/"
+    - name: "影片回顧"
+      url: "https://www.youtube.com/channel/UCqw_z59yI24SivuD573FECA"

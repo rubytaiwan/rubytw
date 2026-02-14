@@ -1,0 +1,19 @@
+<section id="communities">
+  <h3 class="section-title">{{ site.data.i18n.section.communities }}</h3>
+
+  <div class="communities">
+    {% if site.data.communities %}
+    {% for community in site.data.communities %}
+    {% assign mod = forloop.index | modulo: 2 %}
+    <div class="community {% if mod == 0 %}odd{% else %}even{% endif %}">
+      <a href="{{ community.url }}" target="_blank" class="community-card">
+        <div class="community-info">
+          {{ community.name }}
+          <i class="fa {{ community.icon | default: 'fa-external-link' }}" aria-hidden="true"></i>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+</section>

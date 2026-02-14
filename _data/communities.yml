@@ -1,0 +1,7 @@
+---
+- name: Ruby Taiwan Instagram
+  url: https://www.instagram.com/rubytaiwan2008/
+  icon: fa-external-link
+- name: Ruby Taiwan Threads
+  url: https://www.threads.com/@rubytaiwan2008
+  icon: fa-external-link

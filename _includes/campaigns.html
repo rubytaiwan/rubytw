@@ -1,0 +1,34 @@
+<section id="campaigns">
+  {% for campaign in site.data.campaigns %}
+  {% assign mod = forloop.index | modulo: 2 %}
+  <div class="campaign-card {% if mod == 0 %}odd{% else %}even{% endif %} {{ campaign.id }}">
+
+    <div class="campaign-info">
+      <h4 class="campaign-title">{{ campaign.title }}</h4>
+      {% include icon_ruby.svg %}
+      <p class="campaign-desc">{{ campaign.desc }}</p>
+      {%- for link in campaign.links -%}
+      <a href="{{ link.url }}" target="_blank" class="campaign-link {% if campaign.links.size == 2 %}double{% elsif campaign.links.size == 3 %}triple{% endif %}">{{ link.name }}</a>
+      {%- endfor -%}
+    </div>
+
+    <div class="campaign-photos carousel slide" data-ride="carousel" id="{{ campaign.id }}-photo">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        {% for photo in campaign.photo %}
+        <li data-slide-to="{{ forloop.index0 }}" data-target="#{{ campaign.id }}-photo"{% if forloop.first %} class="active"{% endif %}></li>
+        {% endfor %}
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        {% for photo in campaign.photo %}
+        <div class="item{% if forloop.first %} active{% endif %}" id="{{ campaign.id }}-photo-{{ forloop.index0 }}">
+          <img src="{{ '/assets/images/campaigns/' | append: photo | relative_url }}" alt="{{ campaign.title }}" title="{{ campaign.title }}">
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+  {% endfor %}
+</section>

@@ -1,0 +1,66 @@
+@use "sass:color"
+@use "../base" as *
+
+#subscription
+  max-width: inherit
+  padding-left: 30px
+  padding-right: 30px
+  margin: 0 -15px
+  background: $red url("../images/geometric_background.svg") repeat top left
+  box-shadow: 0 2px 4px 0 rgba(#000,0.5)
+
+  .section-title
+    color: #fff
+    margin-bottom: 0
+
+  svg
+    position: absolute
+    height: 22px
+    left: 50%
+    +transform(translateX(-50%))
+
+    #icon_ruby
+      fill: #fff
+
+  .subscription
+    margin: 60px auto 0
+    display: block
+    box-shadow: 0 2px 4px 0 rgba($deep-grey, 0.5)
+
+    @media screen and (min-width: $screen-sm)
+      display: table
+      width: 480px
+
+    .form-control
+      color: $deep-grey
+      +size(100%, 50px)
+      background-color: #fff
+      border-width: 0px
+      border-radius: 4px 4px 0 0
+      padding: 0 0 0 15px
+
+      &:focus
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba($red, 0)
+
+      @media screen and (min-width: $screen-sm)
+        float: left
+        width: 360px
+        border-radius: 4px 0 0 4px
+
+    .input-group-btn button
+      color: #fff
+      font-size: 18px
+      +size(100%, 50px)
+      background-color: $red
+      border-radius: 0 0 4px 4px
+      border: 5px solid #fff
+      margin-left: 0
+      +transition(background-color, 0.3s)
+
+      @media screen and (min-width: $screen-sm)
+        float: left
+        width: 120px
+        border-radius: 0 4px 4px 0
+
+      &:hover
+        background-color: color.adjust($red, $lightness: -7%)
