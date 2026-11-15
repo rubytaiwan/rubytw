@@ -39,3 +39,8 @@ Jekyll static site with data-driven architecture:
 - Add community campaigns: edit `_data/campaigns.yml`
 - Add blog posts: create `YYYY-MM-DD-slug.md` in `_posts/`, front matter requires `title` and optional `cover`
 - UI translations: `_data/i18n.yml`
+
+## EDM / listmonk
+
+- 電子報（edm.ruby.tw，list 12）與 KKTIX 名單匯入流程見 `.claude/skills/edm/SKILL.md`，腳本為 `scripts/import_kktix.rb`
+- 憑證放 `.env`（已 gitignore），範本見 `.env.example`；絕不 commit 金鑰

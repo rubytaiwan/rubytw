@@ -19,6 +19,7 @@ kramdown:
   hard_wrap: true
 
 exclude:
+  - scripts
   - CLAUDE.md
 
 sass:
