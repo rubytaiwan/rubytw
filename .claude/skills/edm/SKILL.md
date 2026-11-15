@@ -6,7 +6,7 @@ description: Operate the Ruby Taiwan listmonk (edm.ruby.tw) — prepare EDM camp
 # Ruby Taiwan EDM (listmonk)
 
 - Instance: https://edm.ruby.tw/ ，社群 list id = **12**（KKTIX 報名者）；攤位名單另有各自的 list，用 `GET /api/lists` 查詢
-- 憑證放在 repo 根目錄 `.env`（已 gitignore，絕不 commit、不印出）：`KKTIX_LIST_API_USER`、`KKTIX_LIST_API_SECRET`。範本見 `.env.example`，API user 請向 listmonk 管理員索取（每人各自一組，不共用）。
+- 憑證放在 repo 根目錄 `.env`（已 gitignore，絕不 commit、不印出）：`LISTMONK_API_USER`、`LISTMONK_API_SECRET`。範本見 `.env.example`，API user 請向 listmonk 管理員索取（每人各自一組，不共用）。
 - API header：`Authorization: token USER:SECRET`
 
 ## 流程規則（寄信對外不可逆）
