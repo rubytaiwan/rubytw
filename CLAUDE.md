@@ -42,5 +42,5 @@ Jekyll static site with data-driven architecture:
 
 ## EDM / listmonk
 
-- 電子報（edm.ruby.tw，list 12）與 KKTIX 名單匯入流程見 `.claude/skills/edm/SKILL.md`，腳本為 `scripts/import_kktix.rb`
+- 電子報（edm.ruby.tw）campaign draft 流程見 `.claude/skills/edm/SKILL.md`
 - 憑證放 `.env`（已 gitignore），範本見 `.env.example`；絕不 commit 金鑰
